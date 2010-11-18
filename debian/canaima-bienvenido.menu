@@ -1,0 +1,7 @@
+?package(gedit):\
+    needs="x11"\
+    section="Apps/Editors"\
+    title="Bienvenido a Canaima"\
+    longtitle="Bienvenido a Canaima"\
+    icon="/usr/share/icons/Oxygen-Green-Canaima/scalable/places/start-here.svg"\
+    command="/usr/bin/canaima-bienvenido"

@@ -1,0 +1,62 @@
+#!/bin/sh -e
+
+case ${1} in
+	install|configure)
+
+	#Para cada usuario en /home/ ...
+	for usuario in /home/*? ;
+	do
+
+		#dependiendo de si el Escritorio está en español o inglés ...
+		for var_desktop in "Desktop Escritorio"
+		do
+
+			#y si existe (ésto se asegura de que independientemente si el usuario
+			#usa su escritorio como "Desktop" o "Escritorio", se realicen las operaciones
+			#necesarias en el que exista o en ambos si ambos existen
+			if [ -d $usuario/$var_desktop/ ]
+			then
+
+				#Obteniendo sólo el nombre del usuario
+				usuario_min=$(basename $usuario)
+
+				#Y en caso de que el usuario sea un usuario activo (existente en /etc/shadow) ...
+				case  $(grep $usuario_min /etc/shadow) in
+
+					'')
+					#No hace nada si no se encuentra en /etc/shadow
+					;;
+
+					*)
+						
+						echo '=== Instalando Canaima Bienvenido para el usuario "'$usuario_min'" ==='
+
+						#Copiamos el lanzador de escritorio al escritorio de cada usuario
+						cp /usr/share/canaima-bienvenido/desktop/canaima-bienvenido.desktop /home/$usuario_min/$var_desktop/
+						#con permisos apropiados
+						chown $usuario_min:$usuario_min /home/$usuario/$var_desktop/canaima-bienvenido.desktop
+						#y el lanzador de escritorio a /etc/skel/Escritorio para usuarios futuros
+						cp -a /usr/share/canaima-bienvenido/desktop/canaima-bienvenido.desktop /etc/skel/${var_desktop}/
+
+						#Asegurando que el directorio .config/autostart esté creado
+						mkdir -p /home/$usuario_min/.config/autostart/
+						#con permisos apropiados
+						chown $usuario_min:$usuario_min /home/$usuario_min/.config/autostart/
+						#y el directorio /etc/skel/.config/autostart
+						mkdir -p /etc/skel/.config/autostart/
+
+						#Copia del lanzador automático de canaima-bienvenido a cada usuario
+						cp /usr/share/canaima-bienvenido/desktop/canaima-bienvenido-automatico.desktop /home/$usuario_min/.config/autostart/
+						#con permisos apropiados
+						chown $usuario_min:$usuario_min /home/$usuario_min/.config/autostart/canaima-bienvenido-automatico.desktop
+						#y el lanzador automático a /etc/skel/.config/autostart para usuarios futuros
+						cp -a /usr/share/canaima-bienvenido/desktop/canaima-bienvenido.desktop /etc/skel/.config/autostart/
+
+					;;
+				esac
+			fi
+		done
+	done
+
+	;;
+esac

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
+<!--Generated with glade3 3.4.5 on Wed Jun  2 09:47:06 2010 -->
+<glade-interface>
+  <widget class="GtkWindow" id="window1">
+    <property name="width_request">600</property>
+    <property name="height_request">570</property>
+    <property name="title" translatable="yes">Bienvenido</property>
+    <property name="resizable">False</property>
+    <property name="window_position">GTK_WIN_POS_CENTER_ALWAYS</property>
+    <property name="default_width">600</property>
+    <property name="default_height">570</property>
+    <property name="icon">images/canaima.png</property>
+    <property name="accept_focus">False</property>
+    <child>
+      <widget class="GtkLayout" id="layout1">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkViewport" id="viewport1">
+            <property name="width_request">600</property>
+            <property name="height_request">429</property>
+            <property name="visible">True</property>
+            <property name="resize_mode">GTK_RESIZE_QUEUE</property>
+            <child>
+              <widget class="GtkTable" id="table1">
+                <property name="visible">True</property>
+                <property name="n_rows">2</property>
+                <property name="n_columns">4</property>
+                <child>
+                  <widget class="GtkVBox" id="vbox8">
+                    <property name="visible">True</property>
+                    <child>
+                      <widget class="GtkButton" id="b1">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="extension_events">GDK_EXTENSION_EVENTS_CURSOR</property>
+                        <property name="tooltip" translatable="yes">Abrir el Navegador Mozilla Firefox</property>
+                        <property name="relief">GTK_RELIEF_NONE</property>
+                        <property name="response_id">0</property>
+                        <signal name="clicked" handler="on_b1_clicked"/>
+                        <child>
+                          <widget class="GtkVBox" id="vbox7">
+                            <property name="visible">True</property>
+                            <child>
+                              <widget class="GtkImage" id="image7">
+                                <property name="visible">True</property>
+                                <property name="tooltip" translatable="yes">Abrir el Navegador Mozilla Firefox</property>
+                                <property name="xpad">2</property>
+                                <property name="pixbuf">images/firefox.png</property>
+                              </widget>
+                            </child>
+                            <child>
+                              <widget class="GtkLabel" id="label14">
+                                <property name="visible">True</property>
+                                <property name="label" translatable="yes">Mozilla Firefox</property>
+                              </widget>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                </child>
+                <child>
+                  <widget class="GtkVBox" id="vbox11">
+                    <property name="visible">True</property>
+                    <child>
+                      <widget class="GtkButton" id="b3">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="tooltip" translatable="yes">Chatear por Gmail, Yahoo, Facebook, MSN, etc.</property>
+                        <property name="relief">GTK_RELIEF_NONE</property>
+                        <property name="response_id">0</property>
+                        <signal name="clicked" handler="on_b3_clicked"/>
+                        <child>
+                          <widget class="GtkVBox" id="vbox10">
+                            <property name="visible">True</property>
+                            <child>
+                              <widget class="GtkImage" id="image9">
+                                <property name="visible">True</property>
+                                <property name="pixbuf">images/pidgin.png</property>
+                              </widget>
+                            </child>
+                            <child>
+                              <widget class="GtkLabel" id="label18">
+                                <property name="visible">True</property>
+                                <property name="label" translatable="yes">Pidgin</property>
+                              </widget>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="right_attach">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b4">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="tooltip" translatable="yes">Aprender más sobre Canaima GNU/Linux</property>
+                    <property name="relief">GTK_RELIEF_NONE</property>
+                    <property name="response_id">0</property>
+                    <signal name="clicked" handler="on_b4_clicked"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox6">
+                        <property name="visible">True</property>
+                        <child>
+                          <widget class="GtkImage" id="image6">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">images/canaima.png</property>
+                          </widget>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label12">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Canaima GNU/Linux</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">3</property>
+                    <property name="right_attach">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b8">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="tooltip" translatable="yes">Hacer Dibujos y Diagramas</property>
+                    <property name="relief">GTK_RELIEF_NONE</property>
+                    <property name="response_id">0</property>
+                    <signal name="clicked" handler="on_b8_clicked"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox3">
+                        <property name="visible">True</property>
+                        <child>
+                          <widget class="GtkImage" id="image3">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">images/openofficeorg-draw.png</property>
+                          </widget>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label6">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">OpenOffice Draw</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">3</property>
+                    <property name="right_attach">4</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b2">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="tooltip" translatable="yes">Chatear por MSN</property>
+                    <property name="relief">GTK_RELIEF_NONE</property>
+                    <property name="response_id">0</property>
+                    <signal name="clicked" handler="on_b2_clicked"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox9">
+                        <property name="visible">True</property>
+                        <child>
+                          <widget class="GtkImage" id="image1">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">images/amsn.png</property>
+                          </widget>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label2">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">aMSN</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b6">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="tooltip" translatable="yes">Abrir Editor de Hoja de Calculo</property>
+                    <property name="relief">GTK_RELIEF_NONE</property>
+                    <property name="response_id">0</property>
+                    <signal name="clicked" handler="on_b6_clicked"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox4">
+                        <property name="visible">True</property>
+                        <child>
+                          <widget class="GtkImage" id="image4">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">images/openofficeorg-calc.png</property>
+                          </widget>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label8">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">OpenOffice Calc</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b5">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="tooltip" translatable="yes">Abrir Editor de Textos</property>
+                    <property name="relief">GTK_RELIEF_NONE</property>
+                    <property name="response_id">0</property>
+                    <signal name="clicked" handler="on_b5_clicked"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox2">
+                        <property name="visible">True</property>
+                        <child>
+                          <widget class="GtkImage" id="image2">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">images/openofficeorg-writer.png</property>
+                          </widget>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label4">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">OpenOffice Writer</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b7">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="tooltip" translatable="yes">Presentaciones</property>
+                    <property name="relief">GTK_RELIEF_NONE</property>
+                    <property name="response_id">0</property>
+                    <signal name="clicked" handler="on_b7_clicked"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox5">
+                        <property name="visible">True</property>
+                        <child>
+                          <widget class="GtkImage" id="image5">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">images/openofficeorg-impress.png</property>
+                          </widget>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label10">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">OpenOffice Impress</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="right_attach">3</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="y">80</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image8">
+            <property name="width_request">600</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">images/arriba2.png</property>
+          </widget>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image10">
+            <property name="width_request">600</property>
+            <property name="height_request">69</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">images/abajo.png</property>
+          </widget>
+          <packing>
+            <property name="y">506</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cerrar">
+            <property name="width_request">133</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="label" translatable="yes">Cerrar</property>
+            <property name="response_id">0</property>
+            <signal name="clicked" handler="on_cerrar_clicked"/>
+          </widget>
+          <packing>
+            <property name="x">459</property>
+            <property name="y">524</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkCheckButton" id="mostrar">
+            <property name="width_request">235</property>
+            <property name="height_request">39</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="label" translatable="yes">No mostrar de nuevo al iniciar</property>
+            <property name="response_id">0</property>
+            <property name="draw_indicator">True</property>
+            <signal name="clicked" handler="on_mostrar_toggled"/>
+          </widget>
+          <packing>
+            <property name="x">14</property>
+            <property name="y">509</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="GtkWindow" id="window2">
+    <property name="width_request">600</property>
+    <property name="height_request">570</property>
+    <property name="title" translatable="yes">Aprender</property>
+    <property name="resizable">False</property>
+    <property name="window_position">GTK_WIN_POS_CENTER</property>
+    <property name="default_width">600</property>
+    <property name="default_height">570</property>
+    <property name="icon">images/canaima.png</property>
+    <property name="accept_focus">False</property>
+    <child>
+      <widget class="GtkLayout" id="layout2">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkImage" id="image20">
+            <property name="width_request">600</property>
+            <property name="height_request">69</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">images/abajo.png</property>
+          </widget>
+          <packing>
+            <property name="y">506</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="volver">
+            <property name="width_request">141</property>
+            <property name="height_request">36</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="label" translatable="yes">Volver</property>
+            <property name="response_id">0</property>
+            <signal name="clicked" handler="on_volver_clicked"/>
+          </widget>
+          <packing>
+            <property name="x">229</property>
+            <property name="y">520</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkNotebook" id="notebook1">
+            <property name="width_request">600</property>
+            <property name="height_request">433</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <child>
+              <widget class="GtkLayout" id="layout3">
+                <property name="visible">True</property>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkLabel" id="label15">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Manuales</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+                <property name="tab_fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkLayout" id="layout4">
+                <property name="visible">True</property>
+              </widget>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkLabel" id="label16">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Tutoriales</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+                <property name="position">1</property>
+                <property name="tab_fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkLayout" id="layout5">
+                <property name="visible">True</property>
+              </widget>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkLabel" id="label17">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Video Tutoriales</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+                <property name="position">2</property>
+                <property name="tab_fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkLayout" id="layout6">
+                <property name="visible">True</property>
+              </widget>
+              <packing>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkLabel" id="label19">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Soporte</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+                <property name="position">3</property>
+                <property name="tab_fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkLayout" id="layout7">
+                <property name="visible">True</property>
+              </widget>
+              <packing>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkLabel" id="label20">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Comunidad</property>
+              </widget>
+              <packing>
+                <property name="type">tab</property>
+                <property name="position">4</property>
+                <property name="tab_fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="y">76</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image19">
+            <property name="width_request">600</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">images/arriba2.png</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>
