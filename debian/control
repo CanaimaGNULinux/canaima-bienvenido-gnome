@@ -6,6 +6,8 @@ Uploaders: José Miguel Parrella Romero <jparrella@onuva.com>, Carlos David Marr
 Build-Depends: debhelper, cdbs
 Standards-Version: 3.9.1
 Homepage: http://canaima.softwarelibre.gob.ve/
+Vcs-Git: git://gitorious.org/canaima-gnu-linux/canaima-bienvenido.git
+Vcs-Browser: http://gitorious.org/canaima-gnu-linux/canaima-bienvenido/trees/master
 
 Package: canaima-bienvenido
 Architecture: all
