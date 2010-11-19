@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash -e
 
 case ${1} in
 	install|configure)
@@ -60,3 +60,5 @@ case ${1} in
 
 	;;
 esac
+
+#DEBHELPER#
