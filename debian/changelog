@@ -1,7 +1,6 @@
 canaima-bienvenido (3.0+0) unstable; urgency=low
 
-  * Reconstrucción del paquete canaima-bienvenido de acuerdo
-    con las nuevas políticas de desarrollo de Canaima GNU/Linux
+  * Reconstrucción del paquete canaima-bienvenido de acuerdo con las nuevas políticas de desarrollo de Canaima GNU/Linux
   * [3881a04] Agregando vcs-git a debian/control
 
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 19 Nov 2010 12:11:34 -0430
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 19 Nov 2010 12:13:09 -0430
