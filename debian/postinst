@@ -14,7 +14,7 @@ case ${1} in
 			#y si existe (ésto se asegura de que independientemente si el usuario
 			#usa su escritorio como "Desktop" o "Escritorio", se realicen las operaciones
 			#necesarias en el que exista o en ambos si ambos existen
-			if [ -d $usuario/$var_desktop/ ]
+			if [ -e $usuario/$var_desktop/ ]
 			then
 
 				#Obteniendo sólo el nombre del usuario
