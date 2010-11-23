@@ -7,68 +7,27 @@ case ${1} in
 	for usuario in /home/*? ;
 	do
 
-		#dependiendo de si el Escritorio está en español o inglés ...
-		for var_desktop in Desktop Escritorio
-		do
+	if [ -h ${usuario}/Desktop ] && [ -d ${usuario}/Escritorio ]
+	then
 
-			#y si existe (ésto se asegura de que independientemente si el usuario
-			#usa su escritorio como "Desktop" o "Escritorio", se realicen las operaciones
-			#necesarias en el que exista o en ambos si ambos existen
-			if [ -d $usuario/$var_desktop ]
-			then
+                rm ${usuario}/Desktop
 
-				#Obteniendo sólo el nombre del usuario
-				usuario_min=$(basename $usuario)
+	elif [ -h ${usuario}/Escritorio ] && [ -d ${usuario}/Desktop ]
+	then
+	
+		rm ${usuario}/Escritorio
+		mv ${usuario}/Desktop ${usuario}/Escritorio
 
-				#Y en caso de que el usuario sea un usuario activo (existente en /etc/shadow) ...
-				case  $(grep $usuario_min /etc/shadow) in
+	fi
 
-					'')
-					#No hace nada si no se encuentra en /etc/shadow
-					;;
+	echo "es_VE" > ${usuario}/.config/user-dirs.locale
+	sed -i 's/$HOME\/Desktop/$HOME\/Escritorio/g' ${usuario}/.config/user-dirs.dirs
 
-					*)
-						
-						echo '=== Instalando Canaima Bienvenido para el usuario "'$usuario_min'" ==='
-						#Copiamos el lanzador de escritorio al escritorio de cada usuario
-						cp /usr/share/canaima-bienvenido/desktop/canaima-bienvenido.desktop /home/$usuario_min/$var_desktop/
-						#con permisos apropiados
-						chown $usuario_min:$usuario_min /home/$usuario_min/$var_desktop/canaima-bienvenido.desktop
-						#y el lanzador de escritorio a /etc/skel/Escritorio para usuarios futuros
-						mkdir -p /etc/skel/${var_desktop}/
-						cp /usr/share/canaima-bienvenido/desktop/canaima-bienvenido.desktop /etc/skel/${var_desktop}/
+	xdg-user-dirs-update
 
-						#Asegurando que el directorio .config/autostart esté creado
-						mkdir -p /home/$usuario_min/.config/autostart/
-						#con permisos apropiados
-						chown $usuario_min:$usuario_min /home/$usuario_min/.config/autostart/
-						#y el directorio /etc/skel/.config/autostart
-						mkdir -p /etc/skel/.config/autostart/
-
-						#Copia del lanzador automático de canaima-bienvenido a cada usuario
-						cp /usr/share/canaima-bienvenido/desktop/canaima-bienvenido-automatico.desktop /home/$usuario_min/.config/autostart/
-						#con permisos apropiados
-						chown $usuario_min:$usuario_min /home/$usuario_min/.config/autostart/canaima-bienvenido-automatico.desktop
-						#y el lanzador automático a /etc/skel/.config/autostart para usuarios futuros
-						cp -a /usr/share/canaima-bienvenido/desktop/canaima-bienvenido.desktop /etc/skel/.config/autostart/
-
-					;;
-				esac
-			fi
-		done
 	done
 
 	;;
 esac
 
-# Automatically added by dh_pysupport
-if which update-python-modules >/dev/null 2>&1; then
-	update-python-modules  canaima-bienvenido.private
-fi
-# End automatically added section
-# Automatically added by dh_installmenu
-if [ "$1" = "configure" ] && [ -x "`which update-menus 2>/dev/null`" ]; then
-	update-menus
-fi
-# End automatically added section
-
+#DEBHELPER#

@@ -8,7 +8,7 @@ case ${1} in
 	do
 
 		#dependiendo de si el Escritorio está en español o inglés ...
-		for var_desktop in Desktop Escritorio
+		for var_desktop in Escritorio
 		do
 
 			#y si existe (ésto se asegura de que independientemente si el usuario
@@ -61,14 +61,4 @@ case ${1} in
 	;;
 esac
 
-# Automatically added by dh_pysupport
-if which update-python-modules >/dev/null 2>&1; then
-	update-python-modules  canaima-bienvenido.private
-fi
-# End automatically added section
-# Automatically added by dh_installmenu
-if [ "$1" = "configure" ] && [ -x "`which update-menus 2>/dev/null`" ]; then
-	update-menus
-fi
-# End automatically added section
-
+#DEBHELPER#
