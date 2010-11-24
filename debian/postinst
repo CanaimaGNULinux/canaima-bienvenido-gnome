@@ -1,64 +1,80 @@
 #!/bin/bash -e
+#
+# ==============================================================================
+# PAQUETE: canaima-bienvenido
+# ARCHIVO: postinst
+# DESCRIPCIÓN: Configura el sistema despues la instalación del paquete.
+# COPYRIGHT:
+#  (C) 2010 Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>
+#  (C) 2010 Diego Alberto Aguilera Zambrano <daguilera85@gmail.com>
+#  (C) 2010 Carlos Alejandro Guerrero Mora <guerrerocarlos@gmail.com>
+#  (C) 2010 Francisco Javier Vásquez Guerrero <franjvasquezg@gmail.com>
+# LICENCIA: GPL3
+# ==============================================================================
+#
+# Este programa es software libre. Puede redistribuirlo y/o modificarlo bajo los
+# términos de la Licencia Pública General de GNU (versión 3).
+
 
 case ${1} in
-	install|configure)
 
-	#Para cada usuario en /home/ ...
+	configure)
+
+	# Para cada usuario en /home/ ...
 	for usuario in /home/*? ;
 	do
 
-		#dependiendo de si el Escritorio está en español o inglés ...
-		for var_desktop in Escritorio
-		do
+		# Si existe la carpeta Escritorio
+		if [ -d $usuario/Escritorio ]
+		then
 
-			#y si existe (ésto se asegura de que independientemente si el usuario
-			#usa su escritorio como "Desktop" o "Escritorio", se realicen las operaciones
-			#necesarias en el que exista o en ambos si ambos existen
-			if [ -d $usuario/$var_desktop ]
-			then
+			# Obteniendo sólo el nombre del usuario
+			usuario_min=$(basename ${usuario})
 
-				#Obteniendo sólo el nombre del usuario
-				usuario_min=$(basename $usuario)
+			# Y en caso de que el usuario sea un usuario activo (existente en /etc/shadow) ...
+			case  $(grep ${usuario_min} /etc/shadow) in
 
-				#Y en caso de que el usuario sea un usuario activo (existente en /etc/shadow) ...
-				case  $(grep $usuario_min /etc/shadow) in
+				'')
+				# No hace nada si no se encuentra en /etc/shadow
+				;;
 
-					'')
-					#No hace nada si no se encuentra en /etc/shadow
-					;;
+				*)
+					
+					echo '===== Instalando Canaima Bienvenido para el usuario "'$usuario_min'" ====='
+					#Copiamos el lanzador de escritorio al escritorio de cada usuario
+					cp /etc/skel/Escritorio/canaima-bienvenido.desktop /home/${usuario_min}/Escritorio/
+					#con permisos apropiados
+					chown ${usuario_min}:${usuario_min} /home/{$usuario_min}/Escritorio/canaima-bienvenido.desktop
 
-					*)
-						
-						echo '=== Instalando Canaima Bienvenido para el usuario "'$usuario_min'" ==='
-						#Copiamos el lanzador de escritorio al escritorio de cada usuario
-						cp /usr/share/canaima-bienvenido/desktop/canaima-bienvenido.desktop /home/$usuario_min/$var_desktop/
-						#con permisos apropiados
-						chown $usuario_min:$usuario_min /home/$usuario_min/$var_desktop/canaima-bienvenido.desktop
-						#y el lanzador de escritorio a /etc/skel/Escritorio para usuarios futuros
-						mkdir -p /etc/skel/${var_desktop}/
-						cp /usr/share/canaima-bienvenido/desktop/canaima-bienvenido.desktop /etc/skel/${var_desktop}/
+					#Asegurando que el directorio .config/autostart esté creado
+					mkdir -p /home/${usuario_min}/.config/autostart/
+					#con permisos apropiados
+					chown ${usuario_min}:${usuario_min} /home/${usuario_min}/.config/autostart/
 
-						#Asegurando que el directorio .config/autostart esté creado
-						mkdir -p /home/$usuario_min/.config/autostart/
-						#con permisos apropiados
-						chown $usuario_min:$usuario_min /home/$usuario_min/.config/autostart/
-						#y el directorio /etc/skel/.config/autostart
-						mkdir -p /etc/skel/.config/autostart/
+					#Copia del lanzador automático de canaima-bienvenido a cada usuario
+					cp /etc/skel/.config/autostart/canaima-bienvenido-automatico.desktop /home/${usuario_min}/.config/autostart/
+					#con permisos apropiados
+					chown ${usuario_min}:${usuario_min} /home/${usuario_min}/.config/autostart/canaima-bienvenido-automatico.desktop
 
-						#Copia del lanzador automático de canaima-bienvenido a cada usuario
-						cp /usr/share/canaima-bienvenido/desktop/canaima-bienvenido-automatico.desktop /home/$usuario_min/.config/autostart/
-						#con permisos apropiados
-						chown $usuario_min:$usuario_min /home/$usuario_min/.config/autostart/canaima-bienvenido-automatico.desktop
-						#y el lanzador automático a /etc/skel/.config/autostart para usuarios futuros
-						cp -a /usr/share/canaima-bienvenido/desktop/canaima-bienvenido.desktop /etc/skel/.config/autostart/
-
-					;;
-				esac
-			fi
-		done
+				;;
+			esac
+		fi
 	done
 
 	;;
+
+        abort-upgrade|abort-remove|abort-deconfigure)
+        ;;
+
+        *)
+
+                echo "postinst no reconoce el argumento '"${1}"'" >&2
+                exit 1
+
+        ;;
+
 esac
 
 #DEBHELPER#
+
+exit 0
