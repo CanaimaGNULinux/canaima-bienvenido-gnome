@@ -5,8 +5,9 @@ canaima-bienvenido (3.0+3) unstable; urgency=low
   * [2b0d86d] Dandole últimos retoques a los scripts del mantenedor
   * [96ea0e7] Corrigiendo error de sintaxis en el Makefile
   * [3230fbe] Corrigiendo otro error de sintaxis en el Makefile
+  * [6cbd66d] Corrigiendo tercer error de sintaxis en el Makefile
 
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 24 Nov 2010 02:52:11 -0430
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 24 Nov 2010 02:54:53 -0430
 
 canaima-bienvenido (3.0+2) unstable; urgency=low
 
