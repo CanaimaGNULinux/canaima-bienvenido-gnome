@@ -19,7 +19,8 @@ test:
 	@echo -n "\n=================================================================================\nHECHO!\n\n"
 
 build:
-        @echo "Nada para compilar!"
+
+	@echo "Nada para compilar!"
 
 install:
 
