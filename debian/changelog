@@ -3,8 +3,9 @@ canaima-bienvenido (3.0+3) unstable; urgency=low
   * [d2585c7] Reestructurando lógica de los scripts del mantenedor
   * [ba9eb84] Cambiando lógica de los scripts del mantenedor
   * [2b0d86d] Dandole últimos retoques a los scripts del mantenedor
+  * [96ea0e7] Corrigiendo error de sintaxis en el Makefile
 
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 24 Nov 2010 02:46:48 -0430
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 24 Nov 2010 02:49:48 -0430
 
 canaima-bienvenido (3.0+2) unstable; urgency=low
 
