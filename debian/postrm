@@ -57,7 +57,7 @@ case ${1} in
 
 	*)
 
-		echo "postr no reconoce el argumento '"${1}"'" >&2
+		echo "postrm no reconoce el argumento '"${1}"'" >&2
 		exit 1
 	;;
 
