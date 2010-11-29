@@ -1,3 +1,9 @@
+canaima-bienvenido (3.0+7) unstable; urgency=low
+
+  * [da5b314] Corrigiendo error de sintaxis
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Mon, 29 Nov 2010 17:29:40 -0430
+
 canaima-bienvenido (3.0+6) unstable; urgency=low
 
   * [c77f97b] Corrigiendo errores
