@@ -23,7 +23,7 @@ case ${1} in
 
                 # ¿Existe un enlace simbólico llamado Desktop?
                 # ¿Y una carpeta llamada Escritorio?
-                if [ -h /etc/skel/Desktop ] && [ -d $/etc/skel/Escritorio ]
+                if [ -h /etc/skel/Desktop ] && [ -d /etc/skel/Escritorio ]
                 then
 
                         # Borra el enlace simbólico
