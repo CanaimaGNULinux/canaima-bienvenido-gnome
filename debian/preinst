@@ -60,51 +60,92 @@ case ${1} in
 		for usuario in /home/*? ;
 		do
 
-		# ¿Existe un enlace simbólico llamado Desktop?
-		# ¿Y una carpeta llamada Escritorio?
-		if [ -h ${usuario}/Desktop ] && [ -d ${usuario}/Escritorio ]
-		then
+			# Obteniendo sólo el nombre del usuario
+			usuario_min=$(basename ${usuario})
 
-			# Borra el enlace simbólico
-        	        rm -f ${usuario}/Desktop
+                        # Y en caso de que el usuario sea un usuario activo (existente en /etc/shadow) ...
+                        case  $(grep ${usuario_min} /etc/shadow) in
 
-		# ¿Existe un enlace simbólico llamado Escritorio?
-		# ¿Y una carpeta llamada Desktop?
-		elif [ -h ${usuario}/Escritorio ] && [ -d ${usuario}/Desktop ]
-		then
+                                '')
+                                # No hace nada si no se encuentra en /etc/shadow
+                                ;;
 
-			# Borra el enlace simbólico
-			rm -f ${usuario}/Escritorio
+                                *)
 
-			# y renombra la carpeta a Escritorio
-			mv ${usuario}/Desktop ${usuario}/Escritorio
+				# ¿Existe un enlace simbólico llamado Desktop?
+				# ¿Y una carpeta llamada Escritorio?
+				if [ -h ${usuario}/Desktop ] && [ -d ${usuario}/Escritorio ]
+				then
 
-		fi
+					# Borra el enlace simbólico
+        			        rm -f ${usuario}/Desktop
 
-                if [ -e ${usuario}/.config/autostart/Bienvenido\ a\ Canaima.desktop ]
-                then
+				# ¿Existe un enlace simbólico llamado Escritorio?
+				# ¿Y una carpeta llamada Desktop?
+				elif [ -h ${usuario}/Escritorio ] && [ -d ${usuario}/Desktop ]
+				then
 
-                        rm -f ${usuario}/.config/autostart/Bienvenido\ a\ Canaima.desktop
+					# Borra el enlace simbólico
+					rm -f ${usuario}/Escritorio
+
+					# y renombra la carpeta a Escritorio
+					mv ${usuario}/Desktop ${usuario}/Escritorio
+
+				fi
+
+                		if [ -e ${usuario}/.config/autostart/Bienvenido\ a\ Canaima.desktop ]
+		                then
+
+                		        rm -f ${usuario}/.config/autostart/Bienvenido\ a\ Canaima.desktop
                 
-                fi
+		                fi
 
-                if [ -e ${usuario}/Escritorio/Bienvenido\ a\ Canaima.desktop ]
-                then
+                		if [ -e ${usuario}/Escritorio/Bienvenido\ a\ Canaima.desktop ]
+		                then
 
-                        rm -f ${usuario}/Escritorio/Bienvenido\ a\ Canaima.desktop
+                		        rm -f ${usuario}/Escritorio/Bienvenido\ a\ Canaima.desktop
 
-                fi
+		                fi
 
-		# Configuremos XDG para que use como locale "es_VE" y
-		# Escritorio como carpeta de usuario predeterminada
+				# Configuremos XDG para que use como locale "es_VE" y
+				# Escritorio como carpeta de usuario predeterminada
 
-		echo "es_VE" > ${usuario}/.config/user-dirs.locale
+				echo "es_VE" > ${usuario}/.config/user-dirs.locale
 
-		sed -i 's/$HOME\/Desktop/$HOME\/Escritorio/g' ${usuario}/.config/user-dirs.dirs
+				if [ -e ${usuario}/.config/user-dirs.dirs ]
+				then
 
-		# Actualicemos la configuración
-		xdg-user-dirs-update
+					sed -i 's/$HOME\/Desktop/$HOME\/Escritorio/g' ${usuario}/.config/user-dirs.dirs
 
+				else
+
+cat <<EOF >${usuario}/.config/user-dirs.dirs
+# This file is written by xdg-user-dirs-update
+# If you want to change or add directories, just edit the line you're
+# interested in. All local changes will be retained on the next run
+# Format is XDG_xxx_DIR="$HOME/yyy", where yyy is a shell-escaped
+# homedir-relative path, or XDG_xxx_DIR="/yyy", where /yyy is an
+# absolute path. No other format is supported.
+#
+XDG_DESKTOP_DIR="$HOME/Escritorio"
+XDG_DOWNLOAD_DIR="$HOME/Descargas"
+XDG_TEMPLATES_DIR="$HOME/Plantillas"
+XDG_PUBLICSHARE_DIR="$HOME/Público"
+XDG_DOCUMENTS_DIR="$HOME/Documentos"
+XDG_MUSIC_DIR="$HOME/Música"
+XDG_PICTURES_DIR="$HOME/Imágenes"
+XDG_VIDEOS_DIR="$HOME/Videos"
+
+EOF
+
+				fi
+
+				# Actualicemos la configuración
+				xdg-user-dirs-update
+
+				;;
+
+			esac
 		done
 
 	;;

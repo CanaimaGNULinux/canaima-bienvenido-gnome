@@ -43,10 +43,10 @@ case ${1} in
 
                                         echo '===== Removiendo Canaima Bienvenido para el usuario "'$usuario_min'" ====='
                                         # Removemos el lanzador del escritorio de cada usuario
-                                        rm /home/${usuario_min}/Escritorio/canaima-bienvenido.desktop
+                                        rm -f /home/${usuario_min}/Escritorio/canaima-bienvenido.desktop
 
                                         # Removemos el lanzador automático de canaima-bienvenido a cada usuario
-                                        rm /home/${usuario_min}/.config/autostart/canaima-bienvenido-automatico.desktop
+                                        rm -f /home/${usuario_min}/.config/autostart/canaima-bienvenido-automatico.desktop
 
 				;;
                         esac
