@@ -1,3 +1,9 @@
+canaima-bienvenido (3.0+5) unstable; urgency=low
+
+  * [c83376b] Corrigiendo preinst
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Mon, 29 Nov 2010 16:09:47 -0430
+
 canaima-bienvenido (3.0+4) unstable; urgency=low
 
   * [745327e] Modificando scripts del mantenedor
