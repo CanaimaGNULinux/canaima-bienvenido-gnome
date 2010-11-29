@@ -27,7 +27,7 @@ case ${1} in
                 then
 
                         # Borra el enlace simbólico
-                        rm $/etc/skel/Desktop
+                        rm -f /etc/skel/Desktop
 
                 # ¿Existe un enlace simbólico llamado Escritorio?
                 # ¿Y una carpeta llamada Desktop?
@@ -35,7 +35,7 @@ case ${1} in
                 then
 
                         # Borra el enlace simbólico
-                        rm /etc/skel/Escritorio
+                        rm -f /etc/skel/Escritorio
 
                         # y renombra la carpeta a Escritorio
                         mv /etc/skel/Desktop /etc/skel/Escritorio
@@ -45,14 +45,14 @@ case ${1} in
 		if [ -e /etc/skel/Escritorio/Bienvenido\ a\ Canaima.desktop ]
 		then
 
-			rm /etc/skel/Escritorio/Bienvenido\ a\ Canaima.desktop
+			rm -f /etc/skel/Escritorio/Bienvenido\ a\ Canaima.desktop
 
 		fi
 
                 if [ -e /etc/skel/.config/autostart/Bienvenido\ a\ Canaima.desktop ]
                 then
 
-                        rm /etc/skel/.config/autostart/Bienvenido\ a\ Canaima.desktop
+                        rm -f /etc/skel/.config/autostart/Bienvenido\ a\ Canaima.desktop
                 
                 fi
 
@@ -66,7 +66,7 @@ case ${1} in
 		then
 
 			# Borra el enlace simbólico
-        	        rm ${usuario}/Desktop
+        	        rm -f ${usuario}/Desktop
 
 		# ¿Existe un enlace simbólico llamado Escritorio?
 		# ¿Y una carpeta llamada Desktop?
@@ -74,7 +74,7 @@ case ${1} in
 		then
 
 			# Borra el enlace simbólico
-			rm ${usuario}/Escritorio
+			rm -f ${usuario}/Escritorio
 
 			# y renombra la carpeta a Escritorio
 			mv ${usuario}/Desktop ${usuario}/Escritorio
@@ -84,20 +84,22 @@ case ${1} in
                 if [ -e ${usuario}/.config/autostart/Bienvenido\ a\ Canaima.desktop ]
                 then
 
-                        rm ${usuario}/.config/autostart/Bienvenido\ a\ Canaima.desktop
+                        rm -f ${usuario}/.config/autostart/Bienvenido\ a\ Canaima.desktop
                 
                 fi
 
                 if [ -e ${usuario}/Escritorio/Bienvenido\ a\ Canaima.desktop ]
                 then
 
-                        rm ${usuario}/Escritorio/Bienvenido\ a\ Canaima.desktop
+                        rm -f ${usuario}/Escritorio/Bienvenido\ a\ Canaima.desktop
 
                 fi
 
 		# Configuremos XDG para que use como locale "es_VE" y
 		# Escritorio como carpeta de usuario predeterminada
+
 		echo "es_VE" > ${usuario}/.config/user-dirs.locale
+
 		sed -i 's/$HOME\/Desktop/$HOME\/Escritorio/g' ${usuario}/.config/user-dirs.dirs
 
 		# Actualicemos la configuración
