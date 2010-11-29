@@ -1,13 +1,17 @@
+#!/usr/bin/env xdg-open
 
 [Desktop Entry]
-Encoding=UTF-8
-Version=1.0
-Type=Application
-Terminal=false
-Name[es_VE]=canaima-bienvenido-automatico.desktop
-Icon[es_VE]=/usr/share/icons/canaima-iconos/scalable/places/start-here.svg
-Exec=canaima-bienvenido-automatico
-Comment[es_VE]=Menu de Bienvenida de Canaima GNU/Linux
-Name=Bienvenido a Canaima
+Name=Bienvenido a Canaima GNU/Linux
+Name[es_VE]=Bienvenido a Canaima GNU/Linux
+GenericName=Bienvenido a Canaima GNU/Linux
+GenericName[es_VE]=Bienvenido a Canaima GNU/Linux
 Comment=Menu de Bienvenida de Canaima GNU/Linux
-Icon=/usr/share/icons/canaima-iconos/scalable/places/start-here.svg
+Comment[es_VE]=Menu de Bienvenida de Canaima GNU/Linux
+Exec=canaima-bienvenido-automatico
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=/usr/share/icons/canaima-iconos/22x22/places/start-here.png
+Categories=GNOME;GTK;Utility;
+X-GNOME-FullName=Menu de Bienvenida de Canaima GNU/Linux
+X-GNOME-FullName[es]=Menu de Bienvenida de Canaima GNU/Linux
