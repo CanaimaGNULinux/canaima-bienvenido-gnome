@@ -43,9 +43,9 @@ uninstall:
 	rm -rf $(DESTDIR)/usr/share/canaima-bienvenido/
 	rm -rf $(DESTDIR)/usr/bin/canaima-bienvenido
 	rm -rf $(DESTDIR)/usr/bin/canaima-bienvenido-automatico
-	rm $(DESTDIR)/etc/skel/Escritorio/canaima-bienvenido.desktop
-	rm $(DESTDIR)/etc/skel/.config/autostart/canaima-bienvenido-automatico.desktop
-
+	rm -f $(DESTDIR)/etc/skel/Escritorio/canaima-bienvenido.desktop
+	rm -f $(DESTDIR)/etc/skel/.config/autostart/canaima-bienvenido-automatico.desktop
+	rm -f $(DESTDIR)/usr/share/applications/canaima-bienvenido.desktop
 clean:
 
 distclean:

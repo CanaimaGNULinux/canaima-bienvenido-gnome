@@ -13,5 +13,5 @@ Type=Application
 StartupNotify=true
 Icon=/usr/share/icons/canaima-iconos/22x22/places/start-here.png
 Categories=GNOME;GTK;Utility;
-X-GNOME-FullName=Menu de Bienvenida de Canaima GNU/Linux
-X-GNOME-FullName[es]=Menu de Bienvenida de Canaima GNU/Linux
+X-GNOME-FullName=Bienvenido a Canaima GNU/Linux
+X-GNOME-FullName[es]=Bienvenido a Canaima GNU/Linux
