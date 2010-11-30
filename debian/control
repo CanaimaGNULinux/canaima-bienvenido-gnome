@@ -11,7 +11,7 @@ Vcs-Browser: http://gitorious.org/canaima-gnu-linux/canaima-bienvenido/trees/mas
 
 Package: canaima-bienvenido
 Architecture: all
-Depends: python, xdg-user-dirs, ${shlibs:Depends}, ${misc:Depends}
+Depends: python, xdg-utils, xdg-user-dirs, ${shlibs:Depends}, ${misc:Depends}
 Description: Canaima bienvenido de Canaima GNU/Linux
  Este paquete contiene el video ejecutado luego del splash
  y la aplicación canaima-bienvenido.
