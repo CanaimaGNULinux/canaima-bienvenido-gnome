@@ -21,6 +21,14 @@ case ${1} in
 
 	install|upgrade)
 
+		if [ -e /etc/init.d/canaima-bienvenido-video ] || [ -e /usr/share/canaima-bienvenido/canaima-bienvenido-video.avi ]
+		then
+
+			rm -f /etc/init.d/canaima-bienvenido-video
+			rm -f /usr/share/canaima-bienvenido/canaima-bienvenido-video.avi
+
+		fi
+
                 # ¿Existe un enlace simbólico llamado Desktop?
                 # ¿Y una carpeta llamada Escritorio?
                 if [ -h /etc/skel/Desktop ] && [ -d /etc/skel/Escritorio ]
