@@ -48,7 +48,37 @@ case ${1} in
                         # y renombra la carpeta a Escritorio
                         mv /etc/skel/Desktop /etc/skel/Escritorio
 
-                fi
+		# ¿Existen dos directorios con el mismo propósito?
+		elif [ -d /etc/skel/Escritorio ] && [ -d /etc/skel/Desktop ]
+		then
+
+			# Mueve el contenido de Desktop a Escritorio
+			mv /etc/skel/Desktop/* /etc/skel/Escritorio/
+
+			# Borra la carpeta Desktop
+			rm -rf /etc/skel/Desktop
+
+		fi
+
+cat <<EOF >/etc/xdg/user-dirs.defaults
+# Default settings for user directories
+#
+# The values are relative pathnames from the home directory and
+# will be translated on a per-path-element basis into the users locale
+DESKTOP=Escritorio
+DOWNLOAD=Descargas
+TEMPLATES=Templates
+PUBLICSHARE=Público
+DOCUMENTS=Documentos
+MUSIC=Música
+PICTURES=Imágenes
+VIDEOS=Videos
+# Another alternative is:
+#MUSIC=Documents/Music
+#PICTURES=Documents/Pictures
+#VIDEOS=Documents/Videos
+
+EOF
 
 		if [ -e /etc/skel/Escritorio/Bienvenido\ a\ Canaima.desktop ]
 		then
@@ -99,6 +129,16 @@ case ${1} in
 					# y renombra la carpeta a Escritorio
 					mv ${usuario}/Desktop ${usuario}/Escritorio
 
+				# ¿Existen dos directorios con el mismo propósito?
+				elif [ -d ${usuario}/Escritorio ] && [ -d ${usuario}/Desktop ]
+				then
+
+					# Mueve el contenido de Desktop a Escritorio
+					mv ${usuario}/Desktop/* ${usuario}/Escritorio/
+
+					# Borra la carpeta Desktop
+					rm -rf ${usuario}/Desktop
+
 				fi
 
                 		if [ -e ${usuario}/.config/autostart/Bienvenido\ a\ Canaima.desktop ]
@@ -120,13 +160,6 @@ case ${1} in
 
 				echo "es_VE" > ${usuario}/.config/user-dirs.locale
 
-				if [ -e ${usuario}/.config/user-dirs.dirs ]
-				then
-
-					sed -i 's/$HOME\/Desktop/$HOME\/Escritorio/g' ${usuario}/.config/user-dirs.dirs
-
-				else
-
 cat <<EOF >${usuario}/.config/user-dirs.dirs
 # This file is written by xdg-user-dirs-update
 # If you want to change or add directories, just edit the line you're
@@ -145,8 +178,6 @@ XDG_PICTURES_DIR="$HOME/Imágenes"
 XDG_VIDEOS_DIR="$HOME/Videos"
 
 EOF
-
-				fi
 
 				# Actualicemos la configuración
 				xdg-user-dirs-update
