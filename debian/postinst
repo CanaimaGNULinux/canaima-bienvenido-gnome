@@ -41,20 +41,27 @@ case ${1} in
 
 				*)
 					
-					echo '===== Instalando Canaima Bienvenido para el usuario "'$usuario_min'" ====='
-					#Copiamos el lanzador de escritorio al escritorio de cada usuario
-					cp /etc/skel/Escritorio/canaima-bienvenido.desktop /home/${usuario_min}/Escritorio/
-					#con permisos apropiados
-					chown ${usuario_min}:${usuario_min} /home/${usuario_min}/Escritorio/canaima-bienvenido.desktop
-
-					#Asegurando que el directorio .config/autostart esté creado
+					#Asegurando que el directorio .config/autostart y .mostrar_bienvenida estén creados
 					mkdir -p /home/${usuario_min}/.config/autostart/
+					mkdir -p /home/${usuario_min}/.config/canaima-bienvenido/
 					#con permisos apropiados
 					chown ${usuario_min}:${usuario_min} /home/${usuario_min}/.config/autostart/
+					chown ${usuario_min}:${usuario_min} /home/${usuario_min}/.config/canaima-bienvenido/
 
-					#Copia del lanzador automático de canaima-bienvenido a cada usuario
+					echo '===== Instalando Canaima Bienvenido para el usuario "'$usuario_min'" ====='
+					# Copiamos el lanzador de escritorio al escritorio de cada usuario
+					cp /etc/skel/Escritorio/canaima-bienvenido.desktop /home/${usuario_min}/Escritorio/
+					# con permisos apropiados
+					chown ${usuario_min}:${usuario_min} /home/${usuario_min}/Escritorio/canaima-bienvenido.desktop
+
+					# Copia del archivo de configuración que determina si debe ejecutarse canaima-bienvenido al inicio o no
+					cp /etc/skel/.config/canaima-bienvenido/usuario.conf /home/${usuario_min}/.config/canaima-bienvenido/
+					# con permisos apropiados
+					chown ${usuario_min}:${usuario_min} /home/${usuario_min}/.config/canaima-bienvenido/usuario.conf
+
+					# Copia del lanzador automático de canaima-bienvenido a cada usuario
 					cp /etc/skel/.config/autostart/canaima-bienvenido-automatico.desktop /home/${usuario_min}/.config/autostart/
-					#con permisos apropiados
+					# con permisos apropiados
 					chown ${usuario_min}:${usuario_min} /home/${usuario_min}/.config/autostart/canaima-bienvenido-automatico.desktop
 
 				;;
