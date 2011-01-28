@@ -2,7 +2,6 @@
 
 import sys
 
-
 try:
         import gtk
         import os, threading, locale
@@ -79,11 +78,16 @@ class HellowWorldGTK:
 	def checkmostrar(self, widget):
 		print self.wTree.get_widget("mostrar").get_active();
 		if self.wTree.get_widget("mostrar").get_active() == True :
-		
-			os.rmdir(os.environ['HOME']+"/.mostrar_bienvenida");
+
+			check_cb_conf=open(os.environ['HOME']+"/.config/canaima-bienvenido/usuario.conf","w")			
+			check_cb_conf.write("MOSTRAR=0")
+			check_cb_conf.close()
+
 		else:
-			os.mkdir(os.environ['HOME']+"/.mostrar_bienvenida");
- 
+
+			check_cb_conf=open(os.environ['HOME']+"/.config/canaima-bienvenido/usuario.conf","w")
+			check_cb_conf.write("MOSTRAR=1")
+			check_cb_conf.close()
 
 
 	def b1_clicked(self, widget):
