@@ -1,3 +1,10 @@
+canaima-bienvenido (3.0+18) testing; urgency=low
+
+  * [2cd5f9b] Mejorando la forma en que se identifican los usuarios en
+    /etc/shadow
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Mon, 31 Jan 2011 10:04:27 -0430
+
 canaima-bienvenido (3.0+17) unstable; urgency=low
 
   * [f3e1d74] Perfeccionando el preinstall
