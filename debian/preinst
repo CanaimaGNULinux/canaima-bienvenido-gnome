@@ -21,31 +21,21 @@ case ${1} in
 
 	install|upgrade)
 
-		if [ -e /etc/init.d/canaima-bienvenido-video ] || [ -e /usr/share/canaima-bienvenido/canaima-bienvenido-video.avi ]
-		then
-
+		if [ -e /etc/init.d/canaima-bienvenido-video ] || [ -e /usr/share/canaima-bienvenido/canaima-bienvenido-video.avi ]; then
 			rm -f /etc/init.d/canaima-bienvenido-video
 			rm -f /usr/share/canaima-bienvenido/canaima-bienvenido-video.avi
-
 		fi
 
-		if [ -e /etc/skel/Escritorio/Bienvenido\ a\ Canaima.desktop ]
-		then
-
+		if [ -e /etc/skel/Escritorio/Bienvenido\ a\ Canaima.desktop ]; then
 			rm -f /etc/skel/Escritorio/Bienvenido\ a\ Canaima.desktop
-
 		fi
 
-                if [ -e /etc/skel/.config/autostart/Bienvenido\ a\ Canaima.desktop ]
-                then
-
+                if [ -e /etc/skel/.config/autostart/Bienvenido\ a\ Canaima.desktop ]; then
                         rm -f /etc/skel/.config/autostart/Bienvenido\ a\ Canaima.desktop
-                
-                fi
+		fi
 
 		# Para cada usuario en /home/ ...
-		for usuario in /home/*? ;
-		do
+		for usuario in /home/*? ; do
 
 			# Obteniendo sólo el nombre del usuario
 			usuario_min=$(basename ${usuario})
@@ -59,19 +49,13 @@ case ${1} in
 
                                 *)
 
-                		if [ -e ${usuario}/.config/autostart/Bienvenido\ a\ Canaima.desktop ]
-		                then
-
+                		if [ -e ${usuario}/.config/autostart/Bienvenido\ a\ Canaima.desktop ]; then
                 		        rm -f ${usuario}/.config/autostart/Bienvenido\ a\ Canaima.desktop
-                
-		                fi
+				fi
 
-                		if [ -e ${usuario}/Escritorio/Bienvenido\ a\ Canaima.desktop ]
-		                then
-
+                		if [ -e ${usuario}/Escritorio/Bienvenido\ a\ Canaima.desktop ]; then
                 		        rm -f ${usuario}/Escritorio/Bienvenido\ a\ Canaima.desktop
-
-		                fi
+				fi
 				;;
 
 			esac
