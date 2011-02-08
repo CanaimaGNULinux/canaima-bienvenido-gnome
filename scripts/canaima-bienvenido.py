@@ -47,13 +47,12 @@ class HellowWorldGTK:
         
         def __init__(self):
                 #Set the Glade file
-                self.gladefile = "/usr/share/canaima-bienvenido/interfaz.glade"  
+                self.gladefile = "interfaz.glade"  
 
                 self.wTree = gtk.glade.XML(self.gladefile) 
 
                 #Create our dictionay and connect it
                 dic = { "on_cerrar_clicked" : self.btnHelloWorld_clicked,
-                        "on_volver_clicked" : self.volver_clicked,
                         "on_b1_clicked" : self.b1_clicked,
                         "on_b2_clicked" : self.b2_clicked,
                         "on_b3_clicked" : self.b3_clicked,
@@ -89,64 +88,53 @@ class HellowWorldGTK:
 			check_cb_conf.write("MOSTRAR=1")
 			check_cb_conf.close()
 
-
 	def b1_clicked(self, widget):
-                print "Abriendo Firefox"
-		comando="firefox"
+                print "Abriendo Cunaguaro"
+		comando="cunaguaro"
 	        thr = threading.Thread(target= abrir_paralelo, args=(0,0,comando));
                 thr.start()
 
 	def b2_clicked(self, widget):
-                print "Abriendo aMSN"
-		comando="amsn"
+                print "Abriendo Guacharo"
+		comando="guacharo"
 	        thr = threading.Thread(target= abrir_paralelo, args=(0,0,comando));
                 thr.start()
-
 
 	def b3_clicked(self, widget):
-                print "Abriendo Pidgin"
-		comando="pidgin"
+                print "Abriendo Turpial"
+		comando="turpial"
 	        thr = threading.Thread(target= abrir_paralelo, args=(0,0,comando));
                 thr.start()
 
+        def b4_clicked(self, widget):
+                print "Abriendo Chat"
+                comando="pidgin"
+                thr = threading.Thread(target= abrir_paralelo, args=(0,0,comando));
+                thr.start()
 
 	def b5_clicked(self, widget):
-                print "Abriendo OpenOffice.org Writer"
-		comando="ooffice -writer"
+                print "Abriendo LibreOffice Writer"
+		comando="libreoffice -writer"
 	        thr = threading.Thread(target= abrir_paralelo, args=(0,0,comando));
                 thr.start()
 
 	def b6_clicked(self, widget):
-                print "Abriendo OpenOffice.org Calc"
-		comando="ooffice -calc"
+                print "Abriendo LibreOffice Calc"
+		comando="libreoffice -calc"
 	        thr = threading.Thread(target= abrir_paralelo, args=(0,0,comando));
                 thr.start()
 
-
-
 	def b7_clicked(self, widget):
-                print "Abriendo OpenOffice.org Impress"
-		comando="ooffice -impress"
+                print "Abriendo LibreOffice Impress"
+		comando="libreoffice -impress"
 	        thr = threading.Thread(target= abrir_paralelo, args=(0,0,comando));
                 thr.start()
 
 	def b8_clicked(self, widget):
-                print "Abriendo OpenOffice.org Draw"
-		comando="ooffice -draw"
+                print "Abriendo Exaile"
+		comando="exaile"
 	        thr = threading.Thread(target= abrir_paralelo, args=(0,0,comando));
                 thr.start()
-
-	def b4_clicked(self, widget):
-                print "Para Aprender!"
-		webbrowser.open_new("http://wiki.canaima.softwarelibre.gob.ve/")
-
-#                self.wTree.get_widget("window1").hide();
-#                self.wTree.get_widget("window2").show();
-
-	def volver_clicked(self, widget):
-                print "Menu de Nuevo..."
-                self.wTree.get_widget("window2").hide();
-                self.wTree.get_widget("window1").show();
 
 if __name__ == "__main__":
         hwg = HellowWorldGTK()
