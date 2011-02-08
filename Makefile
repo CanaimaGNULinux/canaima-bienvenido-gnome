@@ -34,7 +34,6 @@ install:
 	cp -r desktop/canaima-bienvenido.desktop $(DESTDIR)/etc/skel/Escritorio/
 	cp -r conf/usuario.conf $(DESTDIR)/etc/skel/.config/canaima-bienvenido/
 	cp -r desktop/canaima-bienvenido-automatico.desktop $(DESTDIR)/etc/skel/.config/autostart/
-	cp -r images/ $(DESTDIR)/usr/share/canaima-bienvenido/
 	cp -r scripts/canaima-bienvenido.py $(DESTDIR)/usr/share/canaima-bienvenido/
 	cp -r scripts/interfaz.glade $(DESTDIR)/usr/share/canaima-bienvenido/
 	cp -r scripts/canaima-bienvenido.sh $(DESTDIR)/usr/bin/canaima-bienvenido
