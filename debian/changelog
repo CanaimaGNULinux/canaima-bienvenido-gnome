@@ -1,3 +1,10 @@
+canaima-bienvenido (3.0+20) testing; urgency=low
+
+  * [d66ae12] Removiendo imághenes locales, cambiando a configuración
+    global
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Tue, 08 Feb 2011 01:46:48 -0430
+
 canaima-bienvenido (3.0+19) testing; urgency=low
 
   * [cd9e787] Removiendo cosas innecesarias
