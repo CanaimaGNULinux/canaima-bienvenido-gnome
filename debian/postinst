@@ -82,8 +82,8 @@ case ${1} in
 				# con permisos apropiados
 				chown ${usuario_min}:${usuario_min} /home/${usuario_min}/.config/autostart/canaima-bienvenido-automatico.desktop
 
-				;;
-			esac
+			;;
+		esac
 	done
 
 	;;
