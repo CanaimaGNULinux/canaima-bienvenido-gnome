@@ -1,3 +1,9 @@
+canaima-bienvenido (3.0+22) testing; urgency=low
+
+  * [5016225] Reestructurando los botones
+
+ -- Luis Alejandro Martínez Faneyth <huntingbears@OKComputer.cnti.gob.ve>  Fri, 04 Mar 2011 11:35:32 -0430
+
 canaima-bienvenido (3.0+21) testing; urgency=low
 
   * [d916164] Corrigiendo ruta a la interfaz Glade
