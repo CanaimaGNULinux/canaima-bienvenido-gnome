@@ -46,7 +46,7 @@ class HellowWorldGTK:
       
         def __init__(self):
                 #Set the Glade file
-                self.gladefile = "/usr/share/canaima-bienvenido/interfaz.glade"
+                self.gladefile = "interfaz.glade"
 
                 self.wTree = gtk.glade.XML(self.gladefile) 
 
@@ -112,20 +112,20 @@ class HellowWorldGTK:
                 thr.start()
 
 	def b5_clicked(self, widget):
-                print "Abriendo LibreOffice Writer"
-		comando="libreoffice -writer"
+                print "Abriendo LibreOffice"
+		comando="libreoffice"
 	        thr = threading.Thread(target= abrir_paralelo, args=(0,0,comando));
                 thr.start()
 
 	def b6_clicked(self, widget):
-                print "Abriendo LibreOffice Calc"
-		comando="libreoffice -calc"
+                print "Abriendo GIMP"
+		comando="gimp"
 	        thr = threading.Thread(target= abrir_paralelo, args=(0,0,comando));
                 thr.start()
 
 	def b7_clicked(self, widget):
-                print "Abriendo LibreOffice Impress"
-		comando="libreoffice -impress"
+                print "Abriendo VLC"
+		comando="vlc"
 	        thr = threading.Thread(target= abrir_paralelo, args=(0,0,comando));
                 thr.start()
 

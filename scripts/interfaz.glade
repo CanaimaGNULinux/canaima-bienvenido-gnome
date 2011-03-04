@@ -57,7 +57,7 @@
                             <child>
                               <widget class="GtkLabel" id="label14">
                                 <property name="visible">True</property>
-                                <property name="label" translatable="yes">Navegador
+                                <property name="label" translatable="yes">Navegador Web
 Cunaguaro</property>
                                 <property name="justify">center</property>
                               </widget>
@@ -82,7 +82,7 @@ Cunaguaro</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
-                        <property name="tooltip" translatable="yes">Cliente de Twitter</property>
+                        <property name="tooltip" translatable="yes">Abrir el cliente de microblogging para ser utilizado con Twitter e Identi.ca</property>
                         <property name="relief">none</property>
                         <signal name="clicked" handler="on_b3_clicked"/>
                         <child>
@@ -126,7 +126,7 @@ Twitter Turpial</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="tooltip" translatable="yes">Aprender m&#xE1;s sobre Canaima GNU/Linux</property>
+                    <property name="tooltip" translatable="yes">Abrir el chat de soporte de la Comunidad Canaima</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="on_b4_clicked"/>
                     <child>
@@ -165,7 +165,7 @@ Comunidad</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="tooltip" translatable="yes">Hacer Dibujos y Diagramas</property>
+                    <property name="tooltip" translatable="yes">Abrir el reproductor de m&#xFA;sica y radio en l&#xED;nea</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="on_b8_clicked"/>
                     <child>
@@ -183,8 +183,8 @@ Comunidad</property>
                         <child>
                           <widget class="GtkLabel" id="label6">
                             <property name="visible">True</property>
-                            <property name="label" translatable="yes">Reproductor
-Exaile</property>
+                            <property name="label" translatable="yes">Reproductor de
+M&#xFA;sica Exaile</property>
                             <property name="justify">center</property>
                           </widget>
                           <packing>
@@ -206,7 +206,7 @@ Exaile</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="tooltip" translatable="yes">Chatear por MSN</property>
+                    <property name="tooltip" translatable="yes">Abrir Guacharo para leer y escribir correos</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="on_b2_clicked"/>
                     <child>
@@ -245,7 +245,7 @@ Gu&#xE1;charo</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="tooltip" translatable="yes">Abrir editor de Hojas de Calculo</property>
+                    <property name="tooltip" translatable="yes">Abrir el editor de im&#xE1;genes GIMP.</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="on_b6_clicked"/>
                     <child>
@@ -254,7 +254,7 @@ Gu&#xE1;charo</property>
                         <child>
                           <widget class="GtkImage" id="image4">
                             <property name="visible">True</property>
-                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/ooo-calc.svg</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/gimp.svg</property>
                           </widget>
                           <packing>
                             <property name="position">0</property>
@@ -263,8 +263,8 @@ Gu&#xE1;charo</property>
                         <child>
                           <widget class="GtkLabel" id="label8">
                             <property name="visible">True</property>
-                            <property name="label" translatable="yes">LibreOffice
-Calc</property>
+                            <property name="label" translatable="yes">Editor de
+Im&#xE1;genes GIMP</property>
                             <property name="justify">center</property>
                           </widget>
                           <packing>
@@ -286,7 +286,7 @@ Calc</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="tooltip" translatable="yes">Abrir editor de Textos</property>
+                    <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofimáticas LibreOffice</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="on_b5_clicked"/>
                     <child>
@@ -295,7 +295,7 @@ Calc</property>
                         <child>
                           <widget class="GtkImage" id="image2">
                             <property name="visible">True</property>
-                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/ooo-writer.svg</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/libreoffice-startcenter.svg</property>
                           </widget>
                           <packing>
                             <property name="position">0</property>
@@ -304,8 +304,8 @@ Calc</property>
                         <child>
                           <widget class="GtkLabel" id="label4">
                             <property name="visible">True</property>
-                            <property name="label" translatable="yes">LibreOffice
-Writer</property>
+                            <property name="label" translatable="yes">Suite Ofim&#xE1;tica
+LibreOffice</property>
                             <property name="justify">center</property>
                           </widget>
                           <packing>
@@ -325,7 +325,7 @@ Writer</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="tooltip" translatable="yes">Abrir editor de Presentaciones</property>
+                    <property name="tooltip" translatable="yes">Abrir reproductor de video VLC</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="on_b7_clicked"/>
                     <child>
@@ -334,7 +334,7 @@ Writer</property>
                         <child>
                           <widget class="GtkImage" id="image5">
                             <property name="visible">True</property>
-                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/ooo-impress.svg</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/vlc.svg</property>
                           </widget>
                           <packing>
                             <property name="position">0</property>
@@ -343,8 +343,8 @@ Writer</property>
                         <child>
                           <widget class="GtkLabel" id="label10">
                             <property name="visible">True</property>
-                            <property name="label" translatable="yes">LibreOffice
-Impress</property>
+                            <property name="label" translatable="yes">Reproductor de
+Video VLC</property>
                             <property name="justify">center</property>
                           </widget>
                           <packing>
