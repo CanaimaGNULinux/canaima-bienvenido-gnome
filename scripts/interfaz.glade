@@ -13,7 +13,7 @@
     <property name="icon">/usr/share/icons/canaima-iconos/places/scalable/distributor-logo.svg</property>
     <property name="urgency_hint">True</property>
     <property name="accept_focus">False</property>
-    <property name="deletable">False</property>
+    <signal name="destroy" handler="destruir"/>
     <child>
       <widget class="GtkLayout" id="layout1">
         <property name="visible">True</property>
@@ -286,7 +286,7 @@ Im&#xE1;genes GIMP</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofimáticas LibreOffice</property>
+                    <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofim&#xE1;ticas LibreOffice</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="on_b5_clicked"/>
                     <child>
@@ -325,7 +325,7 @@ LibreOffice</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="tooltip" translatable="yes">Abrir reproductor de video VLC</property>
+                    <property name="tooltip" translatable="yes">Abrir reproductor de video Totem</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="on_b7_clicked"/>
                     <child>
@@ -334,7 +334,7 @@ LibreOffice</property>
                         <child>
                           <widget class="GtkImage" id="image5">
                             <property name="visible">True</property>
-                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/vlc.svg</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/totem.svg</property>
                           </widget>
                           <packing>
                             <property name="position">0</property>
@@ -344,7 +344,7 @@ LibreOffice</property>
                           <widget class="GtkLabel" id="label10">
                             <property name="visible">True</property>
                             <property name="label" translatable="yes">Reproductor de
-Video VLC</property>
+Video Totem</property>
                             <property name="justify">center</property>
                           </widget>
                           <packing>
