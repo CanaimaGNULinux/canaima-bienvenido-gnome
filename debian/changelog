@@ -1,3 +1,10 @@
+canaima-bienvenido (3.0+24) testing; urgency=low
+
+  * [d387b41] Corrigiendo errores reportados en el funcionamiento
+  * [c323a9a] Corrigiendo dependencias
+
+ -- Carlos Guerrero <guerrerocarlos@gmail.com>  Tue, 22 Mar 2011 14:19:28 -0430
+
 canaima-bienvenido (3.0+23) testing; urgency=low
 
   * [1f2417a] Corrigiendo dirección del archivo interfaz.glade en
