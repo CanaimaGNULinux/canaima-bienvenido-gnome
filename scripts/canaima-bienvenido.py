@@ -46,7 +46,7 @@ class HellowWorldGTK:
       
         def __init__(self):
                 #Set the Glade file
-                self.gladefile = "interfaz.glade"
+                self.gladefile = "/usr/share/canaima-bienvenido/interfaz.glade"
 
                 self.wTree = gtk.glade.XML(self.gladefile) 
 
