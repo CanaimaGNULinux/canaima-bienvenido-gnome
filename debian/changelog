@@ -1,3 +1,10 @@
+canaima-bienvenido (3.0+23) testing; urgency=low
+
+  * [1f2417a] Corrigiendo dirección del archivo interfaz.glade en
+    canaima-bienvenido.py.
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Tue, 22 Mar 2011 07:41:20 -0430
+
 canaima-bienvenido (3.0+22) testing; urgency=low
 
   * [5016225] Reestructurando los botones
