@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <glade-interface>
-  <!-- interface-requires gtk+ 2.10 -->
+  <!-- interface-requires gtk+ 2.16 -->
   <!-- interface-naming-policy toplevel-contextual -->
   <widget class="GtkWindow" id="window1">
     <property name="width_request">600</property>
@@ -14,6 +14,7 @@
     <property name="urgency_hint">True</property>
     <property name="accept_focus">False</property>
     <signal name="destroy" handler="destruir"/>
+    <signal name="activate_default" handler="prueba" object="prueba"/>
     <child>
       <widget class="GtkLayout" id="layout1">
         <property name="visible">True</property>
@@ -412,6 +413,2013 @@ Video Totem</property>
             <property name="receives_default">False</property>
             <property name="draw_indicator">True</property>
             <signal name="clicked" handler="on_mostrar_toggled"/>
+          </widget>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">456</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="GtkWindow" id="principal">
+    <property name="width_request">600</property>
+    <property name="height_request">550</property>
+    <property name="title" translatable="yes">Bienvenido a Canaima 3.0</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center-always</property>
+    <property name="default_width">600</property>
+    <property name="default_height">570</property>
+    <property name="icon">/usr/share/icons/canaima-iconos/places/scalable/distributor-logo.svg</property>
+    <property name="urgency_hint">True</property>
+    <property name="accept_focus">False</property>
+    <child>
+      <widget class="GtkLayout" id="layout1">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkViewport" id="viewport1">
+            <property name="width_request">600</property>
+            <property name="height_request">370</property>
+            <property name="visible">True</property>
+            <property name="resize_mode">queue</property>
+            <child>
+              <widget class="GtkTable" id="table1">
+                <property name="visible">True</property>
+                <property name="n_rows">2</property>
+                <property name="n_columns">2</property>
+                <child>
+                  <widget class="GtkVBox" id="vbox8">
+                    <property name="visible">True</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <widget class="GtkButton" id="b1">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="extension_events">cursor</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                        <property name="relief">none</property>
+                        <signal name="clicked" handler="mostrar_internet" object="internet" after="yes"/>
+                        <child>
+                          <widget class="GtkVBox" id="vbox7">
+                            <property name="visible">True</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <widget class="GtkImage" id="image7">
+                                <property name="visible">True</property>
+                                <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                                <property name="xpad">2</property>
+                                <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/cunaguaro.svg</property>
+                              </widget>
+                              <packing>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkLabel" id="label14">
+                                <property name="visible">True</property>
+                                <property name="label" translatable="yes">Internet</property>
+                                <property name="justify">center</property>
+                              </widget>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </widget>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b6">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el editor de im&#xE1;genes GIMP.</property>
+                    <property name="relief">none</property>
+                    <child>
+                      <widget class="GtkVBox" id="vbox4">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image4">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/gimp.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label8">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Multimedia</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b5">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofim&#xE1;ticas LibreOffice</property>
+                    <property name="relief">none</property>
+                    <child>
+                      <widget class="GtkVBox" id="vbox2">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image2">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/libreoffice-startcenter.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label4">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Gr&#xE1;ficos</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkVBox" id="vbox1">
+                    <property name="visible">True</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <widget class="GtkButton" id="b2">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="extension_events">cursor</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                        <property name="relief">none</property>
+                        <child>
+                          <widget class="GtkVBox" id="vbox3">
+                            <property name="visible">True</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <widget class="GtkImage" id="image1">
+                                <property name="visible">True</property>
+                                <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                                <property name="xpad">2</property>
+                                <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/cunaguaro.svg</property>
+                              </widget>
+                              <packing>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkLabel" id="label1">
+                                <property name="visible">True</property>
+                                <property name="label" translatable="yes">Oficina</property>
+                                <property name="justify">center</property>
+                              </widget>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="y">80</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image8">
+            <property name="width_request">600</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-top.png</property>
+          </widget>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image10">
+            <property name="width_request">600</property>
+            <property name="height_request">70</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-bottom.png</property>
+          </widget>
+          <packing>
+            <property name="y">480</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cerrar">
+            <property name="label" translatable="yes">Cerrar</property>
+            <property name="width_request">133</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </widget>
+          <packing>
+            <property name="x">460</property>
+            <property name="y">499</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkCheckButton" id="mostrar">
+            <property name="label" translatable="yes">No mostrar de nuevo al iniciar</property>
+            <property name="width_request">235</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_mostrar_toggled"/>
+          </widget>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">456</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="GtkWindow" id="internet">
+    <property name="width_request">600</property>
+    <property name="height_request">550</property>
+    <property name="title" translatable="yes">Bienvenido a Canaima 3.0</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center-always</property>
+    <property name="default_width">600</property>
+    <property name="default_height">570</property>
+    <property name="icon">/usr/share/icons/canaima-iconos/places/scalable/distributor-logo.svg</property>
+    <property name="urgency_hint">True</property>
+    <property name="accept_focus">False</property>
+    <child>
+      <widget class="GtkLayout" id="layout1">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkViewport" id="viewport1">
+            <property name="width_request">600</property>
+            <property name="height_request">370</property>
+            <property name="visible">True</property>
+            <property name="resize_mode">queue</property>
+            <child>
+              <widget class="GtkTable" id="table1">
+                <property name="visible">True</property>
+                <property name="n_rows">2</property>
+                <property name="n_columns">4</property>
+                <child>
+                  <widget class="GtkVBox" id="vbox8">
+                    <property name="visible">True</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <widget class="GtkButton" id="b1">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="extension_events">cursor</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                        <property name="relief">none</property>
+                        <signal name="clicked" handler="internet1"/>
+                        <child>
+                          <widget class="GtkVBox" id="vbox7">
+                            <property name="visible">True</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <widget class="GtkImage" id="image7">
+                                <property name="visible">True</property>
+                                <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                                <property name="xpad">2</property>
+                                <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/cunaguaro.svg</property>
+                              </widget>
+                              <packing>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkLabel" id="label14">
+                                <property name="visible">True</property>
+                                <property name="label" translatable="yes">Navegador Web
+Cunaguaro</property>
+                                <property name="justify">center</property>
+                              </widget>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </widget>
+                </child>
+                <child>
+                  <widget class="GtkVBox" id="vbox11">
+                    <property name="visible">True</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <widget class="GtkButton" id="b3">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip" translatable="yes">Abrir el cliente de microblogging para ser utilizado con Twitter e Identi.ca</property>
+                        <property name="relief">none</property>
+                        <signal name="clicked" handler="internet5"/>
+                        <child>
+                          <widget class="GtkVBox" id="vbox10">
+                            <property name="visible">True</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <widget class="GtkImage" id="image9">
+                                <property name="visible">True</property>
+                                <property name="pixbuf">/usr/share/pixmaps/turpial.png</property>
+                              </widget>
+                              <packing>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkLabel" id="label18">
+                                <property name="visible">True</property>
+                                <property name="label" translatable="yes">Cliente de
+Twitter Turpial</property>
+                                <property name="justify">center</property>
+                              </widget>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="right_attach">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b4">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el chat de soporte de la Comunidad Canaima</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="internet7"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox6">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image6">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/xchat.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label12">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Chat de la
+Comunidad</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">3</property>
+                    <property name="right_attach">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b8">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el reproductor de m&#xFA;sica y radio en l&#xED;nea</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="internet8"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox3">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image3">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/exaile.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label6">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Reproductor de
+M&#xFA;sica Exaile</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">3</property>
+                    <property name="right_attach">4</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b2">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir Guacharo para leer y escribir correos</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="internet3"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox9">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image1">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/guacharo.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label2">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Cliente de Correo
+Gu&#xE1;charo</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b6">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el editor de im&#xE1;genes GIMP.</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="internet4"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox4">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image4">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/gimp.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label8">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Editor de
+Im&#xE1;genes GIMP</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b5">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofim&#xE1;ticas LibreOffice</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="internet2"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox2">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image2">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/libreoffice-startcenter.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label4">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Suite Ofim&#xE1;tica
+LibreOffice</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b7">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir reproductor de video Totem</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="internet6"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox5">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image5">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/totem.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label10">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Reproductor de
+Video Totem</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="right_attach">3</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="y">80</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image8">
+            <property name="width_request">600</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-top.png</property>
+          </widget>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image10">
+            <property name="width_request">600</property>
+            <property name="height_request">70</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-bottom.png</property>
+          </widget>
+          <packing>
+            <property name="y">480</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cerrar">
+            <property name="label" translatable="yes">Volver</property>
+            <property name="width_request">133</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="volver"/>
+          </widget>
+          <packing>
+            <property name="x">460</property>
+            <property name="y">499</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkCheckButton" id="mostrar">
+            <property name="label" translatable="yes">No mostrar de nuevo al iniciar</property>
+            <property name="width_request">235</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_mostrar_toggled"/>
+          </widget>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">456</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="GtkWindow" id="oficina">
+    <property name="width_request">600</property>
+    <property name="height_request">550</property>
+    <property name="title" translatable="yes">Bienvenido a Canaima 3.0</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center-always</property>
+    <property name="default_width">600</property>
+    <property name="default_height">570</property>
+    <property name="icon">/usr/share/icons/canaima-iconos/places/scalable/distributor-logo.svg</property>
+    <property name="urgency_hint">True</property>
+    <property name="accept_focus">False</property>
+    <child>
+      <widget class="GtkLayout" id="layout1">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkViewport" id="viewport1">
+            <property name="width_request">600</property>
+            <property name="height_request">370</property>
+            <property name="visible">True</property>
+            <property name="resize_mode">queue</property>
+            <child>
+              <widget class="GtkTable" id="table1">
+                <property name="visible">True</property>
+                <property name="n_rows">2</property>
+                <property name="n_columns">4</property>
+                <child>
+                  <widget class="GtkVBox" id="vbox8">
+                    <property name="visible">True</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <widget class="GtkButton" id="b1">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="extension_events">cursor</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                        <property name="relief">none</property>
+                        <signal name="clicked" handler="oficina1"/>
+                        <child>
+                          <widget class="GtkVBox" id="vbox7">
+                            <property name="visible">True</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <widget class="GtkImage" id="image7">
+                                <property name="visible">True</property>
+                                <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                                <property name="xpad">2</property>
+                                <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/cunaguaro.svg</property>
+                              </widget>
+                              <packing>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkLabel" id="label14">
+                                <property name="visible">True</property>
+                                <property name="label" translatable="yes">Navegador Web
+Cunaguaro</property>
+                                <property name="justify">center</property>
+                              </widget>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </widget>
+                </child>
+                <child>
+                  <widget class="GtkVBox" id="vbox11">
+                    <property name="visible">True</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <widget class="GtkButton" id="b3">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip" translatable="yes">Abrir el cliente de microblogging para ser utilizado con Twitter e Identi.ca</property>
+                        <property name="relief">none</property>
+                        <signal name="clicked" handler="oficina5"/>
+                        <child>
+                          <widget class="GtkVBox" id="vbox10">
+                            <property name="visible">True</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <widget class="GtkImage" id="image9">
+                                <property name="visible">True</property>
+                                <property name="pixbuf">/usr/share/pixmaps/turpial.png</property>
+                              </widget>
+                              <packing>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkLabel" id="label18">
+                                <property name="visible">True</property>
+                                <property name="label" translatable="yes">Cliente de
+Twitter Turpial</property>
+                                <property name="justify">center</property>
+                              </widget>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="right_attach">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b4">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el chat de soporte de la Comunidad Canaima</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="oficina7"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox6">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image6">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/xchat.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label12">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Chat de la
+Comunidad</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">3</property>
+                    <property name="right_attach">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b8">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el reproductor de m&#xFA;sica y radio en l&#xED;nea</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="oficina8"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox3">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image3">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/exaile.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label6">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Reproductor de
+M&#xFA;sica Exaile</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">3</property>
+                    <property name="right_attach">4</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b2">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir Guacharo para leer y escribir correos</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="oficina3"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox9">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image1">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/guacharo.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label2">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Cliente de Correo
+Gu&#xE1;charo</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b6">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el editor de im&#xE1;genes GIMP.</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="oficina4"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox4">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image4">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/gimp.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label8">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Editor de
+Im&#xE1;genes GIMP</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b5">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofim&#xE1;ticas LibreOffice</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="oficina2"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox2">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image2">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/libreoffice-startcenter.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label4">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Suite Ofim&#xE1;tica
+LibreOffice</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b7">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir reproductor de video Totem</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="oficina6"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox5">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image5">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/totem.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label10">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Reproductor de
+Video Totem</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="right_attach">3</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="y">80</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image8">
+            <property name="width_request">600</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-top.png</property>
+          </widget>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image10">
+            <property name="width_request">600</property>
+            <property name="height_request">70</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-bottom.png</property>
+          </widget>
+          <packing>
+            <property name="y">480</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cerrar">
+            <property name="label" translatable="yes">Volver</property>
+            <property name="width_request">133</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="volver"/>
+          </widget>
+          <packing>
+            <property name="x">460</property>
+            <property name="y">499</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkCheckButton" id="mostrar">
+            <property name="label" translatable="yes">No mostrar de nuevo al iniciar</property>
+            <property name="width_request">235</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_mostrar_toggled"/>
+          </widget>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">456</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="GtkWindow" id="graficos">
+    <property name="width_request">600</property>
+    <property name="height_request">550</property>
+    <property name="title" translatable="yes">Bienvenido a Canaima 3.0</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center-always</property>
+    <property name="default_width">600</property>
+    <property name="default_height">570</property>
+    <property name="icon">/usr/share/icons/canaima-iconos/places/scalable/distributor-logo.svg</property>
+    <property name="urgency_hint">True</property>
+    <property name="accept_focus">False</property>
+    <child>
+      <widget class="GtkLayout" id="layout1">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkViewport" id="viewport1">
+            <property name="width_request">600</property>
+            <property name="height_request">370</property>
+            <property name="visible">True</property>
+            <property name="resize_mode">queue</property>
+            <child>
+              <widget class="GtkTable" id="table1">
+                <property name="visible">True</property>
+                <property name="n_rows">2</property>
+                <property name="n_columns">4</property>
+                <child>
+                  <widget class="GtkVBox" id="vbox8">
+                    <property name="visible">True</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <widget class="GtkButton" id="b1">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="extension_events">cursor</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                        <property name="relief">none</property>
+                        <signal name="clicked" handler="graficos1"/>
+                        <child>
+                          <widget class="GtkVBox" id="vbox7">
+                            <property name="visible">True</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <widget class="GtkImage" id="image7">
+                                <property name="visible">True</property>
+                                <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                                <property name="xpad">2</property>
+                                <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/cunaguaro.svg</property>
+                              </widget>
+                              <packing>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkLabel" id="label14">
+                                <property name="visible">True</property>
+                                <property name="label" translatable="yes">Navegador Web
+Cunaguaro</property>
+                                <property name="justify">center</property>
+                              </widget>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </widget>
+                </child>
+                <child>
+                  <widget class="GtkVBox" id="vbox11">
+                    <property name="visible">True</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <widget class="GtkButton" id="b3">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip" translatable="yes">Abrir el cliente de microblogging para ser utilizado con Twitter e Identi.ca</property>
+                        <property name="relief">none</property>
+                        <signal name="clicked" handler="graficos5"/>
+                        <child>
+                          <widget class="GtkVBox" id="vbox10">
+                            <property name="visible">True</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <widget class="GtkImage" id="image9">
+                                <property name="visible">True</property>
+                                <property name="pixbuf">/usr/share/pixmaps/turpial.png</property>
+                              </widget>
+                              <packing>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkLabel" id="label18">
+                                <property name="visible">True</property>
+                                <property name="label" translatable="yes">Cliente de
+Twitter Turpial</property>
+                                <property name="justify">center</property>
+                              </widget>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="right_attach">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b4">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el chat de soporte de la Comunidad Canaima</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="graficos7"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox6">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image6">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/xchat.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label12">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Chat de la
+Comunidad</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">3</property>
+                    <property name="right_attach">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b8">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el reproductor de m&#xFA;sica y radio en l&#xED;nea</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="graficos8"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox3">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image3">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/exaile.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label6">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Reproductor de
+M&#xFA;sica Exaile</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">3</property>
+                    <property name="right_attach">4</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b2">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir Guacharo para leer y escribir correos</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="graficos3"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox9">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image1">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/guacharo.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label2">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Cliente de Correo
+Gu&#xE1;charo</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b6">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el editor de im&#xE1;genes GIMP.</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="graficos4"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox4">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image4">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/gimp.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label8">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Editor de
+Im&#xE1;genes GIMP</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b5">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofim&#xE1;ticas LibreOffice</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="graficos2"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox2">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image2">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/libreoffice-startcenter.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label4">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Suite Ofim&#xE1;tica
+LibreOffice</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b7">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir reproductor de video Totem</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="graficos6"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox5">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image5">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/totem.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label10">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Reproductor de
+Video Totem</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="right_attach">3</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="y">80</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image8">
+            <property name="width_request">600</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-top.png</property>
+          </widget>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image10">
+            <property name="width_request">600</property>
+            <property name="height_request">70</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-bottom.png</property>
+          </widget>
+          <packing>
+            <property name="y">480</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cerrar">
+            <property name="label" translatable="yes">Volver</property>
+            <property name="width_request">133</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="volver"/>
+          </widget>
+          <packing>
+            <property name="x">460</property>
+            <property name="y">499</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkCheckButton" id="mostrar">
+            <property name="label" translatable="yes">No mostrar de nuevo al iniciar</property>
+            <property name="width_request">235</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_mostrar_toggled"/>
+          </widget>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">456</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="GtkWindow" id="multimedia">
+    <property name="width_request">600</property>
+    <property name="height_request">550</property>
+    <property name="title" translatable="yes">Bienvenido a Canaima 3.0</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center-always</property>
+    <property name="default_width">600</property>
+    <property name="default_height">570</property>
+    <property name="icon">/usr/share/icons/canaima-iconos/places/scalable/distributor-logo.svg</property>
+    <property name="urgency_hint">True</property>
+    <property name="accept_focus">False</property>
+    <child>
+      <widget class="GtkLayout" id="layout1">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkViewport" id="viewport1">
+            <property name="width_request">600</property>
+            <property name="height_request">370</property>
+            <property name="visible">True</property>
+            <property name="resize_mode">queue</property>
+            <child>
+              <widget class="GtkTable" id="table1">
+                <property name="visible">True</property>
+                <property name="n_rows">2</property>
+                <property name="n_columns">4</property>
+                <child>
+                  <widget class="GtkVBox" id="vbox8">
+                    <property name="visible">True</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <widget class="GtkButton" id="b1">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="extension_events">cursor</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                        <property name="relief">none</property>
+                        <signal name="clicked" handler="multimedia1"/>
+                        <child>
+                          <widget class="GtkVBox" id="vbox7">
+                            <property name="visible">True</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <widget class="GtkImage" id="image7">
+                                <property name="visible">True</property>
+                                <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                                <property name="xpad">2</property>
+                                <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/cunaguaro.svg</property>
+                              </widget>
+                              <packing>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkLabel" id="label14">
+                                <property name="visible">True</property>
+                                <property name="label" translatable="yes">Navegador Web
+Cunaguaro</property>
+                                <property name="justify">center</property>
+                              </widget>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </widget>
+                </child>
+                <child>
+                  <widget class="GtkVBox" id="vbox11">
+                    <property name="visible">True</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <widget class="GtkButton" id="b3">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="has_tooltip">True</property>
+                        <property name="tooltip" translatable="yes">Abrir el cliente de microblogging para ser utilizado con Twitter e Identi.ca</property>
+                        <property name="relief">none</property>
+                        <signal name="clicked" handler="multimedia5"/>
+                        <child>
+                          <widget class="GtkVBox" id="vbox10">
+                            <property name="visible">True</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <widget class="GtkImage" id="image9">
+                                <property name="visible">True</property>
+                                <property name="pixbuf">/usr/share/pixmaps/turpial.png</property>
+                              </widget>
+                              <packing>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <widget class="GtkLabel" id="label18">
+                                <property name="visible">True</property>
+                                <property name="label" translatable="yes">Cliente de
+Twitter Turpial</property>
+                                <property name="justify">center</property>
+                              </widget>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="right_attach">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b4">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el chat de soporte de la Comunidad Canaima</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="multimedia7"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox6">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image6">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/xchat.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label12">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Chat de la
+Comunidad</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">3</property>
+                    <property name="right_attach">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b8">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el reproductor de m&#xFA;sica y radio en l&#xED;nea</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="multimedia8"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox3">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image3">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/exaile.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label6">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Reproductor de
+M&#xFA;sica Exaile</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">3</property>
+                    <property name="right_attach">4</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b2">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir Guacharo para leer y escribir correos</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="multimedia3"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox9">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image1">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/guacharo.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label2">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Cliente de Correo
+Gu&#xE1;charo</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b6">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el editor de im&#xE1;genes GIMP.</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="multimedia4"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox4">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image4">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/gimp.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label8">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Editor de
+Im&#xE1;genes GIMP</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b5">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofim&#xE1;ticas LibreOffice</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="multimedia2"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox2">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image2">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/libreoffice-startcenter.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label4">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Suite Ofim&#xE1;tica
+LibreOffice</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="b7">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir reproductor de video Totem</property>
+                    <property name="relief">none</property>
+                    <signal name="clicked" handler="multimedia6"/>
+                    <child>
+                      <widget class="GtkVBox" id="vbox5">
+                        <property name="visible">True</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <widget class="GtkImage" id="image5">
+                            <property name="visible">True</property>
+                            <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/totem.svg</property>
+                          </widget>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkLabel" id="label10">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Reproductor de
+Video Totem</property>
+                            <property name="justify">center</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">2</property>
+                    <property name="right_attach">3</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="y">80</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image8">
+            <property name="width_request">600</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-top.png</property>
+          </widget>
+        </child>
+        <child>
+          <widget class="GtkImage" id="image10">
+            <property name="width_request">600</property>
+            <property name="height_request">70</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-bottom.png</property>
+          </widget>
+          <packing>
+            <property name="y">480</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="cerrar">
+            <property name="label" translatable="yes">Volver</property>
+            <property name="width_request">133</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="volver"/>
+          </widget>
+          <packing>
+            <property name="x">460</property>
+            <property name="y">499</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkCheckButton" id="mostrar">
+            <property name="label" translatable="yes">No mostrar de nuevo al iniciar</property>
+            <property name="width_request">235</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_mostrar_toggled"/>
           </widget>
           <packing>
             <property name="x">10</property>

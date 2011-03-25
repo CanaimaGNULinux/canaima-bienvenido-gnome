@@ -41,17 +41,58 @@ class canaimabienvenido:
                     "on_b6_clicked" : self.b6_clicked,
                     "on_b7_clicked" : self.b7_clicked,
                     "on_b8_clicked" : self.b8_clicked,
+                    "multimedia1" : self.multimedia1,
+                    "multimedia2" : self.multimedia2,
+                    "multimedia3" : self.multimedia3,
+                    "multimedia4" : self.multimedia4,
+                    "multimedia5" : self.multimedia5,
+                    "multimedia6" : self.multimedia6,
+                    "multimedia7" : self.multimedia7,
+                    "multimedia8" : self.multimedia8,
+                    "oficina1" : self.oficina1,
+                    "oficina2" : self.oficina2,
+                    "oficina3" : self.oficina3,
+                    "oficina4" : self.oficina4,
+                    "oficina5" : self.oficina5,
+                    "oficina6" : self.oficina6,
+                    "oficina7" : self.oficina7,
+                    "oficina8" : self.oficina8,
+                    "internet1" : self.internet1,
+                    "internet2" : self.internet2,
+                    "internet3" : self.internet3,
+                    "internet4" : self.internet4,
+                    "internet5" : self.internet5,
+                    "internet6" : self.internet6,
+                    "internet7" : self.internet7,
+                    "internet8" : self.internet8,
+                    "graficos1" : self.graficos1,
+                    "graficos2" : self.graficos2,
+                    "graficos3" : self.graficos3,
+                    "graficos4" : self.graficos4,
+                    "graficos5" : self.graficos5,
+                    "graficos6" : self.graficos6,
+                    "graficos7" : self.graficos7,
+                    "graficos8" : self.graficos8,
+                    "cambiar" : self.cambiar,
+                    "mostrar_internet" : self.mostrar_internet,
                     "on_mostrar_toggled" : self.checkmostrar,
                     "destroy" : self.cerrar,
                     "on_MainWindow_destroy" : self.cerrar }
             
-            self.wTree.get_widget("window1").show(); 
+            self.wTree.get_widget("principal").show(); 
             self.wTree.get_widget("window1").connect("delete-event",self.cerrar); 
             
             self.wTree.signal_autoconnect(dic)
             gtk.main()
 
     #Get the Main Window, and connect the "destroy" event
+
+    def cambiar(self,widget):
+        view=self.wTree.get_widget("window2")
+        view.show()
+
+    def mostrar_internet(self,widget):
+        self.wTree.get_widget("internet").show();        
  
     def checkmostrar(self, widget):
         print self.wTree.get_widget("mostrar").get_active();
@@ -108,6 +149,142 @@ class canaimabienvenido:
         print "Abriendo Exaile"
         comando="exaile"
         os.system(comando+" &")
+
+    def internet1(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def internet2(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def internet3(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def internet4(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def internet4(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def internet5(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def internet6(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def internet7(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def internet8(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+
+    def oficina1(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+
+    def oficina2(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def oficina3(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def oficina4(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def oficina5(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def oficina6(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def oficina7(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def oficina8(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def graficos1(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def graficos2(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def graficos3(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def graficos4(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def graficos5(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def graficos6(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def graficos7(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def graficos8(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def multimedia1(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def multimedia2(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def multimedia3(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def multimedia4(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def multimedia5(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def multimedia6(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def multimedia7(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+    def multimedia8(self, widget):
+        comando=""
+        os.system(comando+" &")
+
+
 
 if __name__ == "__main__":
         hwg = canaimabienvenido()
