@@ -503,6 +503,7 @@ Video Totem</property>
                     <property name="has_tooltip">True</property>
                     <property name="tooltip" translatable="yes">Abrir el editor de im&#xE1;genes GIMP.</property>
                     <property name="relief">none</property>
+                    <signal name="clicked" handler="mostrar_multimedia"/>
                     <child>
                       <widget class="GtkVBox" id="vbox4">
                         <property name="visible">True</property>
@@ -544,6 +545,7 @@ Video Totem</property>
                     <property name="has_tooltip">True</property>
                     <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofim&#xE1;ticas LibreOffice</property>
                     <property name="relief">none</property>
+                    <signal name="clicked" handler="mostrar_graficos"/>
                     <child>
                       <widget class="GtkVBox" id="vbox2">
                         <property name="visible">True</property>
@@ -588,6 +590,7 @@ Video Totem</property>
                         <property name="has_tooltip">True</property>
                         <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
                         <property name="relief">none</property>
+                        <signal name="clicked" handler="mostrar_oficina"/>
                         <child>
                           <widget class="GtkVBox" id="vbox3">
                             <property name="visible">True</property>
@@ -660,6 +663,7 @@ Video Totem</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="cerrar"/>
           </widget>
           <packing>
             <property name="x">460</property>

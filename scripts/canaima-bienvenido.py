@@ -73,26 +73,66 @@ class canaimabienvenido:
                     "graficos6" : self.graficos6,
                     "graficos7" : self.graficos7,
                     "graficos8" : self.graficos8,
+                    "volver" : self.volver,
                     "cambiar" : self.cambiar,
                     "mostrar_internet" : self.mostrar_internet,
+                    "mostrar_graficos" : self.mostrar_graficos,
+                    "mostrar_multimedia" : self.mostrar_multimedia,
+                    "mostrar_oficina" : self.mostrar_oficina,
                     "on_mostrar_toggled" : self.checkmostrar,
                     "destroy" : self.cerrar,
+                    "cerrar" : self.cerrar,
                     "on_MainWindow_destroy" : self.cerrar }
             
             self.wTree.get_widget("principal").show(); 
-            self.wTree.get_widget("window1").connect("delete-event",self.cerrar); 
+            self.wTree.get_widget("multimedia").connect("delete-event",self.cerrar); 
+            self.wTree.get_widget("graficos").connect("delete-event",self.cerrar); 
+            self.wTree.get_widget("internet").connect("delete-event",self.cerrar); 
+            self.wTree.get_widget("oficina").connect("delete-event",self.cerrar); 
             
             self.wTree.signal_autoconnect(dic)
             gtk.main()
 
     #Get the Main Window, and connect the "destroy" event
 
+    def volver(self,widget):
+        self.wTree.get_widget("principal").show()
+        self.wTree.get_widget("multimedia").hide()
+        self.wTree.get_widget("graficos").hide()
+        self.wTree.get_widget("oficina").hide()
+        self.wTree.get_widget("internet").hide()
+
     def cambiar(self,widget):
         view=self.wTree.get_widget("window2")
         view.show()
 
     def mostrar_internet(self,widget):
-        self.wTree.get_widget("internet").show();        
+        self.wTree.get_widget("multimedia").hide()
+        self.wTree.get_widget("graficos").hide()
+        self.wTree.get_widget("oficina").hide()
+        self.wTree.get_widget("internet").show()
+        self.wTree.get_widget("principal").hide()
+
+    def mostrar_oficina(self,widget):
+        self.wTree.get_widget("multimedia").hide()
+        self.wTree.get_widget("graficos").hide()
+        self.wTree.get_widget("oficina").show()
+        self.wTree.get_widget("internet").hide()
+        self.wTree.get_widget("principal").hide()
+
+    def mostrar_graficos(self,widget):
+        self.wTree.get_widget("multimedia").hide()
+        self.wTree.get_widget("graficos").show()
+        self.wTree.get_widget("oficina").hide()
+        self.wTree.get_widget("internet").hide()
+        self.wTree.get_widget("principal").hide()
+
+    def mostrar_multimedia(self,widget):
+        self.wTree.get_widget("multimedia").show()
+        self.wTree.get_widget("graficos").hide()
+        self.wTree.get_widget("oficina").hide()
+        self.wTree.get_widget("internet").hide()
+        self.wTree.get_widget("principal").hide()
  
     def checkmostrar(self, widget):
         print self.wTree.get_widget("mostrar").get_active();
