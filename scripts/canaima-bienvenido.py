@@ -191,7 +191,7 @@ class canaimabienvenido:
         os.system(comando+" &")
 
     def internet1(self, widget):
-        comando=""
+        comando="cunaguaro"
         os.system(comando+" &")
 
     def internet2(self, widget):
@@ -199,11 +199,7 @@ class canaimabienvenido:
         os.system(comando+" &")
 
     def internet3(self, widget):
-        comando=""
-        os.system(comando+" &")
-
-    def internet4(self, widget):
-        comando=""
+        comando="guacharo"
         os.system(comando+" &")
 
     def internet4(self, widget):
@@ -211,7 +207,7 @@ class canaimabienvenido:
         os.system(comando+" &")
 
     def internet5(self, widget):
-        comando=""
+        comando="turpial"
         os.system(comando+" &")
 
     def internet6(self, widget):
@@ -219,7 +215,7 @@ class canaimabienvenido:
         os.system(comando+" &")
 
     def internet7(self, widget):
-        comando=""
+        comando="pidgin"
         os.system(comando+" &")
 
     def internet8(self, widget):
@@ -228,20 +224,20 @@ class canaimabienvenido:
 
 
     def oficina1(self, widget):
-        comando=""
+        comando="libreoffice -writer"
         os.system(comando+" &")
 
 
     def oficina2(self, widget):
-        comando=""
+        comando="libreoffice -impress"
         os.system(comando+" &")
 
     def oficina3(self, widget):
-        comando=""
+        comando="libreoffice -calc"
         os.system(comando+" &")
 
     def oficina4(self, widget):
-        comando=""
+        comando="libreoffice"
         os.system(comando+" &")
 
     def oficina5(self, widget):
@@ -261,19 +257,19 @@ class canaimabienvenido:
         os.system(comando+" &")
 
     def graficos1(self, widget):
-        comando=""
+        comando="shotwell"
         os.system(comando+" &")
 
     def graficos2(self, widget):
-        comando=""
+        comando="libreoffice -draw"
         os.system(comando+" &")
 
     def graficos3(self, widget):
-        comando=""
+        comando="simple-scan"
         os.system(comando+" &")
 
     def graficos4(self, widget):
-        comando=""
+        comando="gimp"
         os.system(comando+" &")
 
     def graficos5(self, widget):
@@ -293,15 +289,15 @@ class canaimabienvenido:
         os.system(comando+" &")
 
     def multimedia1(self, widget):
-        comando=""
+        comando="gnome-sound-recorder"
         os.system(comando+" &")
 
     def multimedia2(self, widget):
-        comando=""
+        comando="totem"
         os.system(comando+" &")
 
     def multimedia3(self, widget):
-        comando=""
+        comando="exaile"
         os.system(comando+" &")
 
     def multimedia4(self, widget):
