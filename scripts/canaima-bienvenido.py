@@ -89,6 +89,7 @@ class canaimabienvenido:
             self.wTree.get_widget("graficos").connect("delete-event",self.cerrar); 
             self.wTree.get_widget("internet").connect("delete-event",self.cerrar); 
             self.wTree.get_widget("oficina").connect("delete-event",self.cerrar); 
+            self.wTree.get_widget("principal").connect("delete-event",self.cerrar); 
             
             self.wTree.signal_autoconnect(dic)
             gtk.main()
