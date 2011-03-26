@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <glade-interface>
-  <!-- interface-requires gtk+ 2.16 -->
+  <!-- interface-requires gtk+ 2.10 -->
   <!-- interface-naming-policy toplevel-contextual -->
   <widget class="GtkWindow" id="window1">
     <property name="width_request">600</property>
@@ -671,7 +671,7 @@ Video Totem</property>
           </packing>
         </child>
         <child>
-          <widget class="GtkCheckButton" id="mostrar">
+          <widget class="GtkCheckButton" id="mostrar0">
             <property name="label" translatable="yes">No mostrar de nuevo al iniciar</property>
             <property name="width_request">235</property>
             <property name="height_request">20</property>
@@ -679,7 +679,7 @@ Video Totem</property>
             <property name="can_focus">True</property>
             <property name="receives_default">False</property>
             <property name="draw_indicator">True</property>
-            <signal name="toggled" handler="on_mostrar_toggled"/>
+            <signal name="clicked" handler="on_mostrar_toggled0"/>
           </widget>
           <packing>
             <property name="x">10</property>
@@ -931,7 +931,7 @@ Mensajer&#xED;a Instantanea
           </packing>
         </child>
         <child>
-          <widget class="GtkCheckButton" id="mostrar">
+          <widget class="GtkCheckButton" id="mostrar1">
             <property name="label" translatable="yes">No mostrar de nuevo al iniciar</property>
             <property name="width_request">235</property>
             <property name="height_request">20</property>
@@ -939,7 +939,7 @@ Mensajer&#xED;a Instantanea
             <property name="can_focus">True</property>
             <property name="receives_default">False</property>
             <property name="draw_indicator">True</property>
-            <signal name="toggled" handler="on_mostrar_toggled"/>
+            <signal name="clicked" handler="on_mostrar_toggled1"/>
           </widget>
           <packing>
             <property name="x">10</property>
@@ -1190,7 +1190,7 @@ LibreOffice Impress</property>
           </packing>
         </child>
         <child>
-          <widget class="GtkCheckButton" id="mostrar">
+          <widget class="GtkCheckButton" id="mostrar2">
             <property name="label" translatable="yes">No mostrar de nuevo al iniciar</property>
             <property name="width_request">235</property>
             <property name="height_request">20</property>
@@ -1198,7 +1198,7 @@ LibreOffice Impress</property>
             <property name="can_focus">True</property>
             <property name="receives_default">False</property>
             <property name="draw_indicator">True</property>
-            <signal name="toggled" handler="on_mostrar_toggled"/>
+            <signal name="clicked" handler="on_mostrar_toggled2"/>
           </widget>
           <packing>
             <property name="x">10</property>
@@ -1449,7 +1449,7 @@ LibreOffice Draw</property>
           </packing>
         </child>
         <child>
-          <widget class="GtkCheckButton" id="mostrar">
+          <widget class="GtkCheckButton" id="mostrar3">
             <property name="label" translatable="yes">No mostrar de nuevo al iniciar</property>
             <property name="width_request">235</property>
             <property name="height_request">20</property>
@@ -1457,7 +1457,7 @@ LibreOffice Draw</property>
             <property name="can_focus">True</property>
             <property name="receives_default">False</property>
             <property name="draw_indicator">True</property>
-            <signal name="toggled" handler="on_mostrar_toggled"/>
+            <signal name="clicked" handler="on_mostrar_toggled3"/>
           </widget>
           <packing>
             <property name="x">10</property>
@@ -1666,7 +1666,7 @@ Exaile</property>
           </packing>
         </child>
         <child>
-          <widget class="GtkCheckButton" id="mostrar">
+          <widget class="GtkCheckButton" id="mostrar4">
             <property name="label" translatable="yes">No mostrar de nuevo al iniciar</property>
             <property name="width_request">235</property>
             <property name="height_request">20</property>
@@ -1674,7 +1674,7 @@ Exaile</property>
             <property name="can_focus">True</property>
             <property name="receives_default">False</property>
             <property name="draw_indicator">True</property>
-            <signal name="toggled" handler="on_mostrar_toggled"/>
+            <signal name="clicked" handler="on_mostrar_toggled4"/>
           </widget>
           <packing>
             <property name="x">10</property>
