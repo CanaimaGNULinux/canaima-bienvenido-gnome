@@ -152,7 +152,7 @@ class canaimabienvenido:
 
     def checkmostrar0(self, widget):
         print self.wTree.get_widget("mostrar0").get_active();
-        if self.wTree.get_widget("mostrar").get_active() == True :
+        if self.wTree.get_widget("mostrar0").get_active() == True :
             check_cb_conf=open(os.environ['HOME']+"/.config/canaima-bienvenido/usuario.conf","w")			
             check_cb_conf.write("MOSTRAR=0")
             check_cb_conf.close()
@@ -163,7 +163,7 @@ class canaimabienvenido:
 
     def checkmostrar1(self, widget):
         print self.wTree.get_widget("mostrar1").get_active();
-        if self.wTree.get_widget("mostrar").get_active() == True :
+        if self.wTree.get_widget("mostrar1").get_active() == True :
             check_cb_conf=open(os.environ['HOME']+"/.config/canaima-bienvenido/usuario.conf","w")			
             check_cb_conf.write("MOSTRAR=0")
             check_cb_conf.close()
@@ -174,7 +174,7 @@ class canaimabienvenido:
 
     def checkmostrar2(self, widget):
         print self.wTree.get_widget("mostrar2").get_active();
-        if self.wTree.get_widget("mostrar").get_active() == True :
+        if self.wTree.get_widget("mostrar2").get_active() == True :
             check_cb_conf=open(os.environ['HOME']+"/.config/canaima-bienvenido/usuario.conf","w")			
             check_cb_conf.write("MOSTRAR=0")
             check_cb_conf.close()
@@ -185,7 +185,7 @@ class canaimabienvenido:
 
     def checkmostrar3(self, widget):
         print self.wTree.get_widget("mostrar3").get_active();
-        if self.wTree.get_widget("mostrar").get_active() == True :
+        if self.wTree.get_widget("mostrar3").get_active() == True :
             check_cb_conf=open(os.environ['HOME']+"/.config/canaima-bienvenido/usuario.conf","w")			
             check_cb_conf.write("MOSTRAR=0")
             check_cb_conf.close()
@@ -196,7 +196,7 @@ class canaimabienvenido:
 
     def checkmostrar4(self, widget):
         print self.wTree.get_widget("mostrar4").get_active();
-        if self.wTree.get_widget("mostrar").get_active() == True :
+        if self.wTree.get_widget("mostrar4").get_active() == True :
             check_cb_conf=open(os.environ['HOME']+"/.config/canaima-bienvenido/usuario.conf","w")			
             check_cb_conf.write("MOSTRAR=0")
             check_cb_conf.close()
