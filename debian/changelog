@@ -1,3 +1,19 @@
+canaima-bienvenido (3.0+25) testing; urgency=low
+
+  * [d77caab] Adaptando codigo para nuevo funcionamiento por categorias
+  * [b87d3c9] finalizada modificaciones de codigo, falta seleccionar
+    aplicaciones para cada categoria y integrar iconos
+  * [6fd6974] Nuevas aplicaciones en submenues, ya cada una con su icono
+    y su lanzador
+  * [86cab3a] añadiendo funcion de cerrar a ventana principal
+  * [15f5cba] asignados comandos a cada boton, y verificacion de
+    funcionamiento de configuracion de mostrar al inicio, todo
+    funcionando
+  * [b8a0fdf] Corrigiendo falla de preferencia al arrancar canaima-
+    bienvenido en el inicio de sesión
+
+ -- Carlos Guerrero <guerrerocarlos@gmail.com>  Sun, 27 Mar 2011 12:34:57 -0430
+
 canaima-bienvenido (3.0+24) testing; urgency=low
 
   * [d387b41] Corrigiendo errores reportados en el funcionamiento
