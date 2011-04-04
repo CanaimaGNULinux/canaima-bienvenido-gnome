@@ -287,7 +287,7 @@ Im&#xE1;genes GIMP</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
-                    <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofim&#xE1;ticas LibreOffice</property>
+                    <property name="tooltip" translatable="yes">Mostrar el conjunto de herramientas ofim&#xE1;ticas LibreOffice</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="on_b5_clicked"/>
                     <child>
@@ -458,7 +458,7 @@ Video Totem</property>
                         <property name="receives_default">True</property>
                         <property name="extension_events">cursor</property>
                         <property name="has_tooltip">True</property>
-                        <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                        <property name="tooltip" translatable="yes">Internet</property>
                         <property name="relief">none</property>
                         <signal name="clicked" handler="mostrar_internet" object="internet" after="yes"/>
                         <child>
@@ -501,7 +501,7 @@ Video Totem</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Abrir el editor de im&#xE1;genes GIMP.</property>
+                    <property name="tooltip" translatable="yes">Multimedia</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="mostrar_multimedia"/>
                     <child>
@@ -543,7 +543,7 @@ Video Totem</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofim&#xE1;ticas LibreOffice</property>
+                    <property name="tooltip" translatable="yes">Gr&#xE1;ficos</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="mostrar_graficos"/>
                     <child>
@@ -609,6 +609,7 @@ Video Totem</property>
                             <child>
                               <widget class="GtkLabel" id="label1">
                                 <property name="visible">True</property>
+                                <property name="tooltip" translatable="yes">Oficina</property>
                                 <property name="label" translatable="yes">Oficina</property>
                                 <property name="justify">center</property>
                               </widget>
@@ -851,7 +852,7 @@ Twitter Turpial</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Abrir el chat de soporte de la Comunidad Canaima</property>
+                    <property name="tooltip" translatable="yes">Abrir Herramienta Pidgin de Mensajer&#xED;a</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="internet7"/>
                     <child>
@@ -985,7 +986,6 @@ Mensajer&#xED;a Instantanea
                         <property name="receives_default">True</property>
                         <property name="extension_events">cursor</property>
                         <property name="has_tooltip">True</property>
-                        <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
                         <property name="relief">none</property>
                         <signal name="clicked" handler="oficina1"/>
                         <child>
@@ -1029,7 +1029,6 @@ LibreOffice Writer</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Abrir Guacharo para leer y escribir correos</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="oficina3"/>
                     <child>
@@ -1070,7 +1069,6 @@ LibreOffice Calc</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Abrir el editor de im&#xE1;genes GIMP.</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="oficina4"/>
                     <child>
@@ -1113,7 +1111,6 @@ LibreOffice</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofim&#xE1;ticas LibreOffice</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="oficina2"/>
                     <child>
@@ -1244,7 +1241,6 @@ LibreOffice Impress</property>
                         <property name="receives_default">True</property>
                         <property name="extension_events">cursor</property>
                         <property name="has_tooltip">True</property>
-                        <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
                         <property name="relief">none</property>
                         <signal name="clicked" handler="graficos1"/>
                         <child>
@@ -1288,7 +1284,6 @@ Shotwell</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Abrir Guacharo para leer y escribir correos</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="graficos3"/>
                     <child>
@@ -1329,7 +1324,6 @@ Simple Scan</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Abrir el editor de im&#xE1;genes GIMP.</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="graficos4"/>
                     <child>
@@ -1372,7 +1366,6 @@ Im&#xE1;genes GIMP</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofim&#xE1;ticas LibreOffice</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="graficos2"/>
                     <child>
@@ -1502,7 +1495,6 @@ LibreOffice Draw</property>
                         <property name="receives_default">True</property>
                         <property name="extension_events">cursor</property>
                         <property name="has_tooltip">True</property>
-                        <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
                         <property name="relief">none</property>
                         <signal name="clicked" handler="multimedia1"/>
                         <child>
@@ -1545,7 +1537,6 @@ LibreOffice Draw</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Abrir el conjunto de herramientas ofim&#xE1;ticas LibreOffice</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="multimedia2"/>
                     <child>
@@ -1586,7 +1577,6 @@ Totem</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Abrir Guacharo para leer y escribir correos</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="multimedia3"/>
                     <child>
