@@ -2,8 +2,9 @@ canaima-bienvenido (3.0+26) testing; urgency=low
 
   * [51b6cab] Corrigiendo falla de preferencia al arrancar canaima-
     bienvenido en el inicio de sesión
+  * [6969604] Corrigiendo y quitando Sugerencias
 
- -- Carlos Guerrero <guerrerocarlos@gmail.com>  Sun, 27 Mar 2011 12:38:02 -0430
+ -- Carlos Guerrero <guerrerocarlos@gmail.com>  Mon, 04 Apr 2011 09:44:34 -0430
 
 canaima-bienvenido (3.0+25) testing; urgency=low
 
