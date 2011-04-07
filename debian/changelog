@@ -1,3 +1,9 @@
+canaima-bienvenido (3.0+27) testing; urgency=low
+
+  * [ddf961d] reduciendo tamaño de GUI canaima-bienvenido ticket #209
+
+ -- Francisco Vasquez Guerrero <fvasquez@cnti.gob.ve>  Thu, 07 Apr 2011 17:10:47 -0430
+
 canaima-bienvenido (3.0+26) testing; urgency=low
 
   * [51b6cab] Corrigiendo falla de preferencia al arrancar canaima-
