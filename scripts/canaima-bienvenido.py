@@ -27,8 +27,8 @@ class canaimabienvenido:
   
     def __init__(self):
             #Set the Glade file
-            #self.gladefile = "/usr/share/canaima-bienvenido/interfaz.glade"
-	    self.gladefile = "/home/fvasquez/repositorio_local/canaima-bienvenido/scripts/interfaz.glade"	
+            self.gladefile = "/usr/share/canaima-bienvenido/interfaz.glade"
+	    #self.gladefile = "/home/fvasquez/repositorio_local/canaima-bienvenido/scripts/interfaz.glade"	
             self.wTree = gtk.glade.XML(self.gladefile) 
 
             #Create our dictionay and connect it
