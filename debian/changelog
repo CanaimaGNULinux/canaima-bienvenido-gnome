@@ -1,3 +1,10 @@
+canaima-bienvenido (3.0+28) testing; urgency=low
+
+  * [72ba5a7] reduciendo tamaño de GUI canaima-bienvenido ticket #209
+    corriegiendo error en el gui .glade
+
+ -- Francisco Vasquez Guerrero <fvasquez@cnti.gob.ve>  Fri, 08 Apr 2011 09:24:49 -0430
+
 canaima-bienvenido (3.0+27) testing; urgency=low
 
   * [ddf961d] reduciendo tamaño de GUI canaima-bienvenido ticket #209
