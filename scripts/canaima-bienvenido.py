@@ -28,7 +28,6 @@ class canaimabienvenido:
     def __init__(self):
             #Set the Glade file
             self.gladefile = "/usr/share/canaima-bienvenido/interfaz.glade"
-	    #self.gladefile = "/home/fvasquez/repositorio_local/canaima-bienvenido/scripts/interfaz.glade"	
             self.wTree = gtk.glade.XML(self.gladefile) 
 
             #Create our dictionay and connect it
@@ -236,8 +235,8 @@ class canaimabienvenido:
         os.system(comando+" &")
 
     def b6_clicked(self, widget):
-        print "Abriendo GIMP"
-        comando="gimp"
+        print "Abriendo GPaint"
+        comando="gpaint"
         os.system(comando+" &")
 
     def b7_clicked(self, widget):
@@ -329,7 +328,7 @@ class canaimabienvenido:
         os.system(comando+" &")
 
     def graficos4(self, widget):
-        comando="gimp"
+        comando="gpaint"
         os.system(comando+" &")
 
     def graficos5(self, widget):

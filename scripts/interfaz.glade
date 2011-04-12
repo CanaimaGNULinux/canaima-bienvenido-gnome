@@ -470,7 +470,6 @@ Video Totem</property>
                             <child>
                               <widget class="GtkImage" id="image7">
                                 <property name="visible">True</property>
-                                <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
                                 <property name="xpad">2</property>
                                 <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/web-browser.svg</property>
                               </widget>
@@ -590,7 +589,7 @@ Video Totem</property>
                         <property name="receives_default">True</property>
                         <property name="extension_events">cursor</property>
                         <property name="has_tooltip">True</property>
-                        <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
+                        <property name="tooltip" translatable="yes">Oficina</property>
                         <property name="relief">none</property>
                         <signal name="clicked" handler="mostrar_oficina"/>
                         <child>
@@ -600,7 +599,6 @@ Video Totem</property>
                             <child>
                               <widget class="GtkImage" id="image1">
                                 <property name="visible">True</property>
-                                <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
                                 <property name="xpad">2</property>
                                 <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/ooo-template.svg</property>
                               </widget>
@@ -611,7 +609,6 @@ Video Totem</property>
                             <child>
                               <widget class="GtkLabel" id="label1">
                                 <property name="visible">True</property>
-                                <property name="tooltip" translatable="yes">Oficina</property>
                                 <property name="label" translatable="yes">Oficina</property>
                                 <property name="justify">center</property>
                               </widget>
@@ -739,7 +736,6 @@ Video Totem</property>
                             <child>
                               <widget class="GtkImage" id="image7">
                                 <property name="visible">True</property>
-                                <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
                                 <property name="xpad">2</property>
                                 <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/cunaguaro.svg</property>
                               </widget>
@@ -990,6 +986,7 @@ Mensajer&#xED;a Instantanea
                         <property name="receives_default">True</property>
                         <property name="extension_events">cursor</property>
                         <property name="has_tooltip">True</property>
+                        <property name="tooltip" translatable="yes">Abrir LibreOffice Writer</property>
                         <property name="relief">none</property>
                         <signal name="clicked" handler="oficina1"/>
                         <child>
@@ -999,7 +996,6 @@ Mensajer&#xED;a Instantanea
                             <child>
                               <widget class="GtkImage" id="image7">
                                 <property name="visible">True</property>
-                                <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
                                 <property name="xpad">2</property>
                                 <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/ooo-writer.svg</property>
                               </widget>
@@ -1033,6 +1029,7 @@ LibreOffice Writer</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir LibreOffice Calc</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="oficina3"/>
                     <child>
@@ -1073,6 +1070,7 @@ LibreOffice Calc</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir LibreOffice</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="oficina4"/>
                     <child>
@@ -1115,6 +1113,7 @@ LibreOffice</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir LibreOffice Impress</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="oficina2"/>
                     <child>
@@ -1246,6 +1245,7 @@ LibreOffice Impress</property>
                         <property name="receives_default">True</property>
                         <property name="extension_events">cursor</property>
                         <property name="has_tooltip">True</property>
+                        <property name="tooltip" translatable="yes">Abrir Editor de Fotografias Shotwell</property>
                         <property name="relief">none</property>
                         <signal name="clicked" handler="graficos1"/>
                         <child>
@@ -1255,7 +1255,6 @@ LibreOffice Impress</property>
                             <child>
                               <widget class="GtkImage" id="image7">
                                 <property name="visible">True</property>
-                                <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
                                 <property name="xpad">2</property>
                                 <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/shotwell.svg</property>
                               </widget>
@@ -1289,6 +1288,7 @@ Shotwell</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir Simple Scan</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="graficos3"/>
                     <child>
@@ -1329,6 +1329,7 @@ Simple Scan</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir GPaint</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="graficos4"/>
                     <child>
@@ -1348,7 +1349,7 @@ Simple Scan</property>
                           <widget class="GtkLabel" id="label8">
                             <property name="visible">True</property>
                             <property name="label" translatable="yes">Editor de
-Im&#xE1;genes GIMP</property>
+Im&#xE1;genes GPaint</property>
                             <property name="justify">center</property>
                           </widget>
                           <packing>
@@ -1371,6 +1372,7 @@ Im&#xE1;genes GIMP</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Abrir LibreOffice Draw</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="graficos2"/>
                     <child>
@@ -1500,6 +1502,7 @@ LibreOffice Draw</property>
                         <property name="receives_default">True</property>
                         <property name="extension_events">cursor</property>
                         <property name="has_tooltip">True</property>
+                        <property name="tooltip" translatable="yes">Grabador de Sonidos</property>
                         <property name="relief">none</property>
                         <signal name="clicked" handler="multimedia1"/>
                         <child>
@@ -1509,7 +1512,6 @@ LibreOffice Draw</property>
                             <child>
                               <widget class="GtkImage" id="image7">
                                 <property name="visible">True</property>
-                                <property name="tooltip" translatable="yes">Abrir el Navegador web Cunaguaro</property>
                                 <property name="xpad">2</property>
                                 <property name="pixbuf">/usr/share/icons/canaima-iconos/apps/scalable/gnome-sound-recorder.svg</property>
                               </widget>
@@ -1520,7 +1522,7 @@ LibreOffice Draw</property>
                             <child>
                               <widget class="GtkLabel" id="label14">
                                 <property name="visible">True</property>
-                                <property name="label" translatable="yes">Grabador de Sonidos</property>
+                                <property name="label" translatable="yes">Abrir Grabador de Sonidos</property>
                                 <property name="justify">center</property>
                               </widget>
                               <packing>
@@ -1542,6 +1544,7 @@ LibreOffice Draw</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Reproductor de Peliculas Totem</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="multimedia2"/>
                     <child>
@@ -1560,7 +1563,7 @@ LibreOffice Draw</property>
                         <child>
                           <widget class="GtkLabel" id="label4">
                             <property name="visible">True</property>
-                            <property name="label" translatable="yes">Reproductor de Pel&#xED;culas
+                            <property name="label" translatable="yes">Abrir Reproductor de Pel&#xED;culas
 Totem</property>
                             <property name="justify">center</property>
                           </widget>
@@ -1582,6 +1585,7 @@ Totem</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
+                    <property name="tooltip" translatable="yes">Repdroductor de Musica Exaile</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="multimedia3"/>
                     <child>
