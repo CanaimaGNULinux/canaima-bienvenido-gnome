@@ -1,3 +1,51 @@
+canaima-bienvenido (3.0+29) testing; urgency=low
+
+  [ Luis Alejandro Martínez Faneyth ]
+  * [14efaf4] Archivos Modificados: [ DISTLIST aclocal.m4 conf/any-
+    emu.mk conf/common.mk conf/gcry.mk conf/gcry.rmk conf/i386-
+    coreboot.mk conf/i386-efi.mk conf/i386-ieee1275.mk conf/i386-
+    multiboot.mk conf/i386-pc.mk conf/i386-qemu.mk conf/i386.mk
+    conf/mips-qemu-mips.mk conf/mips-yeeloong.mk conf/mips.mk
+    conf/powerpc-ieee1275.mk conf/sparc64-ieee1275.mk conf/tests.mk
+    conf/x86-efi.mk conf/x86_64-efi.mk config.guess config.h.in
+    config.sub configure debian/control install-sh lib/libgcrypt-
+    grub/cipher/ChangeLog lib/libgcrypt-grub/cipher/arcfour.c
+    lib/libgcrypt-grub/cipher/bithelp.h lib/libgcrypt-
+    grub/cipher/blowfish.c lib/libgcrypt-grub/cipher/camellia-glue.c
+    lib/libgcrypt-grub/cipher/camellia.c lib/libgcrypt-
+    grub/cipher/camellia.h lib/libgcrypt-grub/cipher/cast5.c
+    lib/libgcrypt-grub/cipher/cipher.h lib/libgcrypt-grub/cipher/crc.c
+    lib/libgcrypt-grub/cipher/crypto.lst lib/libgcrypt-grub/cipher/des.c
+    lib/libgcrypt-grub/cipher/dsa.c lib/libgcrypt-grub/cipher/ecc.c
+    lib/libgcrypt-grub/cipher/elgamal.c lib/libgcrypt-
+    grub/cipher/g10lib.h lib/libgcrypt-grub/cipher/hash-common.h
+    lib/libgcrypt-grub/cipher/md4.c lib/libgcrypt-grub/cipher/md5.c
+    lib/libgcrypt-grub/cipher/memory.h lib/libgcrypt-
+    grub/cipher/primegen.c lib/libgcrypt-grub/cipher/rfc2268.c
+    lib/libgcrypt-grub/cipher/rijndael-tables.h lib/libgcrypt-
+    grub/cipher/rijndael.c lib/libgcrypt-grub/cipher/rmd.h
+    lib/libgcrypt-grub/cipher/rmd160.c lib/libgcrypt-grub/cipher/rsa.c
+    lib/libgcrypt-grub/cipher/seed.c lib/libgcrypt-grub/cipher/serpent.c
+    lib/libgcrypt-grub/cipher/sha1.c lib/libgcrypt-grub/cipher/sha256.c
+    lib/libgcrypt-grub/cipher/sha512.c lib/libgcrypt-grub/cipher/tiger.c
+    lib/libgcrypt-grub/cipher/twofish.c lib/libgcrypt-
+    grub/cipher/types.h lib/libgcrypt-grub/cipher/whirlpool.c missing
+    stamp-h.in debian/postinst  ]
+
+  [ Francisco Vasquez Guerrero ]
+  * [8692e28] mejorando el gui de canaima bienvenido
+
+  [ Carlos Guerrero ]
+  * [7f2ef5c] Resolviendo tiquet #255, corrigiendo tooltips, para
+    funcionamiento correcto de aplicacion y de accesibilidad
+    reemplazando gimp por gpaint segun tiquet #208
+    http://proyectos.canaima.softwarelibre.gob.ve/canaima/ticket/225
+    http://proyectos.canaima.softwarelibre.gob.ve/canaima/ticket/208
+  * [8fa878c] [ canaima-desarrollador ] Los siguientes archivos han sido
+    modificados/añadidos: README
+
+ -- Carlos Guerrero <guerrerocarlos@gmail.com>  Tue, 12 Apr 2011 14:52:08 -0430
+
 canaima-bienvenido (3.0+28) testing; urgency=low
 
   * [72ba5a7] reduciendo tamaño de GUI canaima-bienvenido ticket #209
