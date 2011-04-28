@@ -1348,8 +1348,8 @@ Simple Scan</property>
                         <child>
                           <widget class="GtkLabel" id="label8">
                             <property name="visible">True</property>
-                            <property name="label" translatable="yes">Editor de
-Im&#xE1;genes GPaint</property>
+                            <property name="label" translatable="yes">Aplicaci&#xF3;n para pintar
+GPaint</property>
                             <property name="justify">center</property>
                           </widget>
                           <packing>
