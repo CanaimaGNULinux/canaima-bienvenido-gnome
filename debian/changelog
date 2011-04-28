@@ -1,9 +1,13 @@
 canaima-bienvenido (3.0+30) testing; urgency=low
 
+  [ Luis Alejandro Martínez Faneyth ]
   * [863fed9] Actualizando las dependencias conforme a la nueva
     estructura por clasificaciones.
 
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 15 Apr 2011 01:43:47 -0430
+  [ Carlos Guerrero ]
+  * [843ad75] corrigiendo acentos
+
+ -- Carlos Guerrero <guerrerocarlos@gmail.com>  Thu, 28 Apr 2011 14:34:01 -0430
 
 canaima-bienvenido (3.0+29) testing; urgency=low
 
