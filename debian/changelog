@@ -1,3 +1,10 @@
+canaima-bienvenido (3.0+32) testing; urgency=low
+
+  * [02a28be] [ canaima-desarrollador ] Los siguientes archivos han sido
+    modificados/añadidos: control
+
+ -- Carlos Escobar <carlosescobar70@gmail.com>  Fri, 10 Jun 2011 15:41:44 -0430
+
 canaima-bienvenido (3.0+31) testing; urgency=low
 
   * [3ff4255] correccion mensaje gpaint
