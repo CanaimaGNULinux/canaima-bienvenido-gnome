@@ -1,3 +1,25 @@
+canaima-bienvenido-gnome (3.1-2) stable; urgency=low
+
+  [ Carlos Guerrero ]
+  * [843ad75] corrigiendo acentos
+  * [d91cb52] Nueva versión
+  * [3ff4255] correccion mensaje gpaint
+  * [346ff59] Nueva versión
+
+  [ Carlos Escobar ]
+  * [02a28be] [ canaima-desarrollador ] Los siguientes archivos han sido
+    modificados/añadidos: control
+  * [c20c64c] Nueva versión
+
+  [ William Abrahan Cabrera Reyes ]
+  * [b33e4d0] Ampliada la información de los tips en los botones
+    principales [ticket #255]
+
+  [ Luis Alejandro Martínez Faneyth ]
+  * [08826bc] Nueva versión
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 28 Oct 2011 10:08:18 -0430
+
 canaima-bienvenido-gnome (3.1-1) stable; urgency=low
 
   * Limpiando fuentes para la versión 3.1
