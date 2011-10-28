@@ -375,7 +375,7 @@ Video Totem</property>
             <property name="width_request">600</property>
             <property name="height_request">80</property>
             <property name="visible">True</property>
-            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-top.png</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual-gnome/arte/banner-app-top.png</property>
           </widget>
         </child>
         <child>
@@ -383,7 +383,7 @@ Video Totem</property>
             <property name="width_request">600</property>
             <property name="height_request">70</property>
             <property name="visible">True</property>
-            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-bottom.png</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual-gnome/arte/banner-app-bottom.png</property>
           </widget>
           <packing>
             <property name="y">460</property>
@@ -645,7 +645,7 @@ Procesador de texto, Hoja de calculo y Presentaciones</property>
             <property name="width_request">600</property>
             <property name="height_request">80</property>
             <property name="visible">True</property>
-            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-top.png</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual-gnome/arte/banner-app-top.png</property>
           </widget>
         </child>
         <child>
@@ -653,7 +653,7 @@ Procesador de texto, Hoja de calculo y Presentaciones</property>
             <property name="width_request">600</property>
             <property name="height_request">70</property>
             <property name="visible">True</property>
-            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-bottom.png</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual-gnome/arte/banner-app-bottom.png</property>
           </widget>
           <packing>
             <property name="y">460</property>
@@ -905,7 +905,7 @@ Mensajer&#xED;a Instantanea
             <property name="width_request">600</property>
             <property name="height_request">80</property>
             <property name="visible">True</property>
-            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-top.png</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual-gnome/arte/banner-app-top.png</property>
           </widget>
         </child>
         <child>
@@ -913,7 +913,7 @@ Mensajer&#xED;a Instantanea
             <property name="width_request">600</property>
             <property name="height_request">70</property>
             <property name="visible">True</property>
-            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-bottom.png</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual-gnome/arte/banner-app-bottom.png</property>
           </widget>
           <packing>
             <property name="y">460</property>
@@ -1164,7 +1164,7 @@ LibreOffice Impress</property>
             <property name="width_request">600</property>
             <property name="height_request">80</property>
             <property name="visible">True</property>
-            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-top.png</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual-gnome/arte/banner-app-top.png</property>
           </widget>
         </child>
         <child>
@@ -1172,7 +1172,7 @@ LibreOffice Impress</property>
             <property name="width_request">600</property>
             <property name="height_request">70</property>
             <property name="visible">True</property>
-            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-bottom.png</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual-gnome/arte/banner-app-bottom.png</property>
           </widget>
           <packing>
             <property name="y">460</property>
@@ -1423,7 +1423,7 @@ LibreOffice Draw</property>
             <property name="width_request">600</property>
             <property name="height_request">80</property>
             <property name="visible">True</property>
-            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-top.png</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual-gnome/arte/banner-app-top.png</property>
           </widget>
         </child>
         <child>
@@ -1431,7 +1431,7 @@ LibreOffice Draw</property>
             <property name="width_request">600</property>
             <property name="height_request">70</property>
             <property name="visible">True</property>
-            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-bottom.png</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual-gnome/arte/banner-app-bottom.png</property>
           </widget>
           <packing>
             <property name="y">460</property>
@@ -1639,7 +1639,7 @@ Exaile</property>
             <property name="width_request">600</property>
             <property name="height_request">80</property>
             <property name="visible">True</property>
-            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-top.png</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual-gnome/arte/banner-app-top.png</property>
           </widget>
         </child>
         <child>
@@ -1647,7 +1647,7 @@ Exaile</property>
             <property name="width_request">600</property>
             <property name="height_request">70</property>
             <property name="visible">True</property>
-            <property name="pixbuf">/usr/share/canaima-estilo-visual/arte/banner-app-bottom.png</property>
+            <property name="pixbuf">/usr/share/canaima-estilo-visual-gnome/arte/banner-app-bottom.png</property>
           </widget>
           <packing>
             <property name="y">460</property>
