@@ -1,3 +1,10 @@
+canaima-bienvenido-gnome (3.1-4) stable; urgency=low
+
+  * [aea034c] Cambiando llamada del banner que es parte del paquete
+    canaima-estilo-visual-gnome.
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 28 Oct 2011 16:10:28 -0430
+
 canaima-bienvenido-gnome (3.1-3) stable; urgency=low
 
   * [3e56058] Agregando Replaces a canaima-bienvenido para mantener
