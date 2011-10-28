@@ -9,9 +9,9 @@ GRANDES MODIFICACIONES
 PEQUEÑAS MODIFICACIONES
 
 * Now running lintian...
-W: canaima-bienvenido source: non-native-package-with-native-version
-E: canaima-bienvenido: copyright-should-refer-to-common-license-file-for-gpl
-E: canaima-bienvenido: menu-icon-not-in-xpm-format /usr/share/icons/canaima-iconos/scalable/places/start-here.svg
-W: canaima-bienvenido: binary-without-manpage usr/bin/canaima-bienvenido
-W: canaima-bienvenido: binary-without-manpage usr/bin/canaima-bienvenido-automatico
+W: canaima-bienvenido-gnome source: non-native-package-with-native-version
+E: canaima-bienvenido-gnome: copyright-should-refer-to-common-license-file-for-gpl
+E: canaima-bienvenido-gnome: menu-icon-not-in-xpm-format /usr/share/icons/canaima-iconos/scalable/places/start-here.svg
+W: canaima-bienvenido-gnome: binary-without-manpage usr/bin/canaima-bienvenido-gnome
+W: canaima-bienvenido-gnome: binary-without-manpage usr/bin/canaima-bienvenido-gnome-automatico
 

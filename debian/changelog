@@ -1,4 +1,4 @@
-canaima-bienvenido (3.0+30) testing; urgency=low
+canaima-bienvenido-gnome (3.1-1) stable; urgency=low
 
   * [863fed9] Actualizando las dependencias conforme a la nueva
     estructura por clasificaciones.

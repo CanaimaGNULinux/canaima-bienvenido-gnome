@@ -25,28 +25,28 @@ build:
 install:
 
 	mkdir -p $(DESTDIR)/usr/bin/
-	mkdir -p $(DESTDIR)/usr/share/canaima-bienvenido/
+	mkdir -p $(DESTDIR)/usr/share/canaima-bienvenido-gnome/
 	mkdir -p $(DESTDIR)/etc/skel/Escritorio/
 	mkdir -p $(DESTDIR)/etc/skel/.config/autostart/
 	mkdir -p $(DESTDIR)/usr/share/applications/
-	mkdir -p $(DESTDIR)/etc/skel/.config/canaima-bienvenido/
-	cp -r desktop/canaima-bienvenido.desktop $(DESTDIR)/usr/share/applications/
-	cp -r desktop/canaima-bienvenido.desktop $(DESTDIR)/etc/skel/Escritorio/
-	cp -r conf/usuario.conf $(DESTDIR)/etc/skel/.config/canaima-bienvenido/
-	cp -r desktop/canaima-bienvenido-automatico.desktop $(DESTDIR)/etc/skel/.config/autostart/
-	cp -r scripts/canaima-bienvenido.py $(DESTDIR)/usr/share/canaima-bienvenido/
-	cp -r scripts/interfaz.glade $(DESTDIR)/usr/share/canaima-bienvenido/
-	cp -r scripts/canaima-bienvenido.sh $(DESTDIR)/usr/bin/canaima-bienvenido
-	cp -r scripts/canaima-bienvenido-automatico.sh $(DESTDIR)/usr/bin/canaima-bienvenido-automatico
+	mkdir -p $(DESTDIR)/etc/skel/.config/canaima-bienvenido-gnome/
+	cp -r desktop/canaima-bienvenido-gnome.desktop $(DESTDIR)/usr/share/applications/
+	cp -r desktop/canaima-bienvenido-gnome.desktop $(DESTDIR)/etc/skel/Escritorio/
+	cp -r conf/usuario.conf $(DESTDIR)/etc/skel/.config/canaima-bienvenido-gnome/
+	cp -r desktop/canaima-bienvenido-gnome-automatico.desktop $(DESTDIR)/etc/skel/.config/autostart/
+	cp -r scripts/canaima-bienvenido-gnome.py $(DESTDIR)/usr/share/canaima-bienvenido-gnome/
+	cp -r scripts/interfaz.glade $(DESTDIR)/usr/share/canaima-bienvenido-gnome/
+	cp -r scripts/canaima-bienvenido-gnome.sh $(DESTDIR)/usr/bin/canaima-bienvenido-gnome
+	cp -r scripts/canaima-bienvenido-gnome-automatico.sh $(DESTDIR)/usr/bin/canaima-bienvenido-gnome-automatico
 
 uninstall:
 
-	rm -rf $(DESTDIR)/usr/share/canaima-bienvenido/
-	rm -rf $(DESTDIR)/usr/bin/canaima-bienvenido
-	rm -rf $(DESTDIR)/usr/bin/canaima-bienvenido-automatico
-	rm -f $(DESTDIR)/etc/skel/Escritorio/canaima-bienvenido.desktop
-	rm -f $(DESTDIR)/etc/skel/.config/autostart/canaima-bienvenido-automatico.desktop
-	rm -f $(DESTDIR)/usr/share/applications/canaima-bienvenido.desktop
+	rm -rf $(DESTDIR)/usr/share/canaima-bienvenido-gnome/
+	rm -rf $(DESTDIR)/usr/bin/canaima-bienvenido-gnome
+	rm -rf $(DESTDIR)/usr/bin/canaima-bienvenido-gnome-automatico
+	rm -f $(DESTDIR)/etc/skel/Escritorio/canaima-bienvenido-gnome.desktop
+	rm -f $(DESTDIR)/etc/skel/.config/autostart/canaima-bienvenido-gnome-automatico.desktop
+	rm -f $(DESTDIR)/usr/share/applications/canaima-bienvenido-gnome.desktop
 clean:
 
 distclean:

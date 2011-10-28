@@ -1,7 +1,7 @@
 #!/bin/bash -e
 #
 # ==============================================================================
-# PAQUETE: canaima-bienvenido
+# PAQUETE: canaima-bienvenido-gnome
 # ARCHIVO: postrm
 # DESCRIPCIÓN: Revierte los cambios hechos por el paquete en los scripts del
 #      mantenedor, de forma tal de asegurarse que el sistema quede
@@ -17,7 +17,7 @@
 # Este programa es software libre. Puede redistribuirlo y/o modificarlo bajo los
 # términos de la Licencia Pública General de GNU (versión 3).
 
-PKG="canaima-bienvenido"
+PKG="canaima-bienvenido-gnome"
 # Color Verde
 VERDE="\e[1;32m"
 # Color Rojo
@@ -63,10 +63,10 @@ case ${1} in
 
 				ADVERTENCIA 'Removiendo Canaima Bienvenido para el usuario "'$usuario_min'"'
 				# Removemos el lanzador del escritorio de cada usuario
-				rm -rf /home/${usuario_min}/Escritorio/canaima-bienvenido.desktop
+				rm -rf /home/${usuario_min}/Escritorio/canaima-bienvenido-gnome.desktop
 
-				# Removemos el lanzador automático de canaima-bienvenido a cada usuario
-				rm -rf /home/${usuario_min}/.config/autostart/canaima-bienvenido-automatico.desktop
+				# Removemos el lanzador automático de canaima-bienvenido-gnome a cada usuario
+				rm -rf /home/${usuario_min}/.config/autostart/canaima-bienvenido-gnome-automatico.desktop
 
 			;;
 		esac
