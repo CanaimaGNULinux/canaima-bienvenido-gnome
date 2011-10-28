@@ -460,7 +460,8 @@ Video Totem</property>
                         <property name="receives_default">True</property>
                         <property name="extension_events">cursor</property>
                         <property name="has_tooltip">True</property>
-                        <property name="tooltip" translatable="yes">Internet</property>
+                        <property name="tooltip" translatable="yes">Aplicaciones para acceder a internet.
+Web, Correo, Microbloggin y Chat</property>
                         <property name="relief">none</property>
                         <signal name="clicked" handler="mostrar_internet" object="internet" after="yes"/>
                         <child>
@@ -502,7 +503,8 @@ Video Totem</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Multimedia</property>
+                    <property name="tooltip" translatable="yes">Aplicaciones para acceder a aplicaciones multimedia
+Grabador de sonidos, Reproductor de Pel&#xED;culas y Reproductor de M&#xFA;sica</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="mostrar_multimedia"/>
                     <child>
@@ -544,7 +546,8 @@ Video Totem</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Gr&#xE1;ficos</property>
+                    <property name="tooltip" translatable="yes">Aplicaciones para acceder a aplicaciones gr&#xE1;ficas
+Gestor de fotograf&#xED;as, Esc&#xE1;ner, Editor vectorial y Editor de mapas de bits</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="mostrar_graficos"/>
                     <child>
@@ -589,7 +592,8 @@ Video Totem</property>
                         <property name="receives_default">True</property>
                         <property name="extension_events">cursor</property>
                         <property name="has_tooltip">True</property>
-                        <property name="tooltip" translatable="yes">Oficina</property>
+                        <property name="tooltip" translatable="yes">Aplicaciones para acceder a aplicaciones de productividad
+Procesador de texto, Hoja de calculo y Presentaciones</property>
                         <property name="relief">none</property>
                         <signal name="clicked" handler="mostrar_oficina"/>
                         <child>
@@ -769,7 +773,7 @@ Cunaguaro</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="has_tooltip">True</property>
-                    <property name="tooltip" translatable="yes">Abrir Guacharo para leer y escribir correos</property>
+                    <property name="tooltip" translatable="yes">Abrir Gu&#xE1;charo para leer y escribir correos</property>
                     <property name="relief">none</property>
                     <signal name="clicked" handler="internet3"/>
                     <child>
@@ -1048,7 +1052,7 @@ LibreOffice Writer</property>
                         <child>
                           <widget class="GtkLabel" id="label2">
                             <property name="visible">True</property>
-                            <property name="label" translatable="yes">Hojas de calculo
+                            <property name="label" translatable="yes">Hojas de c&#xE1;lculo
 LibreOffice Calc</property>
                             <property name="justify">center</property>
                           </widget>
@@ -1089,7 +1093,7 @@ LibreOffice Calc</property>
                         <child>
                           <widget class="GtkLabel" id="label8">
                             <property name="visible">True</property>
-                            <property name="label" translatable="yes">Suite Ofimatica
+                            <property name="label" translatable="yes">Suite Ofim&#xE1;tica
 LibreOffice</property>
                             <property name="justify">center</property>
                           </widget>
@@ -1348,8 +1352,8 @@ Simple Scan</property>
                         <child>
                           <widget class="GtkLabel" id="label8">
                             <property name="visible">True</property>
-                            <property name="label" translatable="yes">Editor de
-Im&#xE1;genes GPaint</property>
+                            <property name="label" translatable="yes">Aplicaci&#xF3;n para pintar
+GPaint</property>
                             <property name="justify">center</property>
                           </widget>
                           <packing>

@@ -1,9 +1,32 @@
 canaima-bienvenido-gnome (3.1-1) stable; urgency=low
 
+  * Limpiando fuentes para la versión 3.1
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Tue, 22 Mar 2011 07:41:20 -0430
+
+canaima-bienvenido (3.0+32) testing; urgency=low
+
+  * [02a28be] [ canaima-desarrollador ] Los siguientes archivos han sido
+    modificados/añadidos: control
+
+ -- Carlos Escobar <carlosescobar70@gmail.com>  Fri, 10 Jun 2011 15:41:44 -0430
+
+canaima-bienvenido (3.0+31) testing; urgency=low
+
+  * [3ff4255] correccion mensaje gpaint
+
+ -- Carlos Guerrero <guerrerocarlos@gmail.com>  Thu, 28 Apr 2011 14:40:01 -0430
+
+canaima-bienvenido (3.0+30) testing; urgency=low
+
+  [ Luis Alejandro Martínez Faneyth ]
   * [863fed9] Actualizando las dependencias conforme a la nueva
     estructura por clasificaciones.
 
- -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 28 Oct 2011 09:56:09 -0430
+  [ Carlos Guerrero ]
+  * [843ad75] corrigiendo acentos
+
+ -- Carlos Guerrero <guerrerocarlos@gmail.com>  Thu, 28 Apr 2011 14:34:01 -0430
 
 canaima-bienvenido (3.0+29) testing; urgency=low
 
