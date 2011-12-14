@@ -35,7 +35,8 @@ install:
 	cp -r conf/usuario.conf $(DESTDIR)/etc/skel/.config/canaima-bienvenido-gnome/
 	cp -r desktop/canaima-bienvenido-gnome-automatico.desktop $(DESTDIR)/etc/skel/.config/autostart/
 	cp -r scripts/canaima-bienvenido-gnome.py $(DESTDIR)/usr/share/canaima-bienvenido-gnome/
-	cp -r scripts/interfaz.glade $(DESTDIR)/usr/share/canaima-bienvenido-gnome/
+	cp -r imagenes $(DESTDIR)/usr/share/canaima-bienvenido-gnome/
+	cp -r ui/interfaz.glade $(DESTDIR)/usr/share/canaima-bienvenido-gnome/
 	cp -r scripts/canaima-bienvenido-gnome.sh $(DESTDIR)/usr/bin/canaima-bienvenido-gnome
 	cp -r scripts/canaima-bienvenido-gnome-automatico.sh $(DESTDIR)/usr/bin/canaima-bienvenido-gnome-automatico
 
