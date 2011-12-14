@@ -16,7 +16,7 @@ canaima-bienvenido-gnome (3.1-6) stable; urgency=low
     bienvenido/interfaz.glade , se le agrego el archivo THANKS , se
     cambio el uploader del paquete
 
- -- Sasha Veronica Solano Grosjean <sashasolano@gmail.com>  Wed, 14 Dec 2011 11:24:01 -0430
+ -- Sasha Veronica Solano Grosjean <sashasolano@gmail.com>  Wed, 14 Dec 2011 11:29:48 -0430
 
 canaima-bienvenido-gnome (3.1-5) stable; urgency=low
 
