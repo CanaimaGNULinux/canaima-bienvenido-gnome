@@ -19,7 +19,7 @@ class canaimabienvenido():
         gladefile = "/usr/share/canaima-bienvenido-gnome/interfaz.glade"
         wTree = gtk.glade.XML(gladefile,"main_window")
         wTree.get_widget("main_window").set_title("Bienvenido a Canaima GNU Linux")
-        #wTree.get_widget("main_window").set_icon_from_file("/usr/share/canaima-bienvenido-gnome/templates/logo.svg")
+        #wTree.get_widget("main_window").set_icon_from_file("/usr/share/canaima-bienvenido-gnome/imagenes/logo.svg")
         wTree.get_widget("main_window").connect("destroy", gtk.main_quit)
 
         browser = webkit.WebView()
@@ -34,7 +34,7 @@ class canaimabienvenido():
         else:
             subs['checked'] = ("CHECKED")
             
-        template = open("/usr/share/canaima-bienvenido-gnome/templates/welcome.html").read()
+        template = open("/usr/share/canaima-bienvenido-gnome/welcome.html").read()
         html = string.Template(template).safe_substitute(subs)
         browser.load_html_string(html, "file:/")
         browser.connect('title-changed', self.title_changed)
