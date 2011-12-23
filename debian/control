@@ -11,7 +11,7 @@ Vcs-Browser: http://gitorious.org/canaima-gnu-linux/canaima-bienvenido-gnome/tre
 
 Package: canaima-bienvenido-gnome
 Architecture: all
-Depends: python-glade2, python-webkit, python-gtk2, xdg-utils, xdg-user-dirs, canaima-estilo-visual-gnome (>= 3.1), ${shlibs:Depends}, ${misc:Depends}
+Depends: python, python-glade2, python-webkit, python-gtk2, xdg-utils, xdg-user-dirs, canaima-estilo-visual-gnome (>= 3.1), ${shlibs:Depends}, ${misc:Depends}
 Recommends: ucumari, cunaguaro, guacharo, turpial, gimp, shotwell, simple-scan, libreoffice-draw, libreoffice-writer, libreoffice-calc, libreoffice-impress, totem, pidgin, brasero, exaile, canaima-notas-gnome, pitivi
 Replaces: canaima-bienvenido (>= 3.0)
 Conflicts: canaima-bienvenido (>= 3.0)
