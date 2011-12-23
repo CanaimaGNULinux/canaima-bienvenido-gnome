@@ -47,30 +47,27 @@ case ${1} in
 	purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
 
 	# Para cada usuario en /home/ ...
-	for usuario in /home/*? ; do
+	for HOME_U in /home/*?; do
 
 		# Obteniendo sólo el nombre del usuario
-		usuario_min=$(basename ${usuario})
+		USUARIO=$( basename ${HOME_U} )
 
 		# Y en caso de que el usuario sea un usuario activo (existente en /etc/shadow) ...
-		case  $(grep "${usuario_min}:.*:.*:.*:.*:.*:::" /etc/shadow) in
+		if [ $( grep -c "${USUARIO}:.*:.*:.*:.*:.*:::" /etc/shadow ) == 1 ] \
+		&& [ $( grep -c "${USUARIO}:.*:.*:.*:.*:.*:/bin/.*sh" /etc/passwd ) == 1 ] \
+		&& [ -d ${HOME_U}/.config ] \
+		&& [ -d ${HOME_U} ]; then
 
-			'')
-			# No hace nada si no se encuentra en /etc/shadow
-			;;
-
-			*)
-
-				ADVERTENCIA 'Removiendo Canaima Bienvenido para el usuario "'$usuario_min'"'
+				ADVERTENCIA 'Removiendo Canaima Bienvenido para el usuario "'${USUARIO}'"'
 				# Removemos el lanzador del escritorio de cada usuario
-				rm -rf /home/${usuario_min}/Escritorio/canaima-bienvenido-gnome.desktop
+				rm -rf /home/${USUARIO}/Escritorio/canaima-bienvenido-gnome.desktop
 
 				# Removemos el lanzador automático de canaima-bienvenido-gnome a cada usuario
-				rm -rf /home/${usuario_min}/.config/autostart/canaima-bienvenido-gnome-automatico.desktop
+				rm -rf /home/${USUARIO}/.config/autostart/canaima-bienvenido-gnome-automatico.desktop
 
-			;;
-		esac
-
+				# Removemos los archivos de configuración de canaima-bienvenido-gnome
+				rm -rf /home/${USUARIO}/.config/canaima-bienvenido-gnome/
+		fi
 	done
 
 	;;

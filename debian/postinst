@@ -45,45 +45,41 @@ case ${1} in
 	configure)
 
 	# Para cada usuario en /home/ ...
-	for usuario in /home/*? ; do
+	for HOME_U in /home/*?; do
 
 		# Obteniendo sólo el nombre del usuario
-		usuario_min=$(basename ${usuario})
+		USUARIO=$( basename ${HOME_U} )
 
 		# Y en caso de que el usuario sea un usuario activo (existente en /etc/shadow) ...
-		case  $( grep "${usuario_min}:.*:.*:.*:.*:.*:::" /etc/shadow ) in
+		if [ $( grep -c "${USUARIO}:.*:.*:.*:.*:.*:::" /etc/shadow ) == 1 ] \
+		&& [ $( grep -c "${USUARIO}:.*:.*:.*:.*:.*:/bin/.*sh" /etc/passwd ) == 1 ] \
+		&& [ -d ${HOME_U}/.config ] \
+		&& [ -d ${HOME_U} ]; then
 
-			'')
-			# No hace nada si no se encuentra en /etc/shadow
-			;;
+			ADVERTENCIA 'Instalando Canaima Bienvenido para el usuario "'${USUARIO}'"'
 
-			*)
-					
-				# Asegurando que el directorio .config/autostart y .config/canaima-bienvenido-gnome/ estén creados
-				mkdir -p /home/${usuario_min}/.config/autostart/
-				mkdir -p /home/${usuario_min}/.config/canaima-bienvenido-gnome/
-				# con permisos apropiados
-				chown ${usuario_min}:${usuario_min} /home/${usuario_min}/.config/autostart/
-				chown ${usuario_min}:${usuario_min} /home/${usuario_min}/.config/canaima-bienvenido-gnome/
+			# Asegurando que el directorio .config/autostart y .config/canaima-bienvenido-gnome/ estén creados
+			mkdir -p /home/${USUARIO}/.config/autostart/
+			mkdir -p /home/${USUARIO}/.config/canaima-bienvenido-gnome/
+			# con permisos apropiados
+			chown ${USUARIO}:${USUARIO} /home/${USUARIO}/.config/autostart/
+			chown ${USUARIO}:${USUARIO} /home/${USUARIO}/.config/canaima-bienvenido-gnome/
 
-				ADVERTENCIA 'Instalando Canaima Bienvenido para el usuario "'$usuario_min'"'
-				# Copiamos el lanzador de escritorio al escritorio de cada usuario
-				cp /etc/skel/Escritorio/canaima-bienvenido-gnome.desktop /home/${usuario_min}/Escritorio/
-				# con permisos apropiados
-				chown ${usuario_min}:${usuario_min} /home/${usuario_min}/Escritorio/canaima-bienvenido-gnome.desktop
+			# Copiamos el lanzador de escritorio al escritorio de cada usuario
+			cp /etc/skel/Escritorio/canaima-bienvenido-gnome.desktop /home/${USUARIO}/Escritorio/
+			# con permisos apropiados
+			chown ${USUARIO}:${USUARIO} /home/${USUARIO}/Escritorio/canaima-bienvenido-gnome.desktop
 
-				# Copia del archivo de configuración que determina si debe ejecutarse canaima-bienvenido-gnome al inicio o no
-				cp /etc/skel/.config/canaima-bienvenido-gnome/usuario.conf /home/${usuario_min}/.config/canaima-bienvenido-gnome/
-				# con permisos apropiados
-				chown ${usuario_min}:${usuario_min} /home/${usuario_min}/.config/canaima-bienvenido-gnome/usuario.conf
+			# Copia del archivo de configuración que determina si debe ejecutarse canaima-bienvenido-gnome al inicio o no
+			cp /etc/skel/.config/canaima-bienvenido-gnome/usuario.conf /home/${USUARIO}/.config/canaima-bienvenido-gnome/
+			# con permisos apropiados
+			chown ${USUARIO}:${USUARIO} /home/${USUARIO}/.config/canaima-bienvenido-gnome/usuario.conf
 
-				# Copia del lanzador automático de canaima-bienvenido-gnome a cada usuario
-				cp /etc/skel/.config/autostart/canaima-bienvenido-gnome-automatico.desktop /home/${usuario_min}/.config/autostart/
-				# con permisos apropiados
-				chown ${usuario_min}:${usuario_min} /home/${usuario_min}/.config/autostart/canaima-bienvenido-gnome-automatico.desktop
-
-			;;
-		esac
+			# Copia del lanzador automático de canaima-bienvenido-gnome a cada usuario
+			cp /etc/skel/.config/autostart/canaima-bienvenido-gnome-automatico.desktop /home/${USUARIO}/.config/autostart/
+			# con permisos apropiados
+			chown ${USUARIO}:${USUARIO} /home/${USUARIO}/.config/autostart/canaima-bienvenido-gnome-automatico.desktop
+		fi
 	done
 
 	;;

@@ -1,0 +1,40 @@
+body{
+	background-image:url('/usr/share/canaima-bienvenido-gnome/imagenes/bc.png');
+	background-repeat:repeat;
+	color:#000;
+	overflow:hidden;
+}
+
+a:link,a:visited{
+	text-decoration:none;
+	color:#000000;
+}
+
+.capa_trans{
+	border-radius:5px;
+	background:url(/usr/share/canaima-bienvenido-gnome/imagenes/trans.png);
+	position:absolute;
+	-webkit-box-shadow: 0 0 10px 2px #333;
+	margin:10px;
+}
+
+.titulo{
+	opacity:1;
+	font-family:impact;
+	font-size:8pt;
+	color:#000;
+	text-align:center;
+	font-weight:bold;
+}
+
+.princ{
+	font-size:10pt;
+	color:#000;
+	text-align:justify;
+}
+
+.shakeimage{
+	position:relative
+}
+
+

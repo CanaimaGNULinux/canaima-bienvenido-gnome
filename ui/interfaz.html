@@ -1,0 +1,231 @@
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="/usr/share/canaima-bienvenido-gnome/ui/estilo.css" media="all" />
+<script type="text/javascript" src="/usr/share/canaima-bienvenido-gnome/ui/javascript.js"></script>
+</head>
+<body>
+<div>
+    <h2>Bienvenido</h2>
+        <p class="princ">
+        Gracias por escoger Canaima GNU/Linux. Te presentamos un Sistema Operativo completo, versátil, novedoso, seguro, eficiente y LIBRE, construído de forma colaborativa. Todo lo que necesitas para comenzar a trabajar está en tus manos y a tu alcance, y todo lo que necesitas para aprender ... ¡está a la vuelta de un click!
+		</p>
+        <p class="princ"><b>Las siguientes categorías te ayudaran a empezar:</b></p>
+</div>
+<br/>
+
+<div id="">
+<table width="100%" height="110px" align="center">
+ <tr>
+    <td valign="top" width="20%" class="titulo">
+	<a href='javascript:MostrarDocumentacion()'>
+		<div>PRIMEROS PASOS<div><br/>
+		<img id="mydoc" name="mydoc" onmouseover="doIn('mydoc')" onmouseout="doOut('mydoc')" src="/usr/share/icons/canaima-iconos/apps/48/logviewer.png" />
+	</a>
+    </td>
+    <td valign="top" width="20%" class="titulo">
+	<a href='javascript:MostrarOficina()' >
+		<div>OFICINA</div><br/>
+		<img id="myofi" name="myofi" onmouseover="doIn('myofi')" onmouseout="doOut('myofi')" src="/usr/share/icons/canaima-iconos/apps/48/ooo-template.png" />
+	</a>
+    </td>
+    <td valign="top" width="20%" class="titulo">
+	<a href='javascript:MostrarInternet()'>
+		<div>INTERNET</div><br/>
+		<img id="myweb" name="myweb" onmouseover="doIn('myweb')" onmouseout="doOut('myweb')" src="/usr/share/icons/canaima-iconos/apps/48/web-browser.png" />
+	</a>
+    </td>
+    <td valign="top" width="20%" class="titulo">
+	<a href='javascript:MostrarGraficos()'>
+		<div>GRÁFICOS</div><br/>
+		<img id="mygraf" name="mygraf" onmouseover="doIn('mygraf')" onmouseout="doOut('mygraf')"   src="/usr/share/icons/canaima-iconos/apps/48/gimp.png" />
+	</a>
+   </td>
+   <td valign="top" width="20%" class="titulo">
+	<a href='javascript:MostrarMultimedia()'>
+		<div>MULTIMEDIA</div><br/>
+		<img id="mymult" name="mymult" onmouseover="doIn('mymult')" onmouseout="doOut('mymult')" src="/usr/share/icons/canaima-iconos/apps/48/totem.png" />
+	</a>
+   </td>
+ </tr>
+</table>
+<br/>
+<div id="documentacion" style="display:none;" class="capa_trans">
+<br/>
+  <table class="titulo">
+  <tr>
+    <td valign="top" width="25%">
+	<a href='javascript:changeTitle("portal")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage image_trans" src="/usr/share/icons/canaima-iconos/places/48/distributor-logo.png" />
+		<div>Portal Principal</div>
+	</a>
+    </td>
+    <td valign="top" width="25%">
+	<a href='javascript:changeTitle("wiki")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage image_trans" src="/usr/share/icons/canaima-iconos/apps/48/system-users.png" />
+		<div>Enciclopedia Colaborativa</div>
+	</a>
+    </td>
+    <td valign="top" width="25%">
+	<a href='javascript:changeTitle("canaima-notas-gnome")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage image_trans" src="/usr/share/icons/canaima-iconos/apps/48/tomboy.png" />
+		<div>Documentador de Fallas</div>
+	</a>
+    </td>
+    <td valign="top" width="25%">
+	<a href='javascript:changeTitle("ucumari")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage image_trans" src="/usr/share/icons/canaima-iconos/apps/48/ucumari.png" />
+		<div>Centro de Control Ucumari</div>
+	</a>
+    </td>
+  </tr>
+</table> 
+<br/>
+</div>
+<div id="oficina" style="display:none;" class="capa_trans" >
+<br/>
+  <table class="titulo"> 
+  <tr>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("libreoffice")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/ooo-template.png"/>
+		<div>Suite Ofimatica LibreOffice</div>
+	</a>
+     </td>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("libreoffice-writer")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/ooo-writer.png" />
+		<div>Procesador de Texto LibreOffice</div>
+	</a>
+     </td>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("libreoffice-calc")'>
+		<img  onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/ooo-calc.png"/>
+		<div>Hoja de Cálculo LibreOffice</div>
+	</a>
+     </td>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("libreoffice-impress")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/ooo-impress.png"/>
+		<div>Editor de Presentaciones LibreOffice</div>
+	</a>
+     </td>
+  </tr>
+</table>
+<br/> 
+</div>
+<div id="internet" style="display:none;" class="capa_trans">
+<br/>
+  <table class="titulo"> 
+  <tr>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("cunaguaro")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/cunaguaro.png"/>
+		<div>Navegador Web Cunaguaro</div>
+	</a>
+     </td>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("guacharo")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/guacharo.png"/>
+		<div>Cliente de Correo Guácharo</div>
+	</a>
+     </td>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("turpial")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/turpial.png"/>
+		<div>Cliente de Microblogging Turpial</div>
+	</a>
+     </td>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("pidgin")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage"src="/usr/share/icons/canaima-iconos/apps/48/pidgin.png"/>
+		<div>Cliente de Mensajería Pidgin</div>
+	</a>
+     </td>
+  </tr>
+</table>
+<br/>
+</div>
+<div id="graficos" style="display:none;" class="capa_trans" >
+<br/>
+   <table class="titulo"> 
+   <tr>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("shotwell")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/shotwell.png" />
+		<div>Gestor de Fotografías Shotwell</div>
+	</a>
+     </td>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("simple-scan")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/devices/48/scanner.png" />
+		<div>Reconocimiento de Imágenes Simple Scan</div>
+	</a>
+     </td>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("libreoffice-draw")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/ooo-impress.png" />
+		<div>Dibujos y Diagramas de LibreOffice</div>
+	</a>
+     </td>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("gimp")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/gimp.png"/>
+		<div>Dibujo Básico Gpaint</div>
+	</a>
+     </td>
+   </tr>
+   </table> 
+<br/>
+</div>
+<div id="multimedia" style="display:none;" class="capa_trans">
+<br/>
+<table class="titulo"> 
+  <tr>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("exaile")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/exaile.png" />
+		<div>Reproductor de Música Exaile</div>
+	</a>
+     </td>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("totem")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/totem.png" />
+		<div>Reproductor de Videos Totem</div>
+	</a>
+     </td>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("pitivi")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/pitivi.png" />
+		<div>Editor de Videos y Animaciones Pitivi</div>
+	</a>
+     </td>
+     <td valign="top" width="25%">
+	<a href='javascript:changeTitle("brasero")'>
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/brasero.png" />
+		<div>Grabador de Discos Brasero</div>
+	</a>
+     </td>
+  </tr>
+</table>
+<br/>
+</div> 
+ 
+<br/>
+<table width="90%" align="center" class="titulo" style="position:absolute;bottom:0">
+  <tr>
+       <td align="right" valign="bottom">        
+          <form action="#" name="myForm">
+            <input type=checkbox id="showDialog" name="showDialog" $checked onclick='javascript:assessCheckbox()' />
+            <label for="showDialog">No mostrar de nuevo al iniciar</label>
+            <input type=submit id="closebutton" name="closebutton" value="Cerrar" onclick='javascript:closeWindow()' />
+          </form>        
+       </td>
+    </tr>
+  </table>
+    </font>
+</div>
+</body>
+</html>
+

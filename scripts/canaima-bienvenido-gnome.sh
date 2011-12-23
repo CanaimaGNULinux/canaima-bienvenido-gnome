@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python /usr/share/canaima-bienvenido-gnome/canaima-bienvenido-gnome.py
+python /usr/share/canaima-bienvenido-gnome/principal.py

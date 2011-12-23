@@ -2,5 +2,5 @@
 
 . ${HOME}/.config/canaima-bienvenido-gnome/usuario.conf
 
-[ ${MOSTRAR} == 1 ] && python /usr/share/canaima-bienvenido-gnome/canaima-bienvenido-gnome.py
+[ ${MOSTRAR} == 1 ] && python /usr/share/canaima-bienvenido-gnome/principal.py
 
