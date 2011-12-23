@@ -1,5 +1,6 @@
 canaima-bienvenido-gnome (3.1-6) stable; urgency=low
 
+  [ Sasha Veronica Solano Grosjean ]
   * [c2cb073] Se re hizo la aplicacion usando webkit ademas de corregir
     errores de lintian como unusual-interpreter
     ./usr/share/applications/canaima-bienvenido.desktop #!xdg-open ,
@@ -16,7 +17,12 @@ canaima-bienvenido-gnome (3.1-6) stable; urgency=low
     bienvenido/interfaz.glade , se le agrego el archivo THANKS , se
     cambio el uploader del paquete
 
- -- Sasha Veronica Solano Grosjean <sashasolano@gmail.com>  Thu, 15 Dec 2011 09:56:18 -0430
+  [ Luis Alejandro Martínez Faneyth ]
+  * [9a8f779] * Modificando para que use las imágenes del sistema *
+    Separando css y js
+  * [f307465] Cambiando dependencia gpaint->gimp
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Fri, 23 Dec 2011 11:09:31 -0430
 
 canaima-bienvenido-gnome (3.1-5) stable; urgency=low
 
