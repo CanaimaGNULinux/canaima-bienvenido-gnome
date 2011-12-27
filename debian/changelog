@@ -1,3 +1,10 @@
+canaima-bienvenido-gnome (3.1-8) stable; urgency=low
+
+  * [db08d91] Agregando Provides: canaima-bienvenido a debian/control
+    para forzar remoción automática en actualizaciones de Canaima 3.0
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Tue, 27 Dec 2011 12:07:00 -0430
+
 canaima-bienvenido-gnome (3.1-7) stable; urgency=low
 
   * [f8dda40] * Agregando python como dependencia * Quitando permisos de
