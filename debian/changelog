@@ -1,3 +1,10 @@
+canaima-bienvenido-gnome (3.1-10) stable; urgency=low
+
+  * [ffd6d7c] Agregando paquetes transicionales para facilitar la
+    migración de Canaima 3.0 -> Canaima 3.1
+
+ -- Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>  Wed, 28 Dec 2011 22:57:04 -0430
+
 canaima-bienvenido-gnome (3.1-9) stable; urgency=low
 
   * [b8ba4b6] Corrigiendo validación de los usuarios existentes y
