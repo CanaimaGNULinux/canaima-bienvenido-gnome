@@ -14,10 +14,19 @@ Architecture: all
 Depends: python, python-glade2, python-webkit, python-gtk2, xdg-utils, xdg-user-dirs, xdg-user-dirs-gtk, canaima-estilo-visual-gnome (>= 3.1), ${shlibs:Depends}, ${misc:Depends}
 Pre-Depends: canaima-escritorio-gnome
 Recommends: ucumari, cunaguaro, guacharo, turpial, gimp, shotwell, simple-scan, libreoffice-draw, libreoffice-writer, libreoffice-calc, libreoffice-impress, totem, pidgin, brasero, exaile, canaima-notas-gnome, pitivi
-Replaces: canaima-bienvenido
-Conflicts: canaima-bienvenido
+Replaces: canaima-bienvenido (<< 3.1)
+Conflicts: canaima-bienvenido (<< 3.1)
 Provides: canaima-bienvenido
 Description: Aplicación de bienvenida para Canaima GNU/Linux
  Muestra una ventana al inicio con las aplicaciones más usadas
  e información para asistir al usuario con la introduccion 
  en el uso del Sistema Operativo.
+
+Package: canaima-bienvenido
+Architecture: all
+Depends: canaima-bienvenido-gnome (>= 3.1), ${shlibs:Depends}, ${misc:Depends}
+Description: Paquete transicional canaima-bienvenido -> canaima-bienvenido-gnome
+ Esto es un paquete transicional para que los usuarios puedan
+ actualizar de canaima-bienvenido a canaima-bienvenido-gnome sin muchos
+ problemas. Puede ser removido.
+
