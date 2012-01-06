@@ -1,3 +1,9 @@
+canaima-bienvenido-gnome (3.1-11) stable; urgency=low
+
+  * [9aa3697] se modifico en html para gpaint
+
+ -- Sasha Veronica Solano Grosjean <sashasolano@gmail.com>  Fri, 06 Jan 2012 16:09:30 -0430
+
 canaima-bienvenido-gnome (3.1-10) stable; urgency=low
 
   * [ffd6d7c] Agregando paquetes transicionales para facilitar la
