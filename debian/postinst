@@ -70,6 +70,7 @@ case ${1} in
 			cp /etc/skel/Escritorio/canaima-bienvenido-gnome.desktop /home/${USUARIO}/Escritorio/
 			# con permisos apropiados
 			chown ${USUARIO}:${USUARIO} /home/${USUARIO}/Escritorio/canaima-bienvenido-gnome.desktop
+                        chmod +x /home/${USUARIO}/Escritorio/canaima-bienvenido-gnome.desktop
 
 			# Copia del archivo de configuración que determina si debe ejecutarse canaima-bienvenido-gnome al inicio o no
 			cp /etc/skel/.config/canaima-bienvenido-gnome/usuario.conf /home/${USUARIO}/.config/canaima-bienvenido-gnome/
