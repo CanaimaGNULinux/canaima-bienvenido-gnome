@@ -16,7 +16,7 @@ import warnings
 class canaimabienvenido():
     def __init__(self):
 
-        gladefile = "/usr/share/canaima-bienvenido-gnome/ui/interfaz.glade"
+        gladefile = "/usr/share/canaima-bienvenido-gnome/data/interfaz.glade"
         wTree = gtk.glade.XML(gladefile,"main_window")
         wTree.get_widget("main_window").set_title("Bienvenido a Canaima GNU/Linux")
         wTree.get_widget("main_window").connect("destroy", gtk.main_quit)
@@ -29,7 +29,7 @@ class canaimabienvenido():
         self.codecs_pkg = None
         self.extra_pkg = None
 
-        templatefile = "/usr/share/canaima-bienvenido-gnome/ui/interfaz.html"
+        templatefile = "/usr/share/canaima-bienvenido-gnome/data/interfaz.html"
         template = open(templatefile).read()
         html = string.Template(template).safe_substitute(subs)
         browser.load_html_string(html, "file:/")
@@ -86,18 +86,18 @@ class canaimabienvenido():
             os.system(title+" &")
         elif title == "event_close_true":
             os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
-            os.system("echo 'MOSTRAR=0' > " + home + "/.config/canaima-bienvenido-gnome/usuario.conf")
+            os.system("echo 'MOSTRAR=0' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
             gtk.main_quit()
         elif title == "event_close_false":
             os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
-            os.system("echo 'MOSTRAR=1' > " + home + "/.config/canaima-bienvenido-gnome/usuario.conf")
+            os.system("echo 'MOSTRAR=1' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
             gtk.main_quit()
         elif title == "checkbox_checked":
             os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
-            os.system("echo 'MOSTRAR=0' > " + home + "/.config/canaima-bienvenido-gnome/usuario.conf")
+            os.system("echo 'MOSTRAR=0' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
         elif title == "checkbox_unchecked":
             os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
-            os.system("echo 'MOSTRAR=1' > " + home + "/.config/canaima-bienvenido-gnome/usuario.conf")
+            os.system("echo 'MOSTRAR=1' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
 
 if __name__ == "__main__":
     canaimabienvenido()

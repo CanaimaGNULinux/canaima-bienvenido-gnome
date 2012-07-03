@@ -1,5 +1,5 @@
 body{
-	background-image:url('/usr/share/canaima-bienvenido-gnome/imagenes/bc.png');
+	background-image:url('/usr/share/canaima-bienvenido-gnome/images/background.png');
 	background-repeat:repeat;
 	color:#000;
 	overflow:hidden;
@@ -12,7 +12,7 @@ a:link,a:visited{
 
 .capa_trans{
 	border-radius:5px;
-	background:url(/usr/share/canaima-bienvenido-gnome/imagenes/trans.png);
+	background:url(/usr/share/canaima-bienvenido-gnome/images/transparent.png);
 	position:absolute;
 	-webkit-box-shadow: 0 0 10px 2px #333;
 	margin:10px;
