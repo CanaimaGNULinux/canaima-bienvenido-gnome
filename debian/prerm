@@ -2,10 +2,8 @@
 #
 # ==============================================================================
 # PAQUETE: canaima-bienvenido-gnome
-# ARCHIVO: postrm
-# DESCRIPCIÓN: Revierte los cambios hechos por el paquete en los scripts del
-#      mantenedor, de forma tal de asegurarse que el sistema quede
-#      como estaba antes de su instalación.
+# ARCHIVO: prerm
+# DESCRIPCIÓN: Prepara el sistema para que el paquete sea removido.
 # COPYRIGHT:
 #  (C) 2010 Luis Alejandro Martínez Faneyth <martinez.faneyth@gmail.com>
 #  (C) 2010 Diego Alberto Aguilera Zambrano <daguilera85@gmail.com>
@@ -30,7 +28,7 @@ EXITO() {
 }
 
 case ${1} in
-	purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+	remove|upgrade|deconfigure)
 
 		# Para cada usuario en /home/ ...
 		for USERNAME in $( ls -1 "/home/" ); do
@@ -40,16 +38,19 @@ case ${1} in
 			&& [ -d "/home/${USERNAME}/.config" ]; then
 				ADVERTENCIA 'Removiendo Canaima Bienvenido para el usuario "'${USUARIO}'"'
 				# Removemos el lanzador del escritorio de cada usuario
-				rm -rf "/home/${USERNAME}/Escritorio/canaima-bienvenido-gnome.desktop"
+				rm -rf "/home/${USERNAME}/Escritorio/canaima-bienvenido.desktop"
 
 				# Removemos el lanzador automático de canaima-bienvenido-gnome a cada usuario
-				rm -rf "/home/${USERNAME}/.config/autostart/canaima-bienvenido-gnome-auto.desktop"
+				rm -rf "/home/${USERNAME}/.config/autostart/canaima-bienvenido-automatico.desktop"
 
 				# Removemos los archivos de configuración de canaima-bienvenido-gnome
-				rm -rf "/home/${USERNAME}/.config/canaima-bienvenido-gnome/"
+				rm -rf "/home/${USERNAME}/.config/canaima-bienvenido/"
 			fi
 		done
 
+	;;
+
+	failed-upgrade)
 	;;
 
 	*)

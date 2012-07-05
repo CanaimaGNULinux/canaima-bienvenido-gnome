@@ -2,22 +2,20 @@
 
 SHELL := sh -e
 
-SCRIPTS = "debian/postinst configure" "debian/postrm remove"
+SCRIPTS = debian/postinst debian/postrm
 IMAGES = $(shell ls -1 gui/images/ | grep "\.svg" | sed 's/\.svg//g')
 
 all: test build
 
 test:
 
-	@echo -n "\n===== Comprobando posibles errores de sintaxis en los scripts de mantenedor =====\n\n"
-
-	@for SCRIPT in $(SCRIPTS); \
-	do \
-		echo -n "$${SCRIPT}\n"; \
-		bash -n $${SCRIPT}; \
+	@printf "Comprobando sintaxis de los scripts de shell ["
+	@for SCRIPT in $(SCRIPTS); do \
+		sh -n $${SCRIPT}; \
+		checkbashisms -f -x $${SCRIPT} || true; \
+		printf "."; \
 	done
-
-	@echo -n "\n=================================================================================\nHECHO!\n\n"
+	@printf "]\n"
 
 build: clean
 
