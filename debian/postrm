@@ -31,7 +31,6 @@ EXITO() {
 
 case ${1} in
 	purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
-
 		# Para cada usuario en /home/ ...
 		for USERNAME in $( ls -1 "/home/" ); do
 			# Y en caso de que el usuario sea un usuario activo (existente en /etc/shadow) ...
@@ -49,15 +48,12 @@ case ${1} in
 				rm -rf "/home/${USERNAME}/.config/canaima-bienvenido-gnome/"
 			fi
 		done
-
 	;;
 
 	*)
-
 		ERROR "postrm no reconoce el argumento '"${1}"'" >&2
 		exit 1
 	;;
-
 esac
 
 #DEBHELPER#
