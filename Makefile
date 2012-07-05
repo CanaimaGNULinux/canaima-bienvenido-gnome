@@ -2,7 +2,7 @@
 
 SHELL := sh -e
 
-SCRIPTS = debian/postinst debian/postrm
+SCRIPTS = debian/postinst debian/postrm debian/preinst
 IMAGES = $(shell ls -1 gui/images/ | grep "\.svg" | sed 's/\.svg//g')
 
 all: test build
