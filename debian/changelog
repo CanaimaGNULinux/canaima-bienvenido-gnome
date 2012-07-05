@@ -1,3 +1,9 @@
+canaima-bienvenido-gnome (3.1-14) stable; urgency=low
+
+  * [7c30164] Corrigiendo detalles en el paquete fuente.
+
+ -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Thu, 05 Jul 2012 14:11:59 -0430
+
 canaima-bienvenido-gnome (3.1-13) stable; urgency=low
 
   * [1930f42] Mejorando comprobación de bashisms.
