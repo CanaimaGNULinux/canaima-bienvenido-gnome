@@ -1,3 +1,10 @@
+canaima-bienvenido-gnome (3.1-12) stable; urgency=low
+
+  * [8a74ddd] Añadiendo preinstalll para remover residuos de
+    instalaciones anteriores.
+
+ -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Thu, 05 Jul 2012 10:13:35 -0430
+
 canaima-bienvenido-gnome (3.1-11) stable; urgency=low
 
   [ Sasha Veronica Solano Grosjean ]
