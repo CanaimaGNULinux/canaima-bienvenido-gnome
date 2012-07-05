@@ -21,7 +21,7 @@ build: clean
 
 	@printf "Generando imágenes desde las fuentes [SVG > PNG] ["
 	@for IMAGE in $(IMAGES); do \
-		$(CONVERT) -background None gui/images/$${IMAGE}.svg gui/images/$${IMAGE}.png; \
+		convert -background None gui/images/$${IMAGE}.svg gui/images/$${IMAGE}.png; \
 		printf "."; \
 	done;
 	@echo "Nada para compilar!"
