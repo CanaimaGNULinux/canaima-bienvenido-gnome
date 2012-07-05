@@ -1,8 +1,18 @@
 canaima-bienvenido-gnome (3.1-11) stable; urgency=low
 
+  [ Sasha Veronica Solano Grosjean ]
   * [9aa3697] se modifico en html para gpaint
+  * [9df7749] se modidico interfaz.glade para que que colocara siempre
+    en el centro de la pantalla
+  * [59e564d] modicacion .desktop
 
- -- Sasha Veronica Solano Grosjean <sashasolano@gmail.com>  Fri, 06 Jan 2012 16:09:30 -0430
+  [ Luis Alejandro Martínez Faneyth ]
+  * [91f370d] Reestructurando sistema de archivos. Generando imágenes a
+    partir de fuentes svg.
+  * [62c48dc] Agregando preremove para asegurarse que los archivos de
+    canaima-bienvenido (anterior) han sido removidos.
+
+ -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Thu, 05 Jul 2012 02:39:11 -0430
 
 canaima-bienvenido-gnome (3.1-10) stable; urgency=low
 
