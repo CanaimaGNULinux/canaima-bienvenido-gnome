@@ -13,8 +13,10 @@ canaima-bienvenido-gnome (3.1-11) stable; urgency=low
     canaima-bienvenido (anterior) han sido removidos.
   * [451b8e5] Corrigiendo Makefile. Agregando Build-Depends para
     imagemagick.
+  * [8b92a93] Corrigiendo Makefile. Agregando Build-Depends para
+    imagemagick.
 
- -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Thu, 05 Jul 2012 02:41:00 -0430
+ -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Thu, 05 Jul 2012 02:41:15 -0430
 
 canaima-bienvenido-gnome (3.1-10) stable; urgency=low
 
