@@ -54,7 +54,7 @@ case ${1} in
 				# Copia del archivo de configuración que determina si debe ejecutarse canaima-bienvenido-gnome al inicio o no
 				cp "/etc/skel/.config/canaima-bienvenido-gnome/gui.conf" "/home/${USERNAME}/.config/canaima-bienvenido-gnome/"
 				# con permisos apropiados
-				chown ${USERNAME}:${USERNAME} "/home/${USERNAME}/.config/canaima-bienvenido-gnome/usuario.conf"
+				chown ${USERNAME}:${USERNAME} "/home/${USERNAME}/.config/canaima-bienvenido-gnome/gui.conf"
 
 				# Copia del lanzador automático de canaima-bienvenido-gnome a cada usuario
 				cp "/etc/skel/.config/autostart/canaima-bienvenido-gnome-auto.desktop" "/home/${USERNAME}/.config/autostart/"
