@@ -1,3 +1,9 @@
+canaima-bienvenido-gnome (3.1-17) stable; urgency=low
+
+  * [2e389ee] Corrigiendo colorización de mensajes.
+
+ -- Luis Alejandro Martínez Faneyth <luis@huntingbears.com.ve>  Thu, 30 Aug 2012 17:29:47 -0430
+
 canaima-bienvenido-gnome (3.1-16) stable; urgency=low
 
   * [d6014fe] Actualizando TODO.
