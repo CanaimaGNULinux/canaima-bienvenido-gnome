@@ -11,30 +11,31 @@
 	height: 100%;
 	z-index: 1000;
 	font-weight:400;
-	background:url(../img/black-bg-60.png);
-	background: rgba(0,0,0,0.6);
+	
+	background: #fff;
 	overflow:hidden;
 	display:none;
+        border-top:1px solid #fff;
 }
 
 
 #welcome-screen {
-	width: 660px;
+	/*-width: 660px;
 	left: 0;
 	top: 0;
-		/*-moz-border-radius: 8px;
+       moz-border-radius: 8px;
 		-webkit-border-radius: 8px;
 		-khtml-border-radius: 8px;
 	border-radius: 8px;
 		-moz-box-shadow: 0 0 10px #000;
-  		-webkit-box-shadow: 0 0 10px #000;*/
+  		-webkit-box-shadow: 0 0 10px #000;
 	box-shadow: 0 0 10px #000;	
 	position: absolute;
 	color: #4c4c4c;
 	display: none;
 	padding: 30px 0 20px;
 	z-index:2;
-	background: url("../img/folder/chrome.png") repeat-x scroll 0 0 #fff;
+	background: url("../img/folder/chrome.png") repeat-x scroll 0 0 #fff;*/
 }
 #welcome-screen .control{
 	margin-bottom: 6px;
@@ -50,8 +51,8 @@
 	left: 20px; 
         top: 30px; 
         display: block; 
-        width: 700px; 
-        height: 450px;
+        width: 100%;
+	height: 100%;
 }
 #welcome-screen .welcome-select{
 	border-top:1px solid #fff;
@@ -72,19 +73,26 @@
 	font-weight:500;
 	margin-top: 5px;
 }
-/*#answer {
+#answer {
     height: 580px;
     position: absolute;
     right: 5px;
     width: 680px;
    
-}*/
-#answer answer-screen {
-    height: 580px;
+}
+.answer-screen {
+    box-shadow: 0 0 10px #000;	      
+    background: none repeat scroll 0 0 #EFECDF;
+    border-radius: 8px 8px 8px 8px;
+    color: #4C4C4C;
+    display: block;
+    height: 200px;
+    left: 20px;
+    padding: 100px 0 20px;
     position: absolute;
-    right: 0px;
+    top: 160px;
     width: 700px;
-    background:#efecdf;
+    z-index: 2;
 }
 
 #actions {

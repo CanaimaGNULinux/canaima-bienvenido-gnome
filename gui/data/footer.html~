@@ -1,6 +1,5 @@
-
-		</div> <!-- end content -->
-	</div> <!-- end wrapper -->
+    </div> <!-- welcome-screen -->
+    </div> <!-- bullet-content -->
 </body>
 <script type="text/javascript">
 $(document).ready(function(){

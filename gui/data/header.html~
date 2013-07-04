@@ -11,5 +11,5 @@
 </head>
 <body>
     <div style="display: block;" id="welcome">
-        <div style="left: 20px; top: 30px; display: block; width: 739px; height: 549px;" id="welcome-screen" class="selected-window">	
+        <div style="left: 20px; top: 30px; display: block; width: 739px; height: 530px;" id="welcome-screen" class="selected-window">	
 	      <div class="welcome-header">
