@@ -1,0 +1,108 @@
+/*
+ *  Welcome Screen CSS
+ *  author: Carlos Espinoza
+ */
+
+#welcome {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	font-weight:400;
+	background:url(../img/black-bg-60.png);
+	background: rgba(0,0,0,0.6);
+	overflow:hidden;
+	display:none;
+}
+
+
+#welcome-screen {
+	width: 660px;
+	left: 0;
+	top: 0;
+		/*-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+		-khtml-border-radius: 8px;
+	border-radius: 8px;
+		-moz-box-shadow: 0 0 10px #000;
+  		-webkit-box-shadow: 0 0 10px #000;*/
+	box-shadow: 0 0 10px #000;	
+	position: absolute;
+	color: #4c4c4c;
+	display: none;
+	padding: 30px 0 20px;
+	z-index:2;
+	background: url("../img/folder/chrome.png") repeat-x scroll 0 0 #fff;
+}
+#welcome-screen .control{
+	margin-bottom: 6px;
+    margin-top: -25px;
+}
+#welcome-screen .welcome-header{
+	background: url("../images/circle-of-friends.png") 20px 20px no-repeat #fff;
+	height: 108px;
+        padding: 7px 100px 0 110px;
+        border-bottom:1px solid #d5d5d5;
+}
+#welcome-screen .selected-window {
+	left: 20px; 
+        top: 30px; 
+        display: block; 
+        width: 700px; 
+        height: 450px;
+}
+#welcome-screen .welcome-select{
+	border-top:1px solid #fff;
+	padding:15px;
+}
+#welcome-screen .welcome-select select{
+	margin-left:10px;
+}
+#welcome-screen h1 {
+	font-size: 25px;
+	line-height:1.3;
+	font-weight:500;
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+#welcome-screen h2 {
+	font-size: 16px;
+	font-weight:500;
+	margin-top: 5px;
+}
+#answer {
+    height: 580px;
+    position: absolute;
+    right: 5px;
+    width: 680px;
+   
+}
+#answer answer-screen {
+    height: 580px;
+    position: absolute;
+    right: 0px;
+    width: 700px;
+    background:#efecdf;
+}
+
+#actions {
+    top:300px;
+    height: 580px;
+    position: absolute;
+    right: 5px;
+    width: 700px;
+}
+
+#show-next-startup {
+    top:400px;
+    height: 580px;
+    position: absolute;
+    right: 5px;
+    width: 700px;
+}
+
+
+
+

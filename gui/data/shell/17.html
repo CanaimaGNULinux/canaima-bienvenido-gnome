@@ -1,0 +1,21 @@
+    <div id="bullet-content">
+        <div id="question">
+            <h1>¿Cuánta batería me queda?</h1>
+        </div> <!-- question -->
+        <div id="actions">
+        {{ prev_bullet_link }}{{ close_app_button }}{{ next_bullet_link }}
+            <div id="show-next-startup">
+                <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
+                {{ autostart_checkbox }}
+            </div> <!-- show-next-time -->
+        </div> <!-- actions -->
+        <div id="animation" class="animation-{{ animation_class }}">
+        {{ animation_file }}
+        </div> <!-- animation -->
+        <div id="answer">
+            <p>El ícono de <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:energia">batería</a> en la <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Barra-superior">barra superior</a> a la derecha me lo indica al hacer clic. Desde <a href="[exec]gnome-control-center"> Configuración del sistema</a> (en <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Barra-superior#sec:menu-de-usuario"> Menú de usuario </a> arriba a la derecha) puedo optimizar el uso de la <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:energia">Batería</a>.</p>
+            <div id="vaca-volve">
+                <a href="#"><span>Vaca Volvé!</span></a>
+            </div>
+        </div> <!-- answer -->
+    </div> <!-- bullet-content -->

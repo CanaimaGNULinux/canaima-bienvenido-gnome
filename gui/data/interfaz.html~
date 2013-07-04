@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/eggs.css" />
+	<link rel="stylesheet" type="text/css" href="css/variants/01.css" />
+	<link rel="stylesheet" type="text/css" href="css/animations/01.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/cantora-one.css" />
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="js/com/github/jboesch/Keystrokes/jquery.keystrokes.js" type="text/javascript"></script>
+	<script src="js/utils.js" type="text/javascript"></script>
+	<script src="js/eggs.js" type="text/javascript"></script>
+</head>
+<body class="variant-{{ variant }}">
+	<div id="wrapper">
+		<div id="content">
+		
+
+		</div> <!-- end content -->
+	</div> <!-- end wrapper -->
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('input#chkAutoStart').change(function(){
+		if ($(this).is(':checked')){
+			set_autostart_on();
+		} else {
+			set_autostart_off();
+		}
+	});
+	// 
+	$('div#actions div.action.bullet-navigation').each(function(i, v){
+		if($(this).hasClass('inactive')){
+			$(this).fadeTo('slow', 0.2);
+		}
+		
+	});
+});
+</script>
+</html>
+

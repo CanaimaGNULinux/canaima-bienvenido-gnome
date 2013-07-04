@@ -152,7 +152,7 @@ class BulletsBrowser(webkit.WebView):
 
         self.load_html_string(content, base_uri='file://' + self.app_dir)
 	
-	print content
+	
 
     def __build_prev_bullet_link(self, current_bullet):
         """

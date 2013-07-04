@@ -1,0 +1,21 @@
+    <div id="bullet-content">
+        <div id="question">
+            <h1>¿Cómo compartir archivos sin Internet en Huayra? </h1>
+        </div> <!-- question -->
+        <div id="actions">
+        {{ prev_bullet_link }}{{ close_app_button }}{{ next_bullet_link }}
+            <div id="show-next-startup">
+                <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
+                {{ autostart_checkbox }}
+            </div> <!-- show-next-time -->
+        </div> <!-- actions -->
+        <div id="animation" class="animation-{{ animation_class }}">
+        {{ animation_file }}
+        </div> <!-- animation -->
+        <div id="answer">
+            <p>En Huayra podés <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Compartir-tus-archivos">Compartir archivos</a> con tus compañeros que estén conectados a la misma red (aunque no haya Internet) usando <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#compartir-iptux">ipTux</a> o <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#compartirweb">Compartir Web</a>.</p>
+            <div id="vaca-volve">
+                <a href="#"><span>Vaca Volvé!</span></a>
+            </div>
+        </div> <!-- answer -->
+    </div> <!-- bullet-content -->

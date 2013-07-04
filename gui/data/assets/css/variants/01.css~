@@ -1,0 +1,145 @@
+/*
+ *
+ *=VARIANT-01
+ *
+ */
+body.variant-01 {
+	background: url(../images/background-01-640x450.png) no-repeat;
+}
+body.variant-01 a:link,
+body.variant-01 a:visited {
+	color: #aef525;
+}
+/*
+ * WRAPPER
+ * 
+ */
+body.variant-01 div#wrapper {
+	width: 638px;
+	height: 440px;
+	margin: -7px 0 0 -7px;
+	padding: 0;
+	position: relative;
+}
+/*
+ *
+ *=QUESTION
+ *
+ */
+body.variant-01 div#question {
+	width: 300px;
+	height: 370px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+body.variant-01 div#question h1 {
+	color: #fff;
+	text-shadow: 1px 1px 2px #595959;
+	font-size: 2.2em;
+	font-weight: bold;
+	width: 260px;
+	margin: 110px auto 0;
+	text-align: center;
+}
+/*
+ *
+ *=ACTIONS
+ *
+ */
+body.variant-01 div#actions {
+	width: 280px;
+	height: 70px;
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+}
+body.variant-01 div#actions div.action {
+	width: 70px;
+	float: left;
+}
+body.variant-01 div#actions div#close-app.inactive {
+	opacity: 0.2;
+}
+body.variant-01 div#actions div#prev-bullet {
+	text-align: left;
+}
+body.variant-01 div#actions div#next-bullet {
+	float: right;
+	text-align: right;
+}
+body.variant-01 div#actions div#close-app {
+	float: left;
+	width: 140px;
+	text-align: center;
+}
+/*=SHOW-NEXT-STARTUP */
+body.variant-01 div#show-next-startup {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-family: 'Free sans';
+	font-size: .9em;
+	color: #fff;
+	text-shadow: 1px 1px 2px #595959;
+}
+/*
+ *
+ *=ANSWER / ANIMATIONS
+ *
+ */
+body.variant-01 div#answer {
+	width: 280px;
+	height: 290px;
+	color: #008000;
+	position: absolute;
+	top: 100px;
+	right: 20px;
+	text-align: justify;
+	font-weight: normal;
+	font-family: 'Free sans', sans-serif;
+	overflow-y: auto;
+	overflow-x: none;
+	padding: 0;
+	display: none; /* FIRST TIME */
+}
+body.variant-01 div#animation {
+	width: 320px;
+	height: 380px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+body.variant-01 div#answer a:link,
+body.variant-01 div#answer a:visited {
+	color: #F04ACE;
+	font-weight: bold;
+}
+body.variant-01 div#answer a:hover {
+	text-decoration: underline;
+}
+/* VACA-VOLVE */
+body.variant-01 div#answer div#vaca-volve {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+body.variant-01 div#answer div#vaca-volve a span {
+	display: none;
+}
+body.variant-01 div#answer div#vaca-volve a {
+	display: block;
+	width: 48px;
+	height: 48px;
+}
+body.variant-01 div#answer div#vaca-volve a:link,
+body.variant-01 div#answer div#vaca-volve a:visited {
+	background: url(../../images/vaca-icono-48x48.png) no-repeat;
+}
+body.variant-01 div#answer div#vaca-volve a:hover {
+	background: url(../../images/vaca-icono-b-48x48.png) no-repeat;
+}
+

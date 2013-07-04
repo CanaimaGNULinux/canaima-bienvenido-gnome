@@ -1,0 +1,17 @@
+    <div id="bullet-content">
+        <div id="question">
+            <h2>¿Cómo veo mis archivos de sonido y video ?</h2>
+        </div> <!-- question -->
+        <div id="answer">
+            <p> En Canaima con un simple doble clic puedes reproducir archivos de música con <a href="[exec]rhythmbox">Rhythmbox</a> si es un Video <a href="[exec]totem">totem</a> si quieres editar con <a href="[exec]pitivi">PiTiVi</a> es un editor de vídeo no lineal libre
+
+<p> Además viene con <a href="[exec]brasero ">brasero</a> para grabar cd o dvd de datos  y <a href="[exec]gnome-sound-recorder">gnome-sound-recorder</a> es una sencilla aplicación para grabar y reproducir diferentes archivos de sonido. Si deseas cambiar las Aplicaciones predeterminadas para abrir tus archivos. <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#sec:Abrir-archivos-con">lee aqui</a> </p>
+            <div id="actions">
+        {{ prev_bullet_link }}{{ close_app_button }}{{ next_bullet_link }}
+            <div id="show-next-startup">
+                <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
+                {{ autostart_checkbox }}
+            </div> <!-- show-next-time -->
+        </div> <!-- actions -->
+        </div> <!-- answer -->
+    </div> <!-- bullet-content -->

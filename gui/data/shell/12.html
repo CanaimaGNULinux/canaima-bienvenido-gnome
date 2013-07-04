@@ -1,0 +1,21 @@
+    <div id="bullet-content">
+        <div id="question">
+            <h1>¿Cómo abro un pendrive?</h1>
+        </div> <!-- question -->
+        <div id="actions">
+        {{ prev_bullet_link }}{{ close_app_button }}{{ next_bullet_link }}
+            <div id="show-next-startup">
+                <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
+                {{ autostart_checkbox }}
+            </div> <!-- show-next-time -->
+        </div> <!-- actions -->
+        <div id="animation" class="animation-{{ animation_class }}">
+        {{ animation_file }}
+        </div> <!-- animation -->
+        <div id="answer">
+            <p>Huayra detecta el <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Discos-y-almacenamiento#sec:pendrive">pendrive</a> automáticamente y muestra un recuadro en la <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Barra-inferior#sec:notificaciones">Barra de notificaciones</a> desde donde podés abrir el contenido. Expulsalo de forma segura con haciendo clic con el botón derecho en el ícono del pen que está en el escritorio.</p>
+            <div id="vaca-volve">
+                <a href="#"><span>Vaca Volvé!</span></a>
+            </div>
+        </div> <!-- answer -->
+    </div> <!-- bullet-content -->

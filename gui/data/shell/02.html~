@@ -1,0 +1,21 @@
+    <div id="bullet-content">
+        <div id="question">
+            <h1>Aplicaciones</h1>
+        </div> <!-- question -->
+        <div id="answer">
+            <p>En el <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:menucanaima">Menú de Canaima</a>  puedes encontrar todas las aplicaciones por categoria instaladas en el sistema. tambien puedes usar el <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Vista-de-actividades#sec:Buscador-Canaima">Buscador</a> y colocar el nombre de la aplicacion para encontrarlo.</p> 
+
+<p>Si deseas instalar cualquier programa puedes dirigir a <a href="[exec]software-center">Centro de software</a> instalas todos los programas en sus versiones oficiales y libres de manera rapida y fácil</p>
+
+ <div id="actions"><p>
+        {{ prev_bullet_link }}{{ close_app_button }}{{ next_bullet_link }}
+            <div id="show-next-startup">
+                <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
+                {{ autostart_checkbox }}
+            </div> <!-- show-next-time -->
+        </div> <!-- actions -->
+            <!--<div id="vaca-volve">
+                <a href="#"><span>Vaca Volvé!</span></a>
+            </div>-->
+        </div> <!-- answer -->
+    </div> <!-- bullet-content -->

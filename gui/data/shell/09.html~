@@ -1,0 +1,18 @@
+    <div id="bullet-content">
+        <div id="question">
+            <h1>¿Cómo recupero archivos borrados?</h1>
+        </div> <!-- question -->
+        <div id="animation" class="animation-{{ animation_class }}">
+        {{ animation_file }}
+        </div> <!-- animation -->
+        <div id="answer">
+            <p>En <a href="[exec]nautilus trash://">la papelera</a> selecciono el archivo borrado y hago clic en <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Archivos-y-carpetas#sec:Recuperar-un-archivo">"Restaurar los elementos seleccionados"</a>. De esa manera, el archivo irá a su carpeta original.</p>
+           <div id="actions">
+        {{ prev_bullet_link }}{{ close_app_button }}{{ next_bullet_link }}
+            <div id="show-next-startup">
+                <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
+                {{ autostart_checkbox }}
+            </div> <!-- show-next-time -->
+        </div> <!-- actions --> 
+        </div> <!-- answer -->
+    </div> <!-- bullet-content -->
