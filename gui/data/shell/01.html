@@ -1,15 +1,25 @@
-           <h1>¡Bienvenido a Canaima 4.0!</h1>
+ <body>
+    <div style="display: block;" id="welcome">
+        <div style="left: 20px; top: 30px; display: block; width: 720px; height: 549px;" id="welcome-screen" class="selected-window">	
+	      <div class="welcome-header">
+                  <h1>¡Bienvenido a Canaima 4.0!</h1>
              </div><!-- welcome-header -->
              <div class="answer-screen" >
                    <div id="answer">
                        <p>Canaima es un Sistema Operativo completo, versátil, novedoso, seguro, eficiente y LIBRE que cuenta con una serie de aplicaciones pensadas para facilitar tu trabajo.</p>
                        <p>Disfruta del siguiente recorrido donde aprenderas mas sobre Canaima , nuestro nuevo entorno de escritorio y nuestras aplicaciones <a href="[doc]/usr/share/huayra/help/gnome/parte_1.xml">Paseo por Canaima</a></p>
-                   </div> <!-- answer -->
-            </div> <!-- answer-screen -->
-          <div id="actions">
-               <div class="action bullet-navigation inactive" id="prev-bullet">Anterior</div><div class="action bullet-navigation" id="next-bullet"><a href="[bullet]?1">Siguiente</a></div><div class="action" id="close-app"><a href="#" onclick="finalize();">CERRAR</a>
-              </div><!-- action bullet-navigation inactive -->
-          </div> <!-- actions -->
-          <div id="show-next-startup">
-               <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
-               <input type="checkbox" checked="checked" id="chkAutoStart" />
+                       <div id="actions">
+                           <div class="action bullet-navigation inactive" id="prev-bullet">Anterior</div><div class="action bullet-navigation" id="next-bullet"><a href="[bullet]?1">Siguiente</a></div><div class="action" id="close-app"><a href="#" onclick="finalize();">CERRAR</a>
+                           <div id="show-next-startup">
+                            <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
+                            <input type="checkbox" checked="checked" id="chkAutoStart" />
+                         </div> <!-- show-next-startup -->
+                          </div><!-- action bullet-navigation inactive -->
+                      </div> <!-- actions -->
+                    <div id="Acerca">
+                       <a href="[bullet]?22">Acerca de canaima</a>
+                   </div> <!-- Acerca -->  
+             </div> <!-- answer-screen -->
+            </div> <!-- welcome-screen  -->
+    </div> <!-- welcome -->
+</body>

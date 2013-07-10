@@ -1,5 +1,8 @@
-    </div> <!-- welcome-screen -->
-    </div> <!-- bullet-content -->
+          <div id="Acerca">
+                       <a href="[bullet]?22">Acerca de canaima</a>
+             
+            </div> <!-- welcome-screen  -->
+    </div> <!-- welcome -->
 </body>
 <script type="text/javascript">
 $(document).ready(function(){

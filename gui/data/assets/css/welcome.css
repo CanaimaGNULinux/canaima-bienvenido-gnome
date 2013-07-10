@@ -2,7 +2,16 @@
  *  Welcome Screen CSS
  *  author: Carlos Espinoza
  */
-
+@font-face {
+  font-family: 'jara';
+  font-style: normal;
+  font-weight: 400;
+  src: local('jara'), url(../font/jara.ttf) format('truetype');
+}
+body{
+	font-family: 'jara';
+	font-size:17px;
+}
 #welcome {
 	position: absolute;
 	top: 0;
@@ -11,11 +20,9 @@
 	height: 100%;
 	z-index: 1000;
 	font-weight:400;
-	
 	background: #fff;
 	overflow:hidden;
 	display:none;
-        border-top:1px solid #fff;
 }
 
 
@@ -44,8 +51,11 @@
 #welcome-screen .welcome-header{
 	background: url("../images/circle-of-friends.png") 20px 20px no-repeat #fff;
 	height: 108px;
-        padding: 7px 100px 0 110px;
+        padding: 21px 100px 0 110px;
         border-bottom:1px solid #d5d5d5;
+}
+	 
+       
 }
 #welcome-screen .selected-window {
 	left: 20px; 
@@ -77,7 +87,8 @@
     height: 580px;
     position: absolute;
     right: 5px;
-    width: 680px;
+    width: 670px;
+    top: 3px;
    
 }
 .answer-screen {
@@ -91,8 +102,19 @@
     padding: 100px 0 20px;
     position: absolute;
     top: 160px;
-    width: 700px;
+    width: 685px;
     z-index: 2;
+}
+
+.answer-screen-acerca {
+    display: block;
+    height: 200px;
+    left: 20px;
+    padding: 100px 0 20px;
+    position: absolute;
+    top: 10px;
+    width: 700px;
+    z-index: 2; 
 }
 
 #actions {
@@ -110,6 +132,27 @@
     right: 5px;
     width: 700px;
 }
+#actions {
+    height: 580px;
+    position: absolute;
+    right: 5px;
+    width: 680px;
+    top: 250px;
+   
+}
+#show-next-startup {
+    height: 580px;
+    position: absolute;
+    right: 5px;
+    width: 280px;
+    top: 2;
+}
+#Acerca {
+    height: 580px;
+    position: absolute;
+    top: 340;
+}
+
 
 
 

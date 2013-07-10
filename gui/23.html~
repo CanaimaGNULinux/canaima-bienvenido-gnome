@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="data/assets/css/welcome.css" />
+        <style type="text/css">
+        .animation-size {
+            /* Note that the width and height should match the dimensions of your animation to display correctly */
+            width: 670px;
+            height: 495px;
+        }
+        iframe {
+            border-width: 0;
+        }
+        </style>
+    </head>
+<body>
+    <iframe class="animation-size" src="index.html"></iframe>
+</body>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('input#chkAutoStart').change(function(){
+		if ($(this).is(':checked')){
+			set_autostart_on();
+		} else {
+			set_autostart_off();
+		}
+	});
+	// 
+	$('div#actions div.action.bullet-navigation').each(function(i, v){
+		if($(this).hasClass('inactive')){
+			$(this).fadeTo('slow', 0.2);
+		}
+		
+	});
+});
+</script>
+</html>
+

@@ -250,11 +250,11 @@ def build_app_window(start_page):
         Win.set_icon_from_file(Path + "vaca-icono-48x48.png")
     Win.add(sw)
     Win.set_resizable(False)
-    bullet_browser.set_size_request(740, 550)
-    Win.set_default_size(740, 550)
+    bullet_browser.set_size_request(720, 540)
+    Win.set_default_size(720, 540)
     Win.set_title("Primeros pasos en Canaima")
     Win.set_position(gtk.WIN_POS_CENTER)
-    Win.set_deletable(True)
+    #Win.set_deletable(True)
     Win.connect("destroy", gtk.main_quit)
     return Win
 
