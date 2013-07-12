@@ -1,38 +1,65 @@
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" href="data/assets/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="data/assets/css/eggs.css" />
+    <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="data/assets/css/welcome.css" />
-	<script src="assets/js/jquery-1.8.2.min.js" type="text/javascript"></script>
-	<script src="assets/js/com/github/jboesch/Keystrokes/jquery.keystrokes.js" type="text/javascript"></script>
-	<script src="assets/js/utils.js" type="text/javascript"></script>
-	<script src="assets/js/eggs.js" type="text/javascript"></script>
-</head>
-<body>
+        <style type="text/css">
+        .animation-size {
+            /* Note that the width and height should match the dimensions of your animation to display correctly */
+            width: 670px;
+            height: 495px;
+        }
+        iframe {
+            border-width: 0;
+        }
+        </style>
+    </head>
+ <body>
     <div style="display: block;" id="welcome">
-        <div style="left: 20px; top: 30px; display: block; width: 739px; height: 549px;" id="welcome-screen" class="selected-window">	
+        <div style="left: 20px; top: 30px; display: block; width: 720px; height: 549px;" id="welcome-screen" class="selected-window">	
 	      <div class="welcome-header">
                   <h1>¡Bienvenido a Canaima 4.0!</h1>
              </div><!-- welcome-header -->
              <div class="answer-screen" >
                    <div id="answer">
                        <p>Canaima es un Sistema Operativo completo, versátil, novedoso, seguro, eficiente y LIBRE que cuenta con una serie de aplicaciones pensadas para facilitar tu trabajo.</p>
-                       <p>Disfruta del siguiente recorrido donde aprenderas mas sobre Canaima , nuestro nuevo entorno de escritorio y nuestras aplicaciones <a href="[doc]/usr/share/huayra/help/gnome/parte_1.xml">Paseo por Canaima</a></p>
-                       <div id="actions">
-                           <div class="action bullet-navigation inactive" id="prev-bullet">Anterior</div><div class="action bullet-navigation" id="next-bullet"><a href="[bullet]?1">Siguiente</a></div><div class="action" id="close-app"><a href="#" onclick="finalize();">CERRAR</a>
-                           <div id="show-next-startup">
-                            <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
-                            <input type="checkbox" checked="checked" id="chkAutoStart" />
-                         </div> <!-- show-next-startup -->
-                          </div><!-- action bullet-navigation inactive -->
-                      </div> <!-- actions -->
+                       <p>Disfruta del siguiente recorrido donde aprenderas mas sobre Canaima , nuestro nuevo entorno de escritorio y nuestras aplicaciones <a href="[doc]/usr/share/canaima/help/gnome/parte_1.xml">Paseo por Canaima</a></p>
+                    </div>
+                     <div id="actions">
+        <div class="action bullet-navigation inactive" id="prev-bullet"><span>Anterior</span></div><div class="action" id="close-app"><a href="#" onclick="finalize();">CERRAR</a></div><div class="action bullet-navigation" id="next-bullet"><a href="[bullet]?1">Siguiente</a></div>
+            <div id="show-next-startup">
+                <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
+                <input type="checkbox" checked="checked" id="chkAutoStart" />
+            </div> <!-- show-next-time -->
+        </div> <!-- actions -->
+         
                     <div id="Acerca">
-                       <a href="[bullet]?10">Acerca de canaima</a>
-                   </div> <!-- Acerca -->  
+                          <div id="Acerca-text">  
+                              <a href="[bullet]?22">Acerca de canaima</a>
+                          </div><!-- Acerca-text -->
+                    </div> <!-- Acerca -->  
              </div> <!-- answer-screen -->
             </div> <!-- welcome-screen  -->
     </div> <!-- welcome -->
 </body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('input#chkAutoStart').change(function(){
+		if ($(this).is(':checked')){
+			set_autostart_on();
+		} else {
+			set_autostart_off();
+		}
+	});
+	// 
+	$('div#actions div.action.bullet-navigation').each(function(i, v){
+		if($(this).hasClass('inactive')){
+			$(this).fadeTo('slow', 0.2);
+		}
+		
+	});
+});
+</script>
+</html>
 
 

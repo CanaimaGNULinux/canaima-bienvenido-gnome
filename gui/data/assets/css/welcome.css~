@@ -8,12 +8,21 @@
   font-weight: 400;
   src: local('jara'), url(../font/jara.ttf) format('truetype');
 }
-body{
+body.ayuda{
 	
         background:url("../images/background.png");
         
 }
-#welcome {
+body.ayuda div#show-next-startup {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-family: 'Free sans';
+	font-size: .9em;
+	color: #fff;
+	text-shadow: 1px 1px 2px #595959;
+}
+body.ayuda div#welcome {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -26,8 +35,8 @@ body{
 }
 
 
-#welcome-screen {
-	/*-width: 660px;
+/*-body.ayuda div#welcome-screen {
+	width: 660px;
 	left: 0;
 	top: 0;
        moz-border-radius: 8px;
@@ -44,20 +53,19 @@ body{
 	z-index:2;
 	background: url("../img/folder/chrome.png") repeat-x scroll 0 0 #fff;*/
 }
-#welcome-screen .control{
+body.ayuda div#welcome-screen .control{
 	margin-bottom: 6px;
-    margin-top: -25px;
+        margin-top: -25px;
 }
-#welcome-screen .welcome-header{
+body.ayuda div#welcome-screen .welcome-header{
 	background: url("../images/circle-of-friends.png") 20px 20px no-repeat;
 	height: 108px;
         padding: 21px 100px 0 110px;
         /*border-bottom:1px solid #d5d5d5;*/
 }
 	 
-       
-}
-#welcome-screen .selected-window {
+      
+/*#welcome-screen .selected-window {
 	left: 20px; 
         top: 30px; 
         display: block; 
@@ -70,8 +78,8 @@ body{
 }
 #welcome-screen .welcome-select select{
 	margin-left:10px;
-}
-#welcome-screen h1 {
+}*/
+body.ayuda div#welcome-screen h1 {
 	font-size: 28px;
         color:#fff;
 	line-height:1.3;
@@ -80,12 +88,13 @@ body{
 	margin-top: 20px;
         font-weight: bold;
 }
-#welcome-screen h2 {
+
+/*#welcome-screen h2 {
 	font-size: 16px;
 	font-weight:500;
 	margin-top: 5px;
-}
-#answer {
+}*/
+body.ayuda div#answer {
     height: 580px;
     position: absolute;
     right: 5px;
@@ -94,8 +103,8 @@ body{
    
 }
 .answer-screen {
-    box-shadow: 0 0 10px #000;	      
-    background: none repeat scroll 0 0 #fff;
+   /* box-shadow: 0 10px 10px #000;	*/      
+   background: none repeat scroll 0 0 #fff;
     border-radius: 6px 6px 6px 6px;
     color: #4C4C4C;
     display: block;
@@ -110,7 +119,7 @@ body{
     font-size:17px;
 }
 
-.answer-screen-acerca {
+/*.answer-screen-acerca {
     display: block;
     height: 200px;
     left: 20px;
@@ -120,38 +129,38 @@ body{
     width: 700px;
     z-index: 2; 
 }
-
-#actions {
-    top:300px;
-    height: 580px;
-    position: absolute;
-    right: 5px;
-    width: 700px;
+*/
+body.ayuda div#actions {
+	width: 280px;
+	height: 70px;
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+}
+body.ayuda div#actions div.action {
+	width: 70px;
+	float: left;
+}
+body.ayuda div#actions div#close-app.inactive {
+	opacity: 0.2;
+}
+body.ayuda div#actions div#prev-bullet {
+	text-align: left;
+}
+body.ayuda div#actions div#next-bullet {
+	float: left;
+	text-align: left;
+       
+}
+body.ayuda div#actions div#close-app {
+	float: left;
+	width: 140px;
+	text-align: center;
 }
 
-#show-next-startup {
-    top:400px;
-    height: 580px;
-    position: absolute;
-    right: 5px;
-    width: 700px;
-}
-#actions {
-    height: 580px;
-    position: absolute;
-    right: 5px;
-    width: 680px;
-    top: 250px;
-   
-}
-#show-next-startup {
-    height: 580px;
-    position: absolute;
-    right: 5px;
-    width: 280px;
-    top: 2;
-}
-#Acerca {     
+
+
+body.ayuda div#Acerca {     
     background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 0 0 10px 10px;
     box-shadow: 5px 5px 5px #000;
@@ -168,6 +177,24 @@ body{
     height: 20px;
 }
 
+/*#Acerca-tex {     
+    float:center;
+    font-family: 'Free sans';
+    font-size: .9em;
+}
+
+#answer a:link,
+#answer a:visited {
+	color: #273911;
+	font-weight: bold;
+        text-decoration:none
+}
+#Acerca:link,
+#Acerca a:visited {
+	color: #273911;
+        text-decoration:none
+}
+*/
 
 
 
