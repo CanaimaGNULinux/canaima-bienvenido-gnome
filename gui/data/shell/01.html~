@@ -1,4 +1,4 @@
- <body>
+ <body class="ayuda">
     <div style="display: block;" id="welcome">
         <div style="left: 20px; top: 30px; display: block; width: 720px; height: 549px;" id="welcome-screen" class="selected-window">	
 	      <div class="welcome-header">
@@ -8,7 +8,9 @@
                    <div id="answer">
                        <p>Canaima es un Sistema Operativo completo, versátil, novedoso, seguro, eficiente y LIBRE que cuenta con una serie de aplicaciones pensadas para facilitar tu trabajo.</p>
                        <p>Disfruta del siguiente recorrido donde aprenderas mas sobre Canaima , nuestro nuevo entorno de escritorio y nuestras aplicaciones <a href="[doc]/usr/share/canaima/help/gnome/parte_1.xml">Paseo por Canaima</a></p>
-                         <div id="show-next-startup">
+                        <div id="actions">
+        {{ prev_bullet_link }}{{ close_app_button }}{{ next_bullet_link }}
+            <div id="show-next-startup">
                 <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
                 {{ autostart_checkbox }}
             </div> <!-- show-next-time -->

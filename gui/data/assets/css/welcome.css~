@@ -10,17 +10,18 @@
 }
 body.ayuda{
 	
-        background:url("../images/background.png");
+        /*background:url("../images/background.png");*/
+          background: none repeat scroll 0 0 #8cba1c;
         
 }
 body.ayuda div#show-next-startup {
 	position: absolute;
-	bottom: 0;
+	bottom: 5;
 	left: 0;
 	font-family: 'Free sans';
 	font-size: .9em;
-	color: #fff;
-	text-shadow: 1px 1px 2px #595959;
+        left: 410;
+        width: 300px;
 }
 body.ayuda div#welcome {
 	position: absolute;
@@ -103,9 +104,9 @@ body.ayuda div#answer {
    
 }
 .answer-screen {
-   /* box-shadow: 0 10px 10px #000;	*/      
-   background: none repeat scroll 0 0 #fff;
-    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 10px 10px #000;	 
+   background: none repeat scroll 0 0 #E9E5D3;
+    /*border-radius: 6px 6px 6px 6px;*/
     color: #4C4C4C;
     display: block;
     height: 200px;
@@ -117,6 +118,9 @@ body.ayuda div#answer {
     z-index: 2;
     font-family: 'jara';
     font-size:17px;
+    border-style:solid;
+    border-width:7px;
+    border-color:#fff;
 }
 
 /*.answer-screen-acerca {
@@ -161,40 +165,38 @@ body.ayuda div#actions div#close-app {
 
 
 body.ayuda div#Acerca {     
-    background: none repeat scroll 0 0 #FFFFFF;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 5px 5px 5px #000;
+    background: none repeat scroll 0 0 #E9E5D3;
+   border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 10px #000;
     color: #4C4C4C;
     display: block;
     font-family: 'jara';
     font-size: 17px;
-    left: 20px;
+    left: 550px;
     padding: 10px 0 20px;
     position: absolute;
-    top: 317px;
+    top: 320px;
     z-index: 2;
-    width: 150px;
+    width: 180px;
     height: 20px;
+    text-align:center;
+    
 }
 
-/*#Acerca-tex {     
+body.ayuda div#Acerca div#Acerca-tex {     
     float:center;
     font-family: 'Free sans';
     font-size: .9em;
 }
 
-#answer a:link,
-#answer a:visited {
+a:link,
+a:visited {
 	color: #273911;
 	font-weight: bold;
         text-decoration:none
 }
-#Acerca:link,
-#Acerca a:visited {
-	color: #273911;
-        text-decoration:none
-}
-*/
+
+
 
 
 
