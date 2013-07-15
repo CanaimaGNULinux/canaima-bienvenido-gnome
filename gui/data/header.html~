@@ -1,7 +1,6 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Sencha Animator Sample Embed</title>
         <link rel="stylesheet" type="text/css" href="data/assets/css/welcome.css" />
         <style type="text/css">
         .animation-size {

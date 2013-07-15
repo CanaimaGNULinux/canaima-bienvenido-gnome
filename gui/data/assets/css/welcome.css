@@ -10,14 +10,14 @@
 }
 body.ayuda{
 	
-        background:url("../images/background.jpg");
+        background:url("../images/fondo.png");
           /*background: none repeat scroll 0 0 #8cba1c;*/
         
 }
 body.ayuda div#show-next-startup {
 	position: absolute;
 	bottom: 5;
-	left: 0;
+	top: 10;
 	font-family: 'Free sans';
 	font-size: .9em;
         left: 410;
@@ -106,21 +106,21 @@ body.ayuda div#answer {
 .answer-screen {
     box-shadow: 0 5px 5px #000;	 
    background: none repeat scroll 0 0 #E9E5D3;
-    /*border-radius: 6px 6px 6px 6px;*/
+    border-radius: 6px 6px 6px 6px;
     color: #4C4C4C;
     display: block;
-    height: 200px;
+    height: 260px;
     left: 20px;
     padding: 100px 0 20px;
     position: absolute;
-    top: 120px;
-    width: 685px;
+    top: 110px;
+    width: 690px;
     z-index: 2;
     font-family: 'jara';
     font-size:17px;
-    border-style:solid;
+   /* border-style:solid;
     border-width:7px;
-    border-color:#fff;
+    border-color:#fff;*/
 }
 
 /*.answer-screen-acerca {
@@ -138,7 +138,7 @@ body.ayuda div#actions {
 	width: 280px;
 	height: 70px;
 	position: absolute;
-	bottom: 0;
+	top: 330;
 	left: 10px;
 }
 body.ayuda div#actions div.action {
@@ -162,10 +162,8 @@ body.ayuda div#actions div#close-app {
 	text-align: center;
 }
 
-
-
 body.ayuda div#Acerca {     
-    background: none repeat scroll 0 0 #E9E5D3;
+  background: none repeat scroll 0 0 #E9E5D3;
    border-radius: 0px 0px 10px 10px;
     box-shadow:  0 5px 5px #000;
     color: #4C4C4C;
@@ -175,10 +173,10 @@ body.ayuda div#Acerca {
     left: 20px;
     padding: 10px 0 20px;
     position: absolute;
-    top: 320px;
+    top: 390px;
     z-index: 2;
-    width: 180px;
-    height: 20px;
+    width: 160px;
+    height: 7px;
     text-align:center;
     
 }
@@ -189,13 +187,34 @@ body.ayuda div#Acerca div#Acerca-tex {
     font-size: .9em;
 }
 
-a:link,
-a:visited {
-	color: #273911;
-	font-weight: bold;
-        text-decoration:none
+
+.tabla a:link,
+.tabla a:visited {
+	font-size: 14px;
+	text-decoration: none;
+        color: #273911;
 }
 
+body.ayuda div#Acerca a:link,
+body.ayuda div#Acerca a:visited {
+	font-size: 16px;
+	text-decoration: none;
+        color: #273911;
+}
+
+.titulos a:link,
+.titulos a:visited {
+	font-size: 14px;
+	text-decoration: none;
+        color: #273911;
+}
+
+.titulos td{
+   border-bottom:1px dotted #C0B7B0;
+   border-right:1px dotted #C0B7B0;
+   border-top:1px dotted #C0B7B0;
+   /*background-color: #fff;*/
+}
 
 
 
