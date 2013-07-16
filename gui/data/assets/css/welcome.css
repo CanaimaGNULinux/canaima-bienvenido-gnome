@@ -121,23 +121,22 @@ body.ayuda div#actions div#close-app {
 	text-align: center;
 }
 
-body.ayuda div#Acerca {     
-  background: none repeat scroll 0 0 #E9E5D3;
-   border-radius: 0px 0px 10px 10px;
-    box-shadow:  0 5px 5px #000;
+body.ayuda div#Acerca {
+    background: none repeat scroll 0 0 #E9E5D3;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 5px #000000;
     color: #4C4C4C;
     display: block;
     font-family: 'jara';
     font-size: 17px;
-    left: 20px;
+    height: 5px;
+    left: 520px;
     padding: 10px 0 20px;
     position: absolute;
-    top: 390px;
+    text-align: center;
+    top: 380px;
+    width: 175px;
     z-index: 2;
-    width: 160px;
-    height: 7px;
-    text-align:center;
-    
 }
 
 body.ayuda div#Acerca div#Acerca-tex {     
