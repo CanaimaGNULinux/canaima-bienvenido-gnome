@@ -7,7 +7,7 @@
              <div class="answer-screen" >
                    <div id="answer">
                        <p>Canaima es un Sistema Operativo completo, versátil, novedoso, seguro, eficiente y LIBRE que cuenta con una serie de aplicaciones pensadas para facilitar tu trabajo.</p>
-                       <p>Disfruta del siguiente recorrido donde aprenderas más sobre Canaima , nuestro nuevo entorno de escritorio y nuestras aplicaciones <a href="[doc]/usr/share/canaima/help/gnome/parte_1.xml">Canaima 4.0</a></p>
+                       <p>Disfruta del siguiente recorrido donde aprenderas más sobre <a href="[doc]/usr/share/canaima/help/gnome/parte_1.xml"> CANAIMA </a>  , nuestro nuevo entorno de escritorio y nuestras aplicaciones</p>
 <table width="100%" height="110px" align="center" class="tabla">
    <tr align="center">
         <td valign="top" width="20%" class="titulo"  >
@@ -43,7 +43,7 @@
        <td valign="top" width="25%" style="border-left:1px dotted #C0B7B0;">
 	<a href='javascript:changeTitle("portal")'>
 		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage image_trans" src="/usr/share/icons/Gnamon/apps/32/distributor-logo.png" />
-		<div>Portal Principal</div></a>
+		<div class="imagenes-titulo">Portal Principal</div></a>
       </td>
     <td valign="top" width="25%">
 	<a href='javascript:changeTitle("wiki")'>
@@ -62,29 +62,23 @@
 <br/>
 </div><!--documentacion -->
 <div id="oficina" style="display:none;" class="capa_trans" >
-  <table class="titulo"> 
+  <table class="titulos"> 
   <tr align="center">
      <td valign="top" width="25%">
-	<a href='javascript:changeTitle("libreoffice")'>
-		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" >
-		<div>Suite Ofimatica LibreOffice</div>
-	</a>
-     </td>
-     <td valign="top" width="25%">
-	<a href='javascript:changeTitle("libreoffice-writer")'>
-		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/Gnamon/apps/32/ooo-writer.png" />
+	<a href="[exec]libreoffice --writer">
+		<img src="/usr/share/icons/Gnamon/apps/32/ooo-writer.png"/></a>
 		<div>Procesador de Texto LibreOffice</div>
 	</a>
      </td>
      <td valign="top" width="25%">
-	<a href='javascript:changeTitle("libreoffice-calc")'>
-		<img  onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/Gnamon/apps/32/ooo-calc.png"/>
+	<a href="[exec]libreoffice --calc">
+		<img src="/usr/share/icons/Gnamon/apps/32/ooo-calc.png"/>
 		<div>Hoja de Cálculo LibreOffice</div>
 	</a>
      </td>
      <td valign="top" width="25%">
-	<a href='javascript:changeTitle("libreoffice-impress")'>
-		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/Gnamon/apps/32/ooo-impress.png"/>
+	<a href="[exec]libreoffice --impress">
+		<img  src="/usr/share/icons/Gnamon/apps/32/ooo-impress.png"/>
 		<div>Editor de Presentaciones LibreOffice</div>
 	</a>
      </td>
@@ -92,47 +86,47 @@
 </table>
 </div> <!--oficina -->
 <div id="internet" style="display:none;" class="capa_trans">
-  <table class="titulo"> 
+  <table class="titulos"> 
   <tr align="center">
      <td valign="top" width="25%">
-	<a href='javascript:changeTitle("cunaguaro")'>
+	<a href="[exec]cunaguaro">
 		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/Gnamon/apps/32/cunaguaro.png"/>
 		<div>Navegador Web Cunaguaro</div>
 	</a>
      </td>
      <td valign="top" width="25%">
-	<a href='javascript:changeTitle("guacharo")'>
+	<a href="[exec]guacharo">
 		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/Gnamon/apps/32/guacharo.png"/>
 		<div>Cliente de Correo Guácharo</div>
 	</a>
      </td>
      <td valign="top" width="25%">
-	<a href='javascript:changeTitle("pidgin")'>
-		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage"src="/usr/share/icons/Gnamon/apps/32/pidgin.png"/>
-		<div>Cliente de Mensajería Pidgin</div>
+	<a href="[exec]empathy">
+		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage"src="/usr/share/icons/Gnamon/apps/32/empathy.png"/>
+		<div>Cliente de Mensajería Empathy</div>
 	</a>
      </td>
   </tr>
 </table>
 </div> <!--internet -->
 <div id="graficos" style="display:none;" class="capa_trans" >
-   <table class="titulo"> 
+   <table class="titulos"> 
    <tr align="center">
      <td valign="top" width="25%">
-	<a href='javascript:changeTitle("shotwell")'>
-		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/Gnamon/apps/32/shotwell.png" />
+	<a href="[exec]shotwell">
+		<img src="/usr/share/icons/Gnamon/apps/32/shotwell.png" />
 		<div>Gestor de Fotografías Shotwell</div>
 	</a>
      </td>
      <td valign="top" width="25%">
-	<a href='javascript:changeTitle("simple-scan")'>
-		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/Gnamon/apps/32/scanner.png" />
+	<a href="[exec]simple-scan">
+		<img src="/usr/share/icons/Gnamon/apps/32/scanner.png" />
 		<div>Reconocimiento de Imágenes Simple Scan</div>
 	</a>
      </td>
      <td valign="top" width="25%">
-	<a href='javascript:changeTitle("libreoffice-draw")'>
-		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/Gnamon/apps/32/ooo-impress.png" />
+	<a href="[exec]libreoffice --draw">
+		<img onmouseout="stoprattle(this)" src="/usr/share/icons/Gnamon/apps/32/ooo-impress.png" />
 		<div>Dibujos y Diagramas de LibreOffice</div>
 	</a>
      </td>
@@ -140,24 +134,24 @@
    </table> 
 </div><!--grafico -->
 <div id="multimedia" style="display:none;" class="capa_trans">
-<table class="titulo"> 
+<table class="titulos"> 
   <tr align="center">
      <td valign="top" width="25%">
-	<a href='javascript:changeTitle("exaile")'>
-		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/Gnamon/apps/32/exaile.png" />
-		<div>Reproductor de Música Exaile</div>
+	<a href="[exec]rhythmbox">
+		<img src="/usr/share/icons/Gnamon/apps/32/rhythmbox.png" />
+		<div>Reproductor de Música Rhythmbox</div>
 	</a>
      </td>
      <td valign="top" width="25%">
-	<a href='javascript:changeTitle("totem")'>
-		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/canaima-iconos/apps/48/totem.png" />
+	<a href="[exec]totem">
+		<img src="/usr/share/icons/Gnamon/apps/32/totem.png" />
 		<div>Reproductor de Videos Totem</div>
 	</a>
      </td>
      
      <td valign="top" width="25%">
-	<a href='javascript:changeTitle("brasero")'>
-		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/Gnamon/apps/32/brasero.png" />
+	<a href="[exec]brasero">
+		<img  src="/usr/share/icons/Gnamon/apps/32/brasero.png" />
 		<div>Grabador de Discos Brasero</div>
 	</a>
      </td>
@@ -165,8 +159,11 @@
 </table>
 </div> <!--multimedia -->
 </div> 
-                     <div id="actions">
-        <div class="action bullet-navigation inactive" id="prev-bullet"><span>Anterior</span></div><div class="action" id="close-app"><a href="#" onclick="finalize();">CERRAR</a></div><div class="action bullet-navigation" id="next-bullet"><a href="[bullet]?1">Siguiente</a></div>
+          
+
+ <div id="actions">
+        <div class="action bullet-navigation inactive" id="prev-bullet"><span>{{ prev_bullet_link }}</span></div><div class="action" id="close-app">{{ close_app_button }}</div><div class="action bullet-navigation" id="next-bullet"> {{ next_bullet_link }}</div>
+ 
             <div id="show-next-startup">
                 <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
                 <input type="checkbox" checked="checked" id="chkAutoStart" />

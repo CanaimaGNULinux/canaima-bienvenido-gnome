@@ -81,8 +81,8 @@
   <table class="titulos"> 
   <tr align="center">
      <td valign="top" width="25%">
-	<a href='javascript:changeTitle("libreoffice-writer")'>
-		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage" src="/usr/share/icons/Gnamon/apps/32/ooo-writer.png" />
+	<a href="[exec]libreoffice --writer">
+		<img src="/usr/share/icons/Gnamon/apps/32/ooo-writer.png"/></a>
 		<div>Procesador de Texto LibreOffice</div>
 	</a>
      </td>
@@ -126,7 +126,7 @@
 </table>
 </div> <!--internet -->
 <div id="graficos" style="display:none;" class="capa_trans" >
-   <table class="titulo"> 
+   <table class="titulos"> 
    <tr align="center">
      <td valign="top" width="25%">
 	<a href='javascript:changeTitle("shotwell")'>

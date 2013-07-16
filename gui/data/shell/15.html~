@@ -1,21 +1,26 @@
-    <div id="bullet-content">
-        <div id="question">
-            <h1>¿Cómo agrego una impresora?</h1>
-        </div> <!-- question -->
-        <div id="actions">
-        {{ prev_bullet_link }}{{ close_app_button }}{{ next_bullet_link }}
+ <body class="ayuda">
+    <div style="display: block;" id="welcome">
+        <div style="left: 20px; top: 30px; display: block; width: 720px; height: 549px;" id="welcome-screen" class="selected-window">	
+	      <div class="welcome-header">
+                  <h2>Buscador Canaima</h2>
+             </div><!-- welcome-header -->
+             <div class="answer-screen" >
+                   <div id="answer">
+                 <p>En la parte superior derecha de la <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Vista-de-actividades">vista de actividades</a> encuentro el <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Vista-de-actividades#sec:Buscador-canaima">Buscador Huayra </a>. Al poner las primeras letras de lo que estoy buscando irán apareciendo los resultados, ya sean Aplicaciones, Contactos o Documentos. También puedo buscar en Google, Wikipedia  usando los botones de abajo.</p>
+                  </div> 
+                 <div id="actions">
+        <div class="action bullet-navigation inactive" id="prev-bullet"><span>{{ prev_bullet_link }}</span></div><div class="action" id="close-app">{{ close_app_button }}</div><div class="action bullet-navigation" id="next-bullet"> {{ next_bullet_link }}</div>
             <div id="show-next-startup">
                 <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
-                {{ autostart_checkbox }}
+                <input type="checkbox" checked="checked" id="chkAutoStart" />
             </div> <!-- show-next-time -->
         </div> <!-- actions -->
-        <div id="animation" class="animation-{{ animation_class }}">
-        {{ animation_file }}
-        </div> <!-- animation -->
-        <div id="answer">
-            <p>En <a href="[exec]gnome-control-center"> Configuración del sistema</a> (<a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Barra-superior#sec:menu-de-usuario"> Menú de usuario </a> arriba a la derecha), bajo el título Hardware hago clic en la opción <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Impresoras">"Impresoras"</a> y ahí "Agregar una impresora nueva".</p>
-            <div id="vaca-volve">
-                <a href="#"><span>Vaca Volvé!</span></a>
-            </div>
-        </div> <!-- answer -->
-    </div> <!-- bullet-content -->
+                    <div id="Acerca">
+                          <div id="Acerca-text">  
+                              <a href="[bullet]?22">Acerca de canaima</a>
+                          </div><!-- Acerca-text -->
+                    </div> <!-- Acerca -->  
+             </div> <!-- answer-screen -->
+            </div> <!-- welcome-screen  -->
+    </div> <!-- welcome -->
+</body>

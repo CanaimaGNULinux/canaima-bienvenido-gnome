@@ -1,6 +1,6 @@
     <div id="bullet-content">
         <div id="question">
-            <h1>¿Cómo cambio mi clave?</h1>
+            <h1>¿Cómo cambio la fecha y hora?</h1>
         </div> <!-- question -->
         <div id="actions">
         {{ prev_bullet_link }}{{ close_app_button }}{{ next_bullet_link }}
@@ -13,7 +13,7 @@
         {{ animation_file }}
         </div> <!-- animation -->
         <div id="answer">
-            <p>En <a href="[exec]gnome-control-center">Configuración del sistema</a> (en <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Barra-superior#sec:menu-de-usuario"> Menú de usuario</a>), Cuenta de Usuario. Primero desbloqueo con mi <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Cuentas-de-usuario">contraseña</a> (-alumno- por defecto) y luego hago clic en los círculos al lado de “Contraseña”.</p>
+            <p>Hago clic en la <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Barra-superior">barra superior</a> donde aparece la fecha y la hora, luego en "Ajustes de fecha y hora". También puedo modificar la fecha y la hora en <a href="[exec]gnome-control-center"> Configuración del sistema</a> / Fecha y Hora (en el <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Barra-superior#sec:menu-de-usuario"> Menú de usuario </a>)</p>
             <div id="vaca-volve">
                 <a href="#"><span>Vaca Volvé!</span></a>
             </div>

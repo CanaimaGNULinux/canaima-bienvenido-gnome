@@ -1,15 +1,25 @@
-<div id="bullet-content">
-        <div id="question">
-            <h1>¿Dónde encuentro mis archivos?</h1>
-        </div> <!-- question -->
-        <div id="answer">
-            <p>En <a href="[exec]nautilus">Carpeta Personal</a>  están los archivos de <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#part:usuarios">MI usuario</a> organizadas por categoría ("Imágenes", "Descargas", etc.) con su ícono. También puedo acceder desde el <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:menucanaima">Menú canaima</a> desde <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Archivos-y-carpetas#sec:Marcadores-de-carpeta">los marcadores </a> de carpetas que más usás.</p>
-            <div id="actions">
-        {{ prev_bullet_link }}{{ close_app_button }}{{ next_bullet_link }}
+<body class="ayuda">
+    <div style="display: block;" id="welcome">
+        <div style="left: 20px; top: 30px; display: block; width: 720px; height: 549px;" id="welcome-screen" class="selected-window">	
+	      <div class="welcome-header">
+                  <h1>¿Dónde encuentro mis archivos?</h1>
+             </div><!-- welcome-header -->
+             <div class="answer-screen" >
+                   <div id="answer">
+                    <p>En <a href="[exec]nautilus">Carpeta Personal</a>  están los archivos de tu usuario</a> organizadas por categoría ("Imágenes", "Descargas", etc.) con su ícono. También puedo acceder desde el <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:menucanaima">Menú canaima</a> desde <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Archivos-y-carpetas#sec:Marcadores-de-carpeta">los marcadores </a> de carpetas que más usas.</p>
+                 <div id="actions">
+        <div class="action bullet-navigation inactive" id="prev-bullet"><span>{{ prev_bullet_link }}</span></div><div class="action" id="close-app">{{ close_app_button }}</div><div class="action bullet-navigation" id="next-bullet"> {{ next_bullet_link }}</div>
             <div id="show-next-startup">
                 <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
-                {{ autostart_checkbox }}
+                <input type="checkbox" checked="checked" id="chkAutoStart" />
             </div> <!-- show-next-time -->
         </div> <!-- actions -->
-        </div> <!-- answer -->
-    </div> <!-- bullet-content --> 
+                    <div id="Acerca">
+                          <div id="Acerca-text">  
+                              <a href="[bullet]?22">Acerca de canaima</a>
+                          </div><!-- Acerca-text -->
+                    </div> <!-- Acerca -->  
+             </div> <!-- answer-screen -->
+            </div> <!-- welcome-screen  -->
+    </div> <!-- welcome -->
+</body>

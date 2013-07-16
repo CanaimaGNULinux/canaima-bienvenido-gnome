@@ -1,21 +1,26 @@
-    <div id="bullet-content">
-        <div id="question">
-            <h1>¿Cómo recupero archivos borrados?</h1>
-        </div> <!-- question -->
-        <div id="actions">
-        {{ prev_bullet_link }}{{ close_app_button }}{{ next_bullet_link }}
+    <body class="ayuda">
+    <div style="display: block;" id="welcome">
+        <div style="left: 20px; top: 30px; display: block; width: 720px; height: 549px;" id="welcome-screen" class="selected-window">	
+	      <div class="welcome-header">
+                  <h2>Con F3 y Ctrl + T veo mejor mis archivos</h2>
+             </div><!-- welcome-header -->
+             <div class="answer-screen" >
+                   <div id="answer">
+                     <p>Cuando este viendo <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Archivos-y-carpetas#sec:Examinar-archivos-y">mis archivos y carpetas</a>, puedo usar Ctrl + T para abrir dentro de una misma ventana diferentes solapas, igual que en los navegadores de Internet. También puedo dividir la ventana en dos con F3.</p>
+                  </div> 
+                 <div id="actions">
+        <div class="action bullet-navigation inactive" id="prev-bullet"><span>{{ prev_bullet_link }}</span></div><div class="action" id="close-app">{{ close_app_button }}</div><div class="action bullet-navigation" id="next-bullet"> {{ next_bullet_link }}</div>
             <div id="show-next-startup">
                 <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
-                {{ autostart_checkbox }}
+                <input type="checkbox" checked="checked" id="chkAutoStart" />
             </div> <!-- show-next-time -->
         </div> <!-- actions -->
-        <div id="animation" class="animation-{{ animation_class }}">
-        {{ animation_file }}
-        </div> <!-- animation -->
-        <div id="answer">
-            <p>En <a href="[exec]nautilus trash://">la papelera</a> selecciono el archivo borrado y hago clic en <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Archivos-y-carpetas#sec:Recuperar-un-archivo">"Restaurar los elementos seleccionados"</a>. De esa manera, el archivo irá a su carpeta original.</p>
-            <div id="vaca-volve">
-                <a href="#"><span>Vaca Volvé!</span></a>
-            </div>
-        </div> <!-- answer -->
-    </div> <!-- bullet-content -->
+                    <div id="Acerca">
+                          <div id="Acerca-text">  
+                              <a href="[bullet]?22">Acerca de canaima</a>
+                          </div><!-- Acerca-text -->
+                    </div> <!-- Acerca -->  
+             </div> <!-- answer-screen -->
+            </div> <!-- welcome-screen  -->
+    </div> <!-- welcome -->
+</body>
