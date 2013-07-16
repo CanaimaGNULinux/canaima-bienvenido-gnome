@@ -40,7 +40,7 @@
 <div id="documentacion" style="display:none;" class="capa_trans">
   <table class="titulos" >
     <tr align="center">
-       <td valign="top" width="25%">
+       <td valign="top" width="25%" style="border-left:1px dotted #C0B7B0;">
 	<a href='javascript:changeTitle("portal")'>
 		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage image_trans" src="/usr/share/icons/Gnamon/apps/32/distributor-logo.png" />
 		<div>Portal Principal</div></a>

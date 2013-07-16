@@ -9,77 +9,41 @@
   src: local('jara'), url(../font/jara.ttf) format('truetype');
 }
 body.ayuda{
-	
-        background:url("../images/fondo.png");
-          /*background: none repeat scroll 0 0 #8cba1c;*/
-        
+   background:url("../images/fondo.png");       
 }
+
 body.ayuda div#show-next-startup {
-	position: absolute;
-	bottom: 5;
-	top: 10;
-	font-family: 'Free sans';
-	font-size: .9em;
-        left: 410;
-        width: 300px;
+   position: absolute;
+   bottom: 5;
+   top: 10;
+   font-family: 'Free sans';
+   font-size: .8em;
+   left: 410;
+   width: 300px;
 }
+
 body.ayuda div#welcome {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1000;
-	font-weight:400;
-	overflow:hidden;
-	display:none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1000;
+   font-weight:400;
+   overflow:hidden;
+   display:none;
 }
 
-
-/*-body.ayuda div#welcome-screen {
-	width: 660px;
-	left: 0;
-	top: 0;
-       moz-border-radius: 8px;
-		-webkit-border-radius: 8px;
-		-khtml-border-radius: 8px;
-	border-radius: 8px;
-		-moz-box-shadow: 0 0 10px #000;
-  		-webkit-box-shadow: 0 0 10px #000;
-	box-shadow: 0 0 10px #000;	
-	position: absolute;
-	color: #4c4c4c;
-	display: none;
-	padding: 30px 0 20px;
-	z-index:2;
-	background: url("../img/folder/chrome.png") repeat-x scroll 0 0 #fff;*/
-}
 body.ayuda div#welcome-screen .control{
-	margin-bottom: 6px;
-        margin-top: -25px;
+   margin-bottom: 6px;
+   margin-top: -25px;
 }
 body.ayuda div#welcome-screen .welcome-header{
-	background: url("../images/circle-of-friends.png") 20px 20px no-repeat;
-	height: 108px;
-        padding: 21px 100px 0 110px;
-        /*border-bottom:1px solid #d5d5d5;*/
+   background: url("../images/circle-of-friends.png") 20px 20px no-repeat;
+   height: 108px;
+   padding: 21px 100px 0 110px;
 }
 	 
-      
-/*#welcome-screen .selected-window {
-	left: 20px; 
-        top: 30px; 
-        display: block; 
-        width: 100%;
-	height: 100%;
-}
-#welcome-screen .welcome-select{
-	border-top:1px solid #90be1d;
-	padding:15px;
-}
-#welcome-screen .welcome-select select{
-	margin-left:10px;
-}*/
 body.ayuda div#welcome-screen h1 {
 	font-size: 28px;
         color:#273911;;
@@ -90,11 +54,6 @@ body.ayuda div#welcome-screen h1 {
         font-weight: bold;
 }
 
-/*#welcome-screen h2 {
-	font-size: 16px;
-	font-weight:500;
-	margin-top: 5px;
-}*/
 body.ayuda div#answer {
     height: 580px;
     position: absolute;
@@ -105,7 +64,7 @@ body.ayuda div#answer {
 }
 .answer-screen {
     box-shadow: 0 5px 5px #000;	 
-   background: none repeat scroll 0 0 #E9E5D3;
+   background: none repeat scroll 0 0 #fff;
     border-radius: 6px 6px 6px 6px;
     color: #4C4C4C;
     display: block;
@@ -114,7 +73,7 @@ body.ayuda div#answer {
     padding: 100px 0 20px;
     position: absolute;
     top: 110px;
-    width: 690px;
+    width: 710px;
     z-index: 2;
     font-family: 'jara';
     font-size:17px;
@@ -200,20 +159,37 @@ body.ayuda div#Acerca a:visited {
 	font-size: 16px;
 	text-decoration: none;
         color: #273911;
+        font-weight: bold;
 }
 
-.titulos a:link,
-.titulos a:visited {
+body.ayuda div#answer a:link,
+body.ayuda div#answer a:visited {
 	font-size: 14px;
 	text-decoration: none;
         color: #273911;
+        font-weight: bold;
+}
+
+body.ayuda div#actions a:link,
+body.ayuda div#actions a:visited 
+{
+	font-size: 13px;
+	text-decoration: none;
+        color: #273911;
+        font-weight: bold;
+}
+body.ayuda div#actions a:hover 
+{
+        font-size:20; 
+        font-weight:bold; 
+        color: #acd148;
 }
 
 .titulos td{
    border-bottom:1px dotted #C0B7B0;
    border-right:1px dotted #C0B7B0;
    border-top:1px dotted #C0B7B0;
-   /*background-color: #fff;*/
+   background-color:  #E9E5D3;
 }
 
 
