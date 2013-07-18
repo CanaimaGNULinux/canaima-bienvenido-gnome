@@ -1,7 +1,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <script type="text/javascript" src="data/assets/js/javascrip.js"></script>
         <link rel="stylesheet" type="text/css" href="data/assets/css/welcome.css" />
+        <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
         <style type="text/css">
         .animation-size {
             /* Note that the width and height should match the dimensions of your animation to display correctly */
@@ -13,10 +15,40 @@
         }
         </style>
     </head>
-<body>
-    <iframe class="animation-size" src="index.html"></iframe>
-</body>
+<body class="ayuda">
+    <div style="display: block;" id="welcome">
+        <div style="left: 20px; top: 30px; display: block; width: 720px; height: 549px;" id="welcome-screen" class="selected-window">	
+	      <div class="welcome-header">
+                  <h1>Aplicaciones</h1>
+             </div><!-- welcome-header -->
+             <div class="answer-screen" >
+                   <div id="answer">
+                      <p>En el <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:menucanaima">Menú de Canaima</a>  puedes encontrar todas las aplicaciones por categoria instaladas en el sistema. Tambien puedes usar el <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Vista-de-actividades#sec:Buscador-Canaima">Buscador</a> y colocar el nombre de la aplicacion para encontrarla mas rapido.</p> 
 
+<p>Si deseas instalar cualquier programa puedes dirigir a <a href="[exec]software-center">Centro de software</a> instalas todos los programas en sus versiones oficiales y libres de manera rapida y fácil</p>
+                             <div id="ballWrapper" style="left: 569px; top: 150px;">
+				  <div id="ball"></div>
+			         <div id="ballShadow"></div>			
+			      </div>
+                           	
+                  </div> 
+                  
+                 <div id="actions">
+        <div class="action bullet-navigation inactive" id="prev-bullet"><span><div class="action bullet-navigation" id="prev-bullet"><a href="[bullet]?0">Anterior</a></div></span></div><div class="action" id="close-app"><div class="action" id="close-app"><a href="#" onclick="finalize();">CERRAR</a></div></div><div class="action bullet-navigation" id="next-bullet"> <div class="action bullet-navigation" id="next-bullet"><a href="[bullet]?2">Siguiente</a></div></div>
+            <div id="show-next-startup">
+                <label for="chkAutoStart">Mostrar en el siguiente inicio:</label>
+                <input type="checkbox" checked="checked" id="chkAutoStart" />
+            </div> <!-- show-next-time -->
+        </div> <!-- actions -->
+                    <div id="Acerca">
+                          <div id="Acerca-text">  
+                              <a href="[bullet]?22">Acerca de canaima</a>
+                          </div><!-- Acerca-text -->
+                    </div> <!-- Acerca -->  
+             </div> <!-- answer-screen -->
+            </div> <!-- welcome-screen  -->
+    </div> <!-- welcome -->
+</body>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -37,4 +69,5 @@ $(document).ready(function(){
 });
 </script>
 </html>
+
 
