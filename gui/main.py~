@@ -122,6 +122,7 @@ class BulletsBrowser(webkit.WebView):
 
 
         bullet_content = open(self.bullets_dir + str(self.bullets_list[bullet]['file']), 'r').read()
+	print bullet_content
         
         bullet_content = bullet_content.replace('{{ prev_bullet_link }}',
                 self.__build_prev_bullet_link(bullet))
@@ -152,7 +153,6 @@ class BulletsBrowser(webkit.WebView):
 
         self.load_html_string(content, base_uri='file://' + self.app_dir)
 	
-	print content
 
     def __build_prev_bullet_link(self, current_bullet):
         """
@@ -250,8 +250,8 @@ def build_app_window(start_page):
         Win.set_icon_from_file(Path + "vaca-icono-48x48.png")
     Win.add(sw)
     Win.set_resizable(False)
-    bullet_browser.set_size_request(740, 525)
-    Win.set_default_size(740, 525)
+    bullet_browser.set_size_request(740, 535)
+    Win.set_default_size(740, 535)
     Win.set_title("Primeros pasos en Canaima")
     Win.set_position(gtk.WIN_POS_CENTER)
     #Win.set_deletable(True)

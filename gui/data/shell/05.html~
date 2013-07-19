@@ -6,10 +6,14 @@
              </div><!-- welcome-header -->
              <div class="answer-screen" >
                    <div id="answer">
-                     <p> <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#part:Internet-y-conectividad">conexiones</a> en la <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Barra-superior">barra superior</a> a la derecha y elije la red (WiFi o cableada) La primera vez que te conectes tienes que ingresar la contraseña de root.</p>
+                     <p> <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#part:Internet-y-conectividad">Conexiones</a> en la <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Barra-superior">barra superior</a> a la derecha y elije la red (WiFi o cableada) La primera vez que te conectes tienes que ingresar la contraseña de root.</p>
 
-            <p>Una vez que cuentes con Internet puedes navergar. Canaima tiene su propio navegador llamado <a href="[exec]cunaguaro">Cunaguaro</a> es un derivado de Iceweasel que es el navegador web de Debian GNU/LINUX, la distribución en que se basa Canaima</p> 
-                  </div> 
+            <p>Una vez que cuentes con Internet puedes navergar. Canaima tiene su propio navegador llamado <a href="[exec]cunaguaro">Cunaguaro</a> es un derivado de Iceweasel</p> 
+                  <div id="ballWrapper" style="left: 569px; top: 150px;">
+				  <div id="ball"></div>
+			         <div id="ballShadow"></div>			
+			   </div> <!-- ballWrapper -->	
+                  </div> <!-- answer -->	 
                  <div id="actions">
         <div class="action bullet-navigation inactive" id="prev-bullet"><span>{{ prev_bullet_link }}</span></div><div class="action" id="close-app">{{ close_app_button }}</div><div class="action bullet-navigation" id="next-bullet"> {{ next_bullet_link }}</div>
             <div id="show-next-startup">

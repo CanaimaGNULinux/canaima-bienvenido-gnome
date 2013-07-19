@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+
+
+
+bullets_list = [
+    {"file": "01.html", "title": "¡Bienvenido a Canaima 4.0!"},
+    {"file": "02.html", "title": "Aplicaciones"},
+    {"file": "03.html", "title": "¿Cómo veo mis archivos de sonido y video ?"},
+    {"file": "04.html", "title": "¿Lo que hacías con MS Office lo haces con Libre Office?"},
+    {"file": "05.html", "title": "¿Cómo me conecto a Internet?", "variant": "01"},
+    {"file": "06.html", "title": "¿Cómo cambio mis aplicaciones predeterminadas?"},
+    {"file": "07.html", "title": "¿Dónde encuentro mis archivos?"},
+    {"file": "08.html", "title": "¿Cómo abro un pendrive?"},
+    {"file": "09.html", "title": "¿Cómo recupero archivos borrados?"},
+    {"file": "10.html", "title": "¿Cómo cambio la fecha y la hora? "},
+    {"file": "11.html", "title": "¿Sabías que Canaima no tiene virus?"},
+    {"file": "12.html", "title": "¿Cuánta batería me queda?"},
+    {"file": "13.html", "title": "¿'Software libre' es lo mismo que 'software gratuito'?"},
+    {"file": "14.html", "title": "Con F3 y Ctrl + T veo mejor mis archivos"},
+    {"file": "15.html", "title": "Buscador Canaima"},
+    {"file": "16.html", "title": "¿Cómo comprimo archivos?"},
+    {"file": "17.html", "title": "Acerca Canaima"},
+   
+    
+]

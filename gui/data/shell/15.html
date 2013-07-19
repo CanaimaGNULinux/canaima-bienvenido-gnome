@@ -2,12 +2,17 @@
     <div style="display: block;" id="welcome">
         <div style="left: 20px; top: 30px; display: block; width: 720px; height: 549px;" id="welcome-screen" class="selected-window">	
 	      <div class="welcome-header">
-                  <h2>Buscador Canaima</h2>
+                  <h1>Buscador Canaima</h1>
              </div><!-- welcome-header -->
              <div class="answer-screen" >
                    <div id="answer">
+		  </br>
                  <p>En la parte superior derecha de la <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Vista-de-actividades">vista de actividades</a> encuentro el <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Vista-de-actividades#sec:Buscador-canaima">Buscador Canaima </a>. Al poner las primeras letras de lo que estoy buscando irán apareciendo los resultados, ya sean Aplicaciones, Contactos o Documentos. También puedo buscar en Google, Wikipedia  usando los botones de abajo.</p>
-                  </div> 
+                  <div id="ballWrapper" style="left: 569px; top: 150px;">
+				  <div id="ball"></div>
+			         <div id="ballShadow"></div>			
+			   </div> <!-- ballWrapper -->	
+                  </div> <!-- answer --> 
                  <div id="actions">
         <div class="action bullet-navigation inactive" id="prev-bullet"><span>{{ prev_bullet_link }}</span></div><div class="action" id="close-app">{{ close_app_button }}</div><div class="action bullet-navigation" id="next-bullet"> {{ next_bullet_link }}</div>
             <div id="show-next-startup">

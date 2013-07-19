@@ -113,6 +113,7 @@ class BulletsBrowser(webkit.WebView):
         """
         Builds the page
         """
+	print self.bullets_list
         if bullet >= self.bullet_close_number or (bullet == len(self.bullets_list) - 1):  # Activate close button?
             self.bullet_close_active = True
 
@@ -122,6 +123,7 @@ class BulletsBrowser(webkit.WebView):
 
 
         bullet_content = open(self.bullets_dir + str(self.bullets_list[bullet]['file']), 'r').read()
+	
         
         bullet_content = bullet_content.replace('{{ prev_bullet_link }}',
                 self.__build_prev_bullet_link(bullet))
@@ -152,7 +154,6 @@ class BulletsBrowser(webkit.WebView):
 
         self.load_html_string(content, base_uri='file://' + self.app_dir)
 	
-	print content
 
     def __build_prev_bullet_link(self, current_bullet):
         """

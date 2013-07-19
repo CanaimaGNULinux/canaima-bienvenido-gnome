@@ -2,12 +2,16 @@
     <div style="display: block;" id="welcome">
         <div style="left: 20px; top: 30px; display: block; width: 720px; height: 549px;" id="welcome-screen" class="selected-window">	
 	      <div class="welcome-header">
-                  <h2>¿Cómo abro un pendrive?</h2>
+                  <h1>¿Cómo abro un pendrive?</h1>
              </div><!-- welcome-header -->
              <div class="answer-screen" >
                    <div id="answer">
-                      <p>Canaima detecta el <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Discos-y-almacenamiento#sec:pendrive">pendrive</a> automáticamente y muestra un recuadro en la <a href="[doc]/usr/share/huayra/help/gnome/ayuda.xml#chap:Barra-inferior#sec:notificaciones">Barra de notificaciones</a> desde donde puedes abrir el contenido. Expulsalo de forma segura con haciendo clic con el botón derecho en el ícono del pen que está en el escritorio.</p>
-                  </div> 
+                      <p>Canaima detecta el <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Discos-y-almacenamiento#sec:pendrive">pendrive</a> automáticamente y muestra un recuadro en la <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Barra-inferior#sec:notificaciones">Barra de notificaciones</a> desde donde puedes abrir el contenido. Expulsalo de forma segura con haciendo clic con el botón derecho en el ícono del pendrive que está en el escritorio.</p>
+                  <div id="ballWrapper" style="left: 569px; top: 150px;">
+				  <div id="ball"></div>
+			         <div id="ballShadow"></div>			
+			   </div> <!-- ballWrapper -->	
+                  </div> <!-- answer -->
                  <div id="actions">
         <div class="action bullet-navigation inactive" id="prev-bullet"><span>{{ prev_bullet_link }}</span></div><div class="action" id="close-app">{{ close_app_button }}</div><div class="action bullet-navigation" id="next-bullet"> {{ next_bullet_link }}</div>
             <div id="show-next-startup">

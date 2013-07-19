@@ -6,8 +6,11 @@
              </div><!-- welcome-header -->
              <div class="answer-screen" >
                    <div id="answer">
-                    <p>Puedo elegir <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#sec:Abrir-archivos-con">con qué aplicación</a> quiero abrir mi música, videos, etc. en <a href="[exec]gnome-control-center"> Configuración del sistema</a> (en <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Barra-superior#sec:menu-de-usuario"> Menú de usuario </a> arriba a la derecha), Detalles y luego en “Aplicaciones predeterminadas” elijo la opción (Web, Correo, Calendario, Música, Videos, Fotos)</p>
-                </div>
+		    </br>
+                    <p>¿Puedo elegir <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#sec:Abrir-archivos-con">con qué aplicación</a> quiero abrir mi música, videos, etc ?</p>
+
+<p>Si , en  <a href="[exec]gnome-control-center"> Configuración del sistema</a> (en <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Barra-superior#sec:menu-de-usuario"> Menú de usuario </a> arriba a la derecha), Detalles y luego en “Aplicaciones predeterminadas” elijo la opción (Web, Correo, Calendario, Música, Videos, Fotos)</p>
+                
                  <div id="ballWrapper" style="left: 569px; top: 150px;">
 				  <div id="ball"></div>
 			         <div id="ballShadow"></div>			
