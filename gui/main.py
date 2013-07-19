@@ -20,28 +20,10 @@ class Config:
     @staticmethod
     def getDesktopSession():
         """
-        Get the Desktop session.. mate or gnome.
-        """
-
-        if subprocess.Popen(['pidof', 'mate-session'], stdout=subprocess.PIPE).communicate()[0]:
-            return "mate"
-        elif subprocess.Popen(['pidof', 'gnome-session'], stdout=subprocess.PIPE).communicate()[0]:
-            return "shell"
-        elif subprocess.Popen(['pidof', 'gnome-shell'], stdout=subprocess.PIPE).communicate()[0]:
-            return "shell"
-        elif subprocess.Popen(['pidof', 'x-session-manager'], stdout=subprocess.PIPE).communicate()[0]:
-            if os.path.exists("/etc/alternatives/x-session-manager"):
-                session = os.readlink("/etc/alternatives/x-session-manager").split("/")[3]
-                if session == "gnome-session":
-                    return "shell"
-                elif session == "mate-session":
-                    return "mate"
-                else:
-                    return "other"  # Running other desktop..
-            else:
-                return "other"  # dont have alternatives
-        else:
-            return "other"  # not exist x-session-manager process
+        En el caso de canaima , solo usamos gnome con pluguins.
+        """       
+    	return "shell"
+        
 
     @staticmethod
     def load():
@@ -81,15 +63,8 @@ class BulletsBrowser(webkit.WebView):
         app_dir = "/usr/share/huayra-bullets/"
 
     #get Session gnome or mate
-    RunningDesktop = Config.getDesktopSession()
-
-    if RunningDesktop == "shell":
-        from bullets.shell.bullets_list import bullets_list
-    elif RunningDesktop == "mate":
-        from bullets.mate.bullets_list import bullets_list
-    else:
-        from bullets.other.bullets_list import bullets_list
-
+    RunningDesktop = "shell"
+    from bullets.shell.bullets_list import bullets_list
     bullet_close_number = 0
     bullet_close_active = False
     answer_active = False
@@ -135,23 +110,8 @@ class BulletsBrowser(webkit.WebView):
                 self.__build_show_next_startup())
         bullet_content = bullet_content.replace('{{ animation_class }}',
                 self.bullets_list[bullet]['animation']['class'])
-        # animation_content
-        bullet_content = bullet_content.replace('{{ animation_file }}',
-                open(self.app_dir + 'data/assets/animations/' +
-                self.bullets_list[bullet]['animation']['class'] +
-                '.html', 'r').read())
-        bullet_content = bullet_content.replace('{{ animation_duration }}',
-                self.bullets_list[bullet]['animation']['exit_duration'])
-        bullet_content = bullet_content.replace('{{ animation_dir }}',
-                'data/assets/images/' +
-                self.bullets_list[bullet]['animation']['dir'])
-        bullet_content = bullet_content.replace('{{ answer_active }}',
-                str(self.answer_active).lower())
-
         footer_content = open(self.app_dir + 'data/footer.html', 'r').read()
-
         content = header_content + bullet_content + footer_content
-
         self.load_html_string(content, base_uri='file://' + self.app_dir)
 	
 
