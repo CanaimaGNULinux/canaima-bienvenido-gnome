@@ -3,7 +3,7 @@
 # ==============================================================================
 # PAQUETE: canaima-bienvenido-gnome
 # ARCHIVO: Makefile
-# DESCRIPCIÓN: intacion de las carpetas en su directorio.
+# DESCRIPCIÓN: intacion de las carpetas en su directo.
 # COPYRIGHT:
 #  (C) 2013 Sasha Veronica Solano Grosjean <sashasolano@gmail.com>
 # LICENCIA: GPL3
@@ -38,7 +38,7 @@ install:
 
 	@mkdir -p $(DESTDIR)/usr/bin
 	@mkdir -p $(DESTDIR)/usr/share/canaima-bienvenido-gnome
-	@mkdir -p $(DESTDIR)/etc/skel/.config/autostart
+	@mkdir -p $(DESTDIR)/etc/skel/.config/autostart/canaima-bienvenido-gnome
 	@mkdir -p $(DESTDIR)/usr/share/applications
 	@cp -r gui/* $(DESTDIR)/usr/share/canaima-bienvenido-gnome
 	@cp gui.conf $(DESTDIR)/etc/skel/.config/canaima-bienvenido-gnome/

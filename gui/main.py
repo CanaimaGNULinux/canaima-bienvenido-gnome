@@ -7,7 +7,7 @@ import os
 import sys
 import subprocess
 
-sys.path.append('/usr/share/huayra-bullets')
+sys.path.append('/usr/share/canaima-bienvenido-gnome')
 
 class Config:
     """
@@ -15,7 +15,7 @@ class Config:
     """
     AUTOSTART_ENABLED = False
     NO_AUTOSTART_FILE = os.getenv('HOME') + '/.huayra-bullets-noautostart'
-    DEV = os.path.realpath(__file__) != '/usr/bin/huayra-bullets'
+    DEV = os.path.realpath(__file__) != '/usr/bin/canaima-bienvenido-gnome'
 
     @staticmethod
     def getDesktopSession():
@@ -60,7 +60,7 @@ class BulletsBrowser(webkit.WebView):
     if Config.DEV:
         app_dir = os.getcwd() + "/"
     else:
-        app_dir = "/usr/share/huayra-bullets/"
+        app_dir = "/usr/share/canaima-bienvenido-gnome/"
 
     #get Session gnome or mate
     RunningDesktop = "shell"
@@ -205,10 +205,6 @@ def build_app_window(start_page):
     bullet_browser = BulletsBrowser(start_page)
     sw.add(bullet_browser)
     Win = gtk.Window(gtk.WINDOW_TOPLEVEL)
-    if not Config.DEV:
-        # Sólo si el tema de ventanas soporta ícono
-        Path = "/usr/share/huayra-bullets/assets/images/"
-        Win.set_icon_from_file(Path + "vaca-icono-48x48.png")
     Win.add(sw)
     Win.set_resizable(False)
     bullet_browser.set_size_request(740, 535)
