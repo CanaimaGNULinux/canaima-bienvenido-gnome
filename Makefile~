@@ -1,5 +1,31 @@
 # Makefile
 
+SHELL := sh -e
+
+SCRIPTS = debian/postinst debian/postrm debian/preinst
+IMAGES = $(shell ls -1 gui/images/ | grep "\.svg" | sed 's/\.svg//g')
+
+all: test build
+
+test:
+
+	@printf "Comprobando sintaxis de los scripts de shell ["
+	@for SCRIPT in $(SCRIPTS); do \
+		sh -n $${SCRIPT}; \
+		checkbashisms -f -x $${SCRIPT} || true; \
+		printf "."; \
+	done
+	@printf "]\n"
+
+build: clean
+
+	@printf "Generando imágenes desde las fuentes [SVG > PNG] ["
+	@for IMAGE in $(IMAGES); do \
+		convert -background None gui/images/$${IMAGE}.svg gui/images/$${IMAGE}.png; \
+		printf "."; \
+	done;
+	@echo "Nada para compilar!"
+
 install:
 
 	@mkdir -p $(DESTDIR)/usr/bin
