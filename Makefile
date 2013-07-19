@@ -1,4 +1,17 @@
 # Makefile
+#
+# ==============================================================================
+# PAQUETE: canaima-bienvenido-gnome
+# ARCHIVO: Makefile
+# DESCRIPCIÓN: intacion de las carpetas en su directorio.
+# COPYRIGHT:
+#  (C) 2013 Sasha Veronica Solano Grosjean <sashasolano@gmail.com>
+# LICENCIA: GPL3
+# ==============================================================================
+#
+# Este programa es software libre. Puede redistribuirlo y/o modificarlo bajo los
+# términos de la Licencia Pública General de GNU (versión 3).
+
 HELL := sh -e
 
 all: build
