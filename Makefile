@@ -29,15 +29,10 @@ build: clean
 install:
 
 	@mkdir -p $(DESTDIR)/usr/bin
-	@mkdir -p $(DESTDIR)/usr/share/canaima-bienvenido-gnome/images
-	@mkdir -p $(DESTDIR)/etc/skel/Escritorio
+	@mkdir -p $(DESTDIR)/usr/share/canaima-bienvenido-gnome
 	@mkdir -p $(DESTDIR)/etc/skel/.config/autostart
 	@mkdir -p $(DESTDIR)/usr/share/applications
-	@mkdir -p $(DESTDIR)/etc/skel/.config/canaima-bienvenido-gnome
-	@cp -r gui/* $(DESTDIR)/usr/share/canaima-bienvenido-gnome/
-	@rm $(DESTDIR)/usr/share/canaima-bienvenido-gnome/images/*.svg
-	@cp canaima-bienvenido-gnome.desktop $(DESTDIR)/usr/share/applications/
-	@cp canaima-bienvenido-gnome.desktop $(DESTDIR)/etc/skel/Escritorio/
+	@cp -r gui/* $(DESTDIR)/usr/share/canaima-bienvenido-gnome
 	@cp gui.conf $(DESTDIR)/etc/skel/.config/canaima-bienvenido-gnome/
 	@cp canaima-bienvenido-gnome-auto.desktop $(DESTDIR)/etc/skel/.config/autostart/
 	@cp canaima-bienvenido-gnome.sh $(DESTDIR)/usr/bin/canaima-bienvenido-gnome
@@ -46,9 +41,7 @@ uninstall:
 
 	@rm -rf $(DESTDIR)/usr/share/canaima-bienvenido-gnome/
 	@rm -rf $(DESTDIR)/usr/bin/canaima-bienvenido-gnome
-	@rm -f $(DESTDIR)/etc/skel/Escritorio/canaima-bienvenido-gnome.desktop
 	@rm -f $(DESTDIR)/etc/skel/.config/autostart/canaima-bienvenido-gnome-auto.desktop
-	@rm -f $(DESTDIR)/usr/share/applications/canaima-bienvenido-gnome.desktop
 
 clean:
 

@@ -1,3 +1,9 @@
+canaima-bienvenido-gnome (4.0) stable; urgency=low
+
+  * [3260eec] Nueva Version para 4.0.
+
+ -- Sasha Veronica Solano Grosjean <sashasolano@gmail.com>  Thu, 30 Aug 2012 17:29:47 -0430
+
 canaima-bienvenido-gnome (3.1-17) stable; urgency=low
 
   * [2e389ee] Corrigiendo colorización de mensajes.
