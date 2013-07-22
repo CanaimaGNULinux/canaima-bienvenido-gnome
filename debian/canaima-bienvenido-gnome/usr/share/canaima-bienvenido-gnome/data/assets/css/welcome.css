@@ -1,12 +1,12 @@
 /*
  *  Welcome Screen CSS
- *  author: Carlos Espinoza
+ *  author: Sasha Solano
+ *  huayra GNU Linux
  */
 @font-face {
   font-family: 'jara';
   font-style: normal;
   font-weight: 400;
-  src: local('jara'), url(../font/jara.ttf) format('truetype');
 }
 body.ayuda{
    background:url("../images/fondo.png");       

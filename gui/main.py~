@@ -80,17 +80,23 @@ class BulletsBrowser(webkit.WebView):
         app_dir = os.getcwd() + "/"
         print app_dir
     else:
-        app_dir = "/usr/share/canaima-bienvenido-gnome"
+        app_dir = "/usr/share/canaima-bienvenido-gnome/"
 
     #get Session gnome or mate
     RunningDesktop = Config.getDesktopSession()
-    from data.shell.bullets_list import bullets_list
+
+    if RunningDesktop == "shell":
+        from bullets.shell.bullets_list import bullets_list
+    elif RunningDesktop == "mate":
+        from bullets.mate.bullets_list import bullets_list
+    else:
+        from bullets.other.bullets_list import bullets_list
+
     bullet_close_number = 0
     bullet_close_active = False
     answer_active = False
     bullets_list = bullets_list
-    bullets_dir = app_dir + 'data/' + RunningDesktop + '/'
-    print "esto" + bullets_dir
+    bullets_dir = app_dir + 'bullets/' + RunningDesktop + '/'
 
 
     def __init__(self, start_page):
@@ -247,11 +253,10 @@ def exit_app():
 
 
 if __name__ == '__main__':
-   Config.load()
-   if '--autostart' in sys.argv and not Config.AUTOSTART_ENABLED:
-       sys.exit()
-   PATH = "file://" + BulletsBrowser.bullets_dir
-   print  PATH
-   WIN = build_app_window(PATH + "/pages/bullets.html")
-   WIN.show_all()
-   gtk.main()
+    Config.load()
+    if '--autostart' in sys.argv and not Config.AUTOSTART_ENABLED:
+        sys.exit()
+    PATH = "file://" + BulletsBrowser.bullets_dir
+    WIN = build_app_window(PATH + "/pages/bullets.html")
+    WIN.show_all()
+    gtk.main()
