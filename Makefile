@@ -39,6 +39,7 @@ install:
 	@mkdir -p $(DESTDIR)/usr/bin/canaima-bienvenido-gnome
 	@mkdir -p $(DESTDIR)/usr/share/canaima-bienvenido-gnome
 	@mkdir -p $(DESTDIR)/etc/skel/.config/autostart/canaima-bienvenido-gnome
+	@mkdir -p $(DESTDIR)/etc/skel/.config/canaima-bienvenido-gnome
 	@mkdir -p $(DESTDIR)/usr/share/applications
 	@cp -r gui/* $(DESTDIR)/usr/share/canaima-bienvenido-gnome
 	@cp gui.conf $(DESTDIR)/etc/skel/.config/canaima-bienvenido-gnome/

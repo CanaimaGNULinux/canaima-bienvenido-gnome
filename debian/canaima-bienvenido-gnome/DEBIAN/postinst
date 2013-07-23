@@ -45,11 +45,6 @@ case ${1} in
 				chown -R ${USERNAME}:${USERNAME} "/home/${USERNAME}/.config/autostart/"
 				chown -R ${USERNAME}:${USERNAME} "/home/${USERNAME}/.config/canaima-bienvenido-gnome/"
 
-				# Copiamos el lanzador de escritorio al escritorio de cada usuario
-				cp "/etc/skel/Escritorio/canaima-bienvenido-gnome.desktop" "/home/${USERNAME}/Escritorio/"
-				# con permisos apropiados
-				chown ${USERNAME}:${USERNAME} "/home/${USERNAME}/Escritorio/canaima-bienvenido-gnome.desktop"
-                	        chmod +x "/home/${USERNAME}/Escritorio/canaima-bienvenido-gnome.desktop"
 
 				# Copia del archivo de configuración que determina si debe ejecutarse canaima-bienvenido-gnome al inicio o no
 				cp "/etc/skel/.config/canaima-bienvenido-gnome/gui.conf" "/home/${USERNAME}/.config/canaima-bienvenido-gnome/"

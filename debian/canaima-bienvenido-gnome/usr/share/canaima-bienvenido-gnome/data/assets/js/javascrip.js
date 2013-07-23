@@ -220,6 +220,11 @@ function MostrarMultimedia() {
 
 }
 
+function goBack()
+  {
+  window.history.back()
+  }
+
 function doIn(_g) {
 
 	document.getElementById(_g).style.width="70px";

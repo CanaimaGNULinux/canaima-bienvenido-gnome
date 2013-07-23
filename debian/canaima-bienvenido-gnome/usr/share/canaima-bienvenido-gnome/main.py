@@ -14,16 +14,34 @@ class Config:
     Config class
     """
     AUTOSTART_ENABLED = False
-    NO_AUTOSTART_FILE = os.getenv('HOME') + '/.huayra-bullets-noautostart'
+    NO_AUTOSTART_FILE = os.getenv('HOME') + '/.canaima-bienvenido-noautostart'
     DEV = os.path.realpath(__file__) != '/usr/bin/canaima-bienvenido-gnome'
 
     @staticmethod
     def getDesktopSession():
         """
-        En el caso de canaima , solo usamos gnome con pluguins.
-        """       
-    	return "shell"
-        
+        Get the Desktop session.. mate or gnome.
+        """
+
+        if subprocess.Popen(['pidof', 'mate-session'], stdout=subprocess.PIPE).communicate()[0]:
+            return "mate"
+        elif subprocess.Popen(['pidof', 'gnome-session'], stdout=subprocess.PIPE).communicate()[0]:
+            return "shell"
+        elif subprocess.Popen(['pidof', 'gnome-shell'], stdout=subprocess.PIPE).communicate()[0]:
+            return "shell"
+        elif subprocess.Popen(['pidof', 'x-session-manager'], stdout=subprocess.PIPE).communicate()[0]:
+            if os.path.exists("/etc/alternatives/x-session-manager"):
+                session = os.readlink("/etc/alternatives/x-session-manager").split("/")[3]
+                if session == "gnome-session":
+                    return "shell"
+                elif session == "mate-session":
+                    return "mate"
+                else:
+                    return "other"  # Running other desktop..
+            else:
+                return "other"  # dont have alternatives
+        else:
+            return "other"  # not exist x-session-manager process
 
     @staticmethod
     def load():
@@ -58,18 +76,22 @@ class BulletsBrowser(webkit.WebView):
 
     #Check env dev
     if Config.DEV:
+        
         app_dir = os.getcwd() + "/"
+        
     else:
-        app_dir = "/usr/share/canaima-bienvenido-gnome/"
+        app_dir = "/usr/share/canaima-bienvenido-gnome"
 
     #get Session gnome or mate
-    RunningDesktop = "shell"
-    from bullets.shell.bullets_list import bullets_list
+    RunningDesktop = Config.getDesktopSession()
+    from data.shell.bullets_list import bullets_list
     bullet_close_number = 0
     bullet_close_active = False
     answer_active = False
     bullets_list = bullets_list
-    bullets_dir = app_dir  +'data/'+ RunningDesktop + '/'
+    bullets_dir = app_dir + 'data/' + RunningDesktop + '/'
+   
+
 
     def __init__(self, start_page):
         """
@@ -88,18 +110,16 @@ class BulletsBrowser(webkit.WebView):
         """
         Builds the page
         """
-	print self.bullets_list
         if bullet >= self.bullet_close_number or (bullet == len(self.bullets_list) - 1):  # Activate close button?
             self.bullet_close_active = True
-
         header = open(self.app_dir + 'data/header.html', 'r').read()
         header_content = header.replace('{{ variant }}', str(self.bullets_list[bullet]['variant']))
         header_content = header_content.replace('{{ animation }}', self.bullets_list[bullet]['animation']['class'])
 
 
         bullet_content = open(self.bullets_dir + str(self.bullets_list[bullet]['file']), 'r').read()
-	
-        
+        bullet_content = bullet_content.replace('{{ prev_bullet_link }}',
+                self.__build_prev_bullet_link(bullet))
         bullet_content = bullet_content.replace('{{ prev_bullet_link }}',
                 self.__build_prev_bullet_link(bullet))
         bullet_content = bullet_content.replace('{{ next_bullet_link }}',
@@ -112,10 +132,10 @@ class BulletsBrowser(webkit.WebView):
                 self.bullets_list[bullet]['animation']['class'])
         footer_content = open(self.app_dir + 'data/footer.html', 'r').read()
         content = header_content + bullet_content + footer_content
-        self.load_html_string(content, base_uri='file://' + self.app_dir)
-	
+        self.load_html_string(content, base_uri='file://' + self.app_dir)	
 
     def __build_prev_bullet_link(self, current_bullet):
+	
         """
         Prev bullet link
         """
@@ -130,6 +150,8 @@ class BulletsBrowser(webkit.WebView):
         if int(current_bullet) == len(self.bullets_list) - 1:
             return '<div class="action bullet-navigation inactive" id="next-bullet"><span>Siguiente</span></div>'
         return '<div class="action bullet-navigation" id="next-bullet"><a href="[bullet]?%s">Siguiente</a></div>' % str(int(current_bullet) + 1)
+        
+       
 
     def __build_close_button(self, current_bullet):
         """
@@ -225,10 +247,11 @@ def exit_app():
 
 
 if __name__ == '__main__':
-    Config.load()
-    if '--autostart' in sys.argv and not Config.AUTOSTART_ENABLED:
-        sys.exit()
-    PATH = "file://" + BulletsBrowser.bullets_dir
-    WIN = build_app_window(PATH + "/pages/bullets.html")
-    WIN.show_all()
-    gtk.main()
+   Config.load()
+   if '--autostart' in sys.argv and not Config.AUTOSTART_ENABLED:
+       sys.exit()
+   PATH = "file://" + BulletsBrowser.bullets_dir
+   print  PATH
+   WIN = build_app_window(PATH + "/pages/bullets.html")
+   WIN.show_all()
+   gtk.main()
