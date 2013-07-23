@@ -2,17 +2,18 @@
     <div style="display: block;" id="welcome">
         <div style="left: 20px; top: 30px; display: block; width: 720px; height: 549px;" id="welcome-screen" class="selected-window">	
 	      <div class="welcome-header">
-                  <h2>¿Cómo recupero archivos borrados?</h2>
+                  <h3>¿Cómo veo mis archivos de sonido y video ?</h3>
              </div><!-- welcome-header -->
              <div class="answer-screen" >
                    <div id="answer">
-		    </br>
-                      <p>En <a href="[exec]nautilus trash://">la papelera</a> selecciono el archivo borrado y hago clic en <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Archivos-y-carpetas#sec:Recuperar-un-archivo">"Restaurar los elementos seleccionados"</a>. De esa manera, el archivo irá a su carpeta original.</p>
+                     <p> En Canaima con un simple doble clic puedes reproducir archivos de música con <a href="[exec]rhythmbox">Rhythmbox</a> y de Video <a href="[exec]totem">totem</a> 
+
+<p>Además viene con <a href="[exec]brasero ">brasero</a> para grabar cd o dvd de datos  y <a href="[exec]gnome-sound-recorder">gnome-sound-recorder</a> es una sencilla aplicación para grabar y reproducir diferentes archivos de sonido.</p>
                   <div id="ballWrapper" style="left: 569px; top: 150px;">
 				  <div id="ball"></div>
 			         <div id="ballShadow"></div>			
 			   </div> <!-- ballWrapper -->	
-                  </div> <!-- answer -->
+                  </div> <!-- answer -->	
                  <div id="actions">
         <div class="action bullet-navigation inactive" id="prev-bullet"><span>{{ prev_bullet_link }}</span></div><div class="action" id="close-app">{{ close_app_button }}</div><div class="action bullet-navigation" id="next-bullet"> {{ next_bullet_link }}</div>
             <div id="show-next-startup">
@@ -22,7 +23,7 @@
         </div> <!-- actions -->
                     <div id="Acerca">
                           <div id="Acerca-text">  
-                              <a href="[bullet]?16">Acerca de canaima</a>
+                              <a href="[bullet]?22">Acerca de canaima</a>
                           </div><!-- Acerca-text -->
                     </div> <!-- Acerca -->  
              </div> <!-- answer-screen -->

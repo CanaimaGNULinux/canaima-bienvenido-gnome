@@ -7,8 +7,8 @@
         <meta name="description" content="acerca canaima GNU/Linux" />
         <meta name="keywords" content="jmpress, slideshow, container, plugin, jquery, css3" />
         <meta name="author" content="for Codrops" />
-        <link rel="stylesheet" type="text/css" href="data/assets/css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="data/assets/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="data/assets/js/jmpress.min.js"></script>
 	<script type="text/javascript" src="data/assets/js/jquery.jmslideshow.js"></script>

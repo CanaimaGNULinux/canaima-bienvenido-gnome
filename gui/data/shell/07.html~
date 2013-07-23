@@ -2,13 +2,13 @@
     <div style="display: block;" id="welcome">
         <div style="left: 20px; top: 30px; display: block; width: 720px; height: 549px;" id="welcome-screen" class="selected-window">	
 	      <div class="welcome-header">
-                  <h2>¿Cómo recupero archivos borrados?</h2>
+                  <h2>¿Dónde encuentro mis archivos?</h2>
              </div><!-- welcome-header -->
              <div class="answer-screen" >
                    <div id="answer">
-		    </br>
-                      <p>En <a href="[exec]nautilus trash://">la papelera</a> selecciono el archivo borrado y hago clic en <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Archivos-y-carpetas#sec:Recuperar-un-archivo">"Restaurar los elementos seleccionados"</a>. De esa manera, el archivo irá a su carpeta original.</p>
-                  <div id="ballWrapper" style="left: 569px; top: 150px;">
+		   </br>
+                    <p>En tu <a href="[exec]nautilus">Carpeta Personal</a>  están los archivos de tu usuario</a> organizadas por categoría ("Imágenes", "Descargas", etc.) con su ícono.<p></p> También puedo acceder desde el <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:menucanaima">Menú canaima</a> desde <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Archivos-y-carpetas#sec:Marcadores-de-carpeta">los marcadores </a> de carpetas que más usas.</p>
+                   <div id="ballWrapper" style="left: 569px; top: 150px;">
 				  <div id="ball"></div>
 			         <div id="ballShadow"></div>			
 			   </div> <!-- ballWrapper -->	
@@ -22,7 +22,7 @@
         </div> <!-- actions -->
                     <div id="Acerca">
                           <div id="Acerca-text">  
-                              <a href="[bullet]?16">Acerca de canaima</a>
+                              <a href="[bullet]?22">Acerca de canaima</a>
                           </div><!-- Acerca-text -->
                     </div> <!-- Acerca -->  
              </div> <!-- answer-screen -->

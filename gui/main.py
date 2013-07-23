@@ -78,7 +78,7 @@ class BulletsBrowser(webkit.WebView):
     if Config.DEV:
         
         app_dir = os.getcwd() + "/"
-        print app_dir
+        
     else:
         app_dir = "/usr/share/canaima-bienvenido-gnome"
 
@@ -90,7 +90,7 @@ class BulletsBrowser(webkit.WebView):
     answer_active = False
     bullets_list = bullets_list
     bullets_dir = app_dir + 'data/' + RunningDesktop + '/'
-    print "esto" + bullets_dir
+   
 
 
     def __init__(self, start_page):
@@ -110,18 +110,16 @@ class BulletsBrowser(webkit.WebView):
         """
         Builds the page
         """
-	print self.bullets_list
         if bullet >= self.bullet_close_number or (bullet == len(self.bullets_list) - 1):  # Activate close button?
             self.bullet_close_active = True
-
         header = open(self.app_dir + 'data/header.html', 'r').read()
         header_content = header.replace('{{ variant }}', str(self.bullets_list[bullet]['variant']))
         header_content = header_content.replace('{{ animation }}', self.bullets_list[bullet]['animation']['class'])
 
 
         bullet_content = open(self.bullets_dir + str(self.bullets_list[bullet]['file']), 'r').read()
-	
-        
+        bullet_content = bullet_content.replace('{{ prev_bullet_link }}',
+                self.__build_prev_bullet_link(bullet))
         bullet_content = bullet_content.replace('{{ prev_bullet_link }}',
                 self.__build_prev_bullet_link(bullet))
         bullet_content = bullet_content.replace('{{ next_bullet_link }}',
@@ -134,10 +132,10 @@ class BulletsBrowser(webkit.WebView):
                 self.bullets_list[bullet]['animation']['class'])
         footer_content = open(self.app_dir + 'data/footer.html', 'r').read()
         content = header_content + bullet_content + footer_content
-        self.load_html_string(content, base_uri='file://' + self.app_dir)
-	
+        self.load_html_string(content, base_uri='file://' + self.app_dir)	
 
     def __build_prev_bullet_link(self, current_bullet):
+	
         """
         Prev bullet link
         """
@@ -152,6 +150,8 @@ class BulletsBrowser(webkit.WebView):
         if int(current_bullet) == len(self.bullets_list) - 1:
             return '<div class="action bullet-navigation inactive" id="next-bullet"><span>Siguiente</span></div>'
         return '<div class="action bullet-navigation" id="next-bullet"><a href="[bullet]?%s">Siguiente</a></div>' % str(int(current_bullet) + 1)
+        
+       
 
     def __build_close_button(self, current_bullet):
         """

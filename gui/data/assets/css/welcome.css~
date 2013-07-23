@@ -203,12 +203,6 @@ body.ayuda div#actions a:hover
         font-weight:bold; 
         color: #acd148;
 }
-body.ayuda div#atras
-{
-        font-size:20; 
-        font-weight:bold; 
-        color: #acd148;
-}
 
 .titulos td{
    border-bottom:1px dotted #C0B7B0;

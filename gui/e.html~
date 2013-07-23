@@ -1,44 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-		<meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <title>Canaima Acerca</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="data/assets/js/javascrip.js"></script>
+        <link rel="stylesheet" type="text/css" href="data/assets/css/welcome.css" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="description" content="acerca canaima GNU/Linux" />
         <meta name="keywords" content="jmpress, slideshow, container, plugin, jquery, css3" />
         <meta name="author" content="for Codrops" />
-        <link rel="shortcut icon" href="../favicon.ico"> 
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="../assets/css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
-		<!--[if lt IE 9]>
-		<link rel="stylesheet" type="text/css" href="css/style_ie.css" />
-		<![endif]-->
-		<!-- jQuery -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<!-- jmpress plugin -->
-		<script type="text/javascript" src="../assets/js/jmpress.min.js"></script>
-		<!-- jmslideshow plugin : extends the jmpress plugin -->
-		<script type="text/javascript" src="../assets/js/jquery.jmslideshow.js"></script>
-                <script type="text/javascript" src="../assets/js/modernizr.custom.48780.js"></script>
-
-<script>		
-function goBack()
-  {
-  window.history.back();
-  alert ('hola');
-  }
-</script>
+        <link rel="stylesheet" type="text/css" href="data/assets/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="data/assets/css/style.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="data/assets/js/jmpress.min.js"></script>
+	<script type="text/javascript" src="data/assets/js/jquery.jmslideshow.js"></script>
+	<script type="text/javascript" src="data/assets/js/modernizr.custom.48780.js"></script>
     </head>
-    <body>
+    <body class="ayuda">
 			<section id="jms-slideshow" class="jms-slideshow">
 				<div class="step" data-color="color-2">
 					<div class="jms-content">
 						<h3>Arceca de Canaima GNU/Linux</h3>
 					<p>Una distribución GNU/Linux basada en Debian que surge como una solución, en principio, para cubrir las necesidades ofimáticas y de escritorio de los usuarios finales de la Administración Pública Nacional.</p>
 						<a class="jms-link" href="#">Versión 4.0</a>
-                                               <div class="jms-link" onclick="javascript:goBack();">Volver</div>
+                                           
 					</div>
 					<img src="../assets/images/acerca.png" />
 				</div>
@@ -48,6 +31,7 @@ function goBack()
 					<p>Realizada en Venezuela por talento nacional.  </p>
 					<p>Hemos desarrollado un sistema de software libre para garantizar la libertad de los usuarios.</p>
 						<a class="jms-link" href="#">Versión 4.0</a>
+                                                
 					</div>
 					<img src="../assets/images/venezuela.png" />
 				</div>
@@ -123,6 +107,7 @@ function goBack()
 						<a class="jms-link" href="#">Versión 4.0</a>
 					</div>
 				</div>
+		<div class="atras" id="prev-bullet"><span>{{ prev_bullet_link }}</span></div>
 			</section>
 
 		<script type="text/javascript">
@@ -141,4 +126,3 @@ function goBack()
 			});
 		</script>
     </body>
-</html>
