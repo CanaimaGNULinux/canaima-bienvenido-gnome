@@ -14,6 +14,7 @@ class Config:
     Config class
     """
     AUTOSTART_ENABLED = False
+    NO_AUTOSTART_FILE = os.getenv('HOME') + '/.canaima-bienvenido-noautostart'
     DEV = os.path.realpath(__file__) != '/usr/bin/canaima-bienvenido-gnome'
 
     @staticmethod
