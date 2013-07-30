@@ -74,16 +74,6 @@ function link_portal() {
 	window.location = '[app]portal';
 
 }
-function link_wiki() {    
-
-	window.location = '[app]wiki';
-
-}
-function link_trac() {    
-
-	window.location = '[app]trac';
-
-}
  
 
 function closeWindow() {

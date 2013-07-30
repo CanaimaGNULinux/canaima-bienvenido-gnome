@@ -1,4 +1,4 @@
-ab7e1fef3a7039052d373a239ec3b143  usr/bin/canaima-bienvenido-gnome/canaima-bienvenido-gnome.sh
+ab7e1fef3a7039052d373a239ec3b143  usr/bin/canaima-bienvenido-gnome
 68b329da9893e34099c7d8ad5cb9c940  usr/share/canaima-bienvenido-gnome/data/__init__.py
 68b329da9893e34099c7d8ad5cb9c940  usr/share/canaima-bienvenido-gnome/data/assets/__init__.py
 59d39fa0641a5a4d8bb358967b5a1326  usr/share/canaima-bienvenido-gnome/data/assets/css/demo.css
@@ -20,7 +20,7 @@ b80dfd092c90f500d039de3f3951b173  usr/share/canaima-bienvenido-gnome/data/assets
 e3e4c93b3b40ab184dddcaffc1af8ef5  usr/share/canaima-bienvenido-gnome/data/assets/js/modernizr.custom.48780.js
 f0126d8282e06098105dbad5b2ffc714  usr/share/canaima-bienvenido-gnome/data/footer.html
 5ce469c6d79107f2d595c63785bd5d73  usr/share/canaima-bienvenido-gnome/data/header.html
-3f4c6cf7d754d8954a54e69d11c7fe34  usr/share/canaima-bienvenido-gnome/data/shell/01.html
+e9c20461986d66a58eabd3c18fbdef65  usr/share/canaima-bienvenido-gnome/data/shell/01.html
 eda7446dbc43889b089488df4a6f057a  usr/share/canaima-bienvenido-gnome/data/shell/02.html
 e6b049c1b80eb082ba75ccc1ea56ccc3  usr/share/canaima-bienvenido-gnome/data/shell/03.html
 57357178ecdc832f2e8c4b8e064d2b1c  usr/share/canaima-bienvenido-gnome/data/shell/04.html
@@ -40,8 +40,7 @@ aa0512550aba595ccfb75b51b55d1892  usr/share/canaima-bienvenido-gnome/data/shell/
 d41d8cd98f00b204e9800998ecf8427e  usr/share/canaima-bienvenido-gnome/data/shell/__init__.py
 b0a816ff58b57463829202cdfaca6b01  usr/share/canaima-bienvenido-gnome/data/shell/acerca.html
 266d137c4226a30e5b3d18e61287841f  usr/share/canaima-bienvenido-gnome/data/shell/bullets_list.py
-b7b657d1c3047f4dbe4854f6717a902f  usr/share/canaima-bienvenido-gnome/e.html
-384c293a68fe3fe1c151edec7cf772bf  usr/share/canaima-bienvenido-gnome/main.py
+4aac4d64c7dda0c94950f30dd05f7ebe  usr/share/canaima-bienvenido-gnome/main.py
 5ba4b1f3c9dccabc2a5fdbd4419ac9b4  usr/share/doc/canaima-bienvenido-gnome/changelog.gz
 4f0569565cbdba85bcdf8e2d7ae7093e  usr/share/doc/canaima-bienvenido-gnome/copyright
 3e65f2341329ae15182c7be1c887f0ea  usr/share/python-support/canaima-bienvenido-gnome.private

@@ -190,6 +190,15 @@ class BulletsBrowser(webkit.WebView):
                         creationflags=0)
                 return True
             elif parts[0] == 'app':
+                if parts[1] == 'portal':
+                    os.system("sensible-browser http://canaima.softwarelibre.gob.ve/ -new-tab")
+                    return True
+                if parts[1] == 'wiki':
+                    os.system("sensible-browser http://wiki.canaima.softwarelibre.gob.ve/wiki/Portada/ -new-tab")
+                    return True
+		if parts[1] == 'trac':
+                    os.system("sensible-browser http://trac.canaima.softwarelibre.gob.ve/canaima/ -new-tab")
+                    return True
                 # Close app
                 if parts[1] == 'finalize':
                     exit_app()

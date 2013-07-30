@@ -1,47 +1,32 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <script type="text/javascript" src="data/assets/js/javascrip.js"></script>
-        <link rel="stylesheet" type="text/css" href="data/assets/css/welcome.css" />
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="acerca canaima GNU/Linux" />
-        <meta name="keywords" content="jmpress, slideshow, container, plugin, jquery, css3" />
-        <meta name="author" content="for Codrops" />
-        <link rel="stylesheet" type="text/css" href="data/assets/css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="data/assets/css/style.css" />
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="data/assets/js/jmpress.min.js"></script>
-	<script type="text/javascript" src="data/assets/js/jquery.jmslideshow.js"></script>
-	<script type="text/javascript" src="data/assets/js/modernizr.custom.48780.js"></script>
-    </head>
-    <body class="ayuda">
+    <body>
 			<section id="jms-slideshow" class="jms-slideshow">
 				<div class="step" data-color="color-2">
 					<div class="jms-content">
 						<h3>Arceca de Canaima GNU/Linux</h3>
 					<p>Una distribución GNU/Linux basada en Debian que surge como una solución, en principio, para cubrir las necesidades ofimáticas y de escritorio de los usuarios finales de la Administración Pública Nacional.</p>
-						<a class="jms-link" href="#">Versión 4.0</a>
-                                           
+						<a class="jms-link" href="#">Versión 4.0~B1</a>
+     
 					</div>
-					<img src="../assets/images/acerca.png" />
+					<img src="data/assets/images/acerca.png" />
 				</div>
 				<div class="step" data-color="color-2" data-y="500" data-scale="0.4" data-rotate-x="10">
 					<div class="jms-content">
 						<h3>Totalmente en Software Libre</h3>
 					<p>Realizada en Venezuela por talento nacional.  </p>
 					<p>Hemos desarrollado un sistema de software libre para garantizar la libertad de los usuarios.</p>
-						<a class="jms-link" href="#">Versión 4.0</a>
+						<a class="jms-link" href="#">Versión 4.0~B1</a>
+                                         
                                                 
 					</div>
-					<img src="../assets/images/venezuela.png" />
+					<img src="data/assets/images/venezuela.png" />
 				</div>
 				<div class="step" data-color="color-2" data-x="-100" data-z="1500" data-rotate="170">
 					<div class="jms-content">
 						<h3>Algunas Ventajas</h3>
 					<p>Canaima GNU/Linux posee aplicaciones diversas para llevar a cabo tareas de ofimática, internet, gráficos, entretenimiento, desarrollo y configuración de todo el sistema.</p>
-						<a class="jms-link" href="#">Versión 4.0</a>
+						<a class="jms-link" href="#">Versión 4.0~B1</a>
 					</div>
-					<img src="../assets/images/aplicaciones.png" />
+					<img src="data/assets/images/aplicaciones.png" />
 				</div>
 				<div class="step" data-color="color-2" data-x="2000" data-scale="0.1">
 					<div class="jms-content">
@@ -60,9 +45,9 @@
 					<p id="participantes">Rodrigo Rodriguez</p>
 					<p id="participantes">Xavier Araque</p>
 					<p id="participantes">Julio C. Ortega</p>	
-						<a class="jms-link" href="#">Versión 4.0</a>
+						<a class="jms-link" href="#">Versión 4.0~B1</a>
 					</div>
-					<img src="../assets/images/img-part-1.png" />
+					<img src="data/assets/images/img-part-1.png" />
 				</div>
 				<div class="step" data-color="color-2" data-z="150" data-scale="0.4">
 					<div class="jms-content">
@@ -83,9 +68,9 @@
 					<p id="participantes">Carlos Espinoza</p>
 					<p id="participantes">Homero Hernandez</p>
 					<p id="participantes">Jose Guerrero</p>		
-						<a class="jms-link" href="#">Versión 4.0</a>
+						<a class="jms-link" href="#">Versión 4.0~B1</a>
 					</div>
-					<img src="../assets/images/img-part-2.png" />
+					<img src="data/assets/images/img-part-2.png" />
 				</div>
 				<div class="step" data-color="color-2" data-rotate-y="170">
 					<div class="jms-content-inti">
@@ -104,10 +89,11 @@
 					<p id="participantes-inti">Ministerio del Poder Popular para la Participación y Protección Social (MPPPS)</p>
 					<p id="participantes-inti">Ministerio del Poder Popular para Ciencia, Tecnología e Innovación (MCTI)</p>
 					<p id="participantes-inti">Fidetel (Fondo de Investigación y Desarrollo de las Telecomunicaciones)</p>
-						<a class="jms-link" href="#">Versión 4.0</a>
+					       <a class="jms-link" href="#">Versión 4.0~Beta</a>
+			                       <div class="jms-boton"><span>{{ prev_bullet_link }}</span></div>
 					</div>
 				</div>
-		<div class="atras" id="prev-bullet"><span>{{ prev_bullet_link }}</span></div>
+		
 			</section>
 
 		<script type="text/javascript">

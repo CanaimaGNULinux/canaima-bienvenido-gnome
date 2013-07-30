@@ -13,9 +13,10 @@ class Config:
     """
     Config class
     """
+   
     AUTOSTART_ENABLED = False
     NO_AUTOSTART_FILE = os.getenv('HOME') + '/.canaima-bienvenido-noautostart'
-    DEV = os.path.realpath(__file__) != '/usr/bin/canaima-bienvenido-gnome'
+    DEV = os.path.dirname(os.path.realpath(__file__)) != '/usr/share/canaima-bienvenido-gnome'
 
     @staticmethod
     def getDesktopSession():
@@ -78,9 +79,10 @@ class BulletsBrowser(webkit.WebView):
     if Config.DEV:
         
         app_dir = os.getcwd() + "/"
+	
         
     else:
-        app_dir = "/usr/share/canaima-bienvenido-gnome"
+        app_dir = "/usr/share/canaima-bienvenido-gnome/"
 
     #get Session gnome or mate
     RunningDesktop = Config.getDesktopSession()
@@ -188,6 +190,15 @@ class BulletsBrowser(webkit.WebView):
                         creationflags=0)
                 return True
             elif parts[0] == 'app':
+                if parts[1] == 'portal':
+                    os.system("sensible-browser http://canaima.softwarelibre.gob.ve/ -new-tab")
+                    return True
+                if parts[1] == 'wiki':
+                    os.system("sensible-browser http://wiki.canaima.softwarelibre.gob.ve/wiki/Portada -new-tab")
+                    return True
+		if parts[1] == 'trac':
+                    os.system("sensible-browser http://trac.canaima.softwarelibre.gob.ve/canaima/ -new-tab")
+                    return True
                 # Close app
                 if parts[1] == 'finalize':
                     exit_app()
@@ -223,10 +234,12 @@ def build_app_window(start_page):
     """
     Build application window.
     """
+    logo='/usr/share/icons/Gnamon/places/48/canaima-logo.png'
     sw = gtk.ScrolledWindow()
     bullet_browser = BulletsBrowser(start_page)
     sw.add(bullet_browser)
     Win = gtk.Window(gtk.WINDOW_TOPLEVEL)
+    Win.set_icon_from_file(logo)
     Win.add(sw)
     Win.set_resizable(False)
     bullet_browser.set_size_request(740, 535)
@@ -251,7 +264,6 @@ if __name__ == '__main__':
    if '--autostart' in sys.argv and not Config.AUTOSTART_ENABLED:
        sys.exit()
    PATH = "file://" + BulletsBrowser.bullets_dir
-   print  PATH
    WIN = build_app_window(PATH + "/pages/bullets.html")
    WIN.show_all()
    gtk.main()

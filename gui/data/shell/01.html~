@@ -13,27 +13,27 @@
         <td valign="top" width="20%" class="titulo"  >
 	    <a href='javascript:MostrarDocumentacion()'>
 		<div>Primeros Pasos<div><br/>
-		    <img id="mydoc" name="mydoc" onmouseover="doIn('mydoc')" onmouseout="doOut('mydoc')" src="/usr/share/icons/Gnamon/apps/32/logviewer.png" /></a>
+		    <img id="mydoc" name="mydoc" src="/usr/share/icons/Gnamon/apps/32/logviewer.png" /></a>
       </td>
       <td valign="top" width="20%" class="titulo">
 	   <a href='javascript:MostrarOficina()' >
 		<div>Oficina</div><br/>
-		     <img id="myofi" name="myofi" onmouseover="doIn('myofi')" onmouseout="doOut('myofi')" src="/usr/share/icons/Gnamon/apps/32/ooo-template.png" /></a>
+		     <img id="myofi" name="myofi" src="/usr/share/icons/Gnamon/apps/32/ooo-template.png" /></a>
     </td>
     <td valign="top" width="20%" class="titulo">
 	<a href='javascript:MostrarInternet()'>
 		<div>Internet</div><br/>
-		   <img id="myweb" name="myweb" onmouseover="doIn('myweb')" onmouseout="doOut('myweb')" src="/usr/share/icons/Gnamon/apps/32/web-browser.png" /></a>
+		   <img id="myweb" name="myweb"  src="/usr/share/icons/Gnamon/apps/32/web-browser.png" /></a>
     </td>
     <td valign="top" width="20%" class="titulo">
 	<a href='javascript:MostrarGraficos()'>
 		<div>Graficos</div><br/>
-		<img id="mygraf" name="mygraf" onmouseover="doIn('mygraf')" onmouseout="doOut('mygraf')"   src="/usr/share/icons/Gnamon/apps/32/gimp.png" /></a>
+		<img id="mygraf" name="mygraf"  src="/usr/share/icons/Gnamon/apps/32/gimp.png" /></a>
    </td>
    <td valign="top" width="20%" class="titulo">
 	<a href='javascript:MostrarMultimedia()'>
 		<div>Multimedia</div><br/>
-		<img id="mymult" name="mymult" onmouseover="doIn('mymult')" onmouseout="doOut('mymult')" src="/usr/share/icons/Gnamon/apps/32/totem.png" /></a>
+		<img id="mymult" name="mymult"  src="/usr/share/icons/Gnamon/apps/32/totem.png" /></a>
    </td>
 </tr>
 </table>
@@ -41,18 +41,18 @@
   <table class="titulos" >
     <tr align="center">
        <td valign="top" width="25%" style="border-left:1px dotted #C0B7B0;">
-	<a href='javascript:changeTitle("portal")'>
-		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage image_trans" src="/usr/share/icons/Gnamon/places/32/canaima-logo.png" />
+	<a  onclick="link_portal()">
+		<img onmouseout="stoprattle(this)" src="/usr/share/icons/Gnamon/places/32/canaima-logo.png" />
 		<div class="imagenes-titulo">Portal Principal</div></a>
       </td>
     <td valign="top" width="25%">
-	<a href='javascript:changeTitle("wiki")'>
-		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage image_trans" src="/usr/share/icons/Gnamon/apps/32/system-users.png" />
+	<a onclick="link_wiki()>
+		<img onmouseout="stoprattle(this)"  src="/usr/share/icons/Gnamon/apps/32/system-users.png" />
 		<div>Enciclopedia Colaborativa</div>
 	</a>
     </td>
     <td valign="top" width="25%">
-	<a href='javascript:changeTitle("canaima-notas-gnome")'>
+	<a onclick="link_trac()>
 		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage image_trans" src="/usr/share/icons/Gnamon/apps/32/tomboy.png" />
 		<div>Documentador de Fallas</div>
 	</a>

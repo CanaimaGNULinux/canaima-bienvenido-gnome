@@ -15,7 +15,7 @@ Depends: python, python-webkit, python-gtk2,
          xdg-utils, xdg-user-dirs, xdg-user-dirs-gtk,canaima-ayuda,
          gnome-icon-theme-gnamon ,python-support (>= 0.90), ${shlibs:Depends}, ${misc:Depends}
 Pre-Depends: canaima-escritorio-gnome
-Recommends: cunaguaro, guacharo, turpial, gimp, shotwell, simple-scan,
+Recommends: cunaguaro, guacharo, gimp, shotwell, simple-scan,
             libreoffice-draw, libreoffice-writer, libreoffice-calc, libreoffice-impress,
             totem, empathy, brasero, rhythmbox, canaima-notas-gnome
 Replaces: canaima-bienvenido (<< 4.0)
