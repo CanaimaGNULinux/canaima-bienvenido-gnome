@@ -1,20 +1,17 @@
-<body class="ayuda">
+    <body class="ayuda">
     <div style="display: block;" id="welcome">
         <div style="left: 20px; top: 30px; display: block; width: 720px; height: 549px;" id="welcome-screen" class="selected-window">	
 	      <div class="welcome-header">
-                  <h1>¿Cómo me conecto a Internet?</h1>
+                  <h1>¿Cómo comprimo archivos?</h1>
              </div><!-- welcome-header -->
              <div class="answer-screen" >
                    <div id="answer">
-                    </br>
-                     <p> <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#part:Internet-y-conectividad">Accede a conexiones</a> en la <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Barra-superior">barra superior</a> a la derecha y elije la red (WiFi o cableada) La primera vez que te conectes debes que ingresar la contraseña de root.</p>
-
-            <p>Una vez que cuentes con Internet puedes navegar. Canaima tiene su propio navegador llamado <a href="[exec]cunaguaro">Cunaguaro</a>, un derivado de Iceweasel</p> 
+                  <p>Simplemente hago clic con el botón derecho y elijo la opción <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Archivos-y-carpetas#sec:Comprimir-y-descomprimir">"Comprimir"</a>. Luego elijo el nombre del archivo final y la extensión (zip, rar, 7z, tar.gz, etc.). La opción 7z que es la que más y mejor comprime.</p>
                   <div id="ballWrapper" style="left: 569px; top: 150px;">
 				  <div id="ball"></div>
 			         <div id="ballShadow"></div>			
 			   </div> <!-- ballWrapper -->	
-                  </div> <!-- answer -->	 
+                  </div> <!-- answer --> 
                  <div id="actions">
         <div class="action bullet-navigation inactive" id="prev-bullet"><span>{{ prev_bullet_link }}</span></div><div class="action" id="close-app">{{ close_app_button }}</div><div class="action bullet-navigation" id="next-bullet"> {{ next_bullet_link }}</div>
             <div id="show-next-startup">

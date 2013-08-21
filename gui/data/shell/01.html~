@@ -46,13 +46,13 @@
 		<div class="imagenes-titulo">Portal Principal</div></a>
       </td>
     <td valign="top" width="25%">
-	<a onclick="link_wiki()>
+	<a onclick="link_wiki()">
 		<img onmouseout="stoprattle(this)"  src="/usr/share/icons/Gnamon/apps/32/system-users.png" />
 		<div>Enciclopedia Colaborativa</div>
 	</a>
     </td>
     <td valign="top" width="25%">
-	<a onclick="link_trac()>
+	<a onclick="link_trac()">
 		<img onmouseout="stoprattle(this)" onmouseover="init(this);rattleimage()" class="shakeimage image_trans" src="/usr/share/icons/Gnamon/apps/32/tomboy.png" />
 		<div>Documentador de Fallas</div>
 	</a>

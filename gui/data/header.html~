@@ -9,7 +9,7 @@
         <meta name="author" content="for Codrops" />
         <link rel="stylesheet" type="text/css" href="data/assets/css/demo.css" />
         <link rel="stylesheet" type="text/css" href="data/assets/css/style.css" />
-	<script type="text/javascript" src="data/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="data/assets/js/jmpress.min.js"></script>
 	<script type="text/javascript" src="data/assets/js/jquery.jmslideshow.js"></script>
 	<script type="text/javascript" src="data/assets/js/modernizr.custom.48780.js"></script>

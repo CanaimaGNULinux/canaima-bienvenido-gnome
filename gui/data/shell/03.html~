@@ -2,19 +2,18 @@
     <div style="display: block;" id="welcome">
         <div style="left: 20px; top: 30px; display: block; width: 720px; height: 549px;" id="welcome-screen" class="selected-window">	
 	      <div class="welcome-header">
-                  <h1>¿Cómo me conecto a Internet?</h1>
+                  <h3>¿Cómo veo mis archivos de sonido y video ?</h3>
              </div><!-- welcome-header -->
              <div class="answer-screen" >
                    <div id="answer">
-                    </br>
-                     <p> <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#part:Internet-y-conectividad">Accede a conexiones</a> en la <a href="[doc]/usr/share/canaima/help/gnome/ayuda.xml#chap:Barra-superior">barra superior</a> a la derecha y elije la red (WiFi o cableada) La primera vez que te conectes debes que ingresar la contraseña de root.</p>
+                     <p> En Canaima con un simple doble clic puedes reproducir archivos de música con <a href="[exec]rhythmbox">Rhythmbox</a> y de Video <a href="[exec]totem">totem</a> 
 
-            <p>Una vez que cuentes con Internet puedes navegar. Canaima tiene su propio navegador llamado <a href="[exec]cunaguaro">Cunaguaro</a>, un derivado de Iceweasel</p> 
+<p>Además viene con <a href="[exec]brasero ">brasero</a> para grabar cd o dvd de datos  y <a href="[exec]gnome-sound-recorder">gnome-sound-recorder</a> es una sencilla aplicación para grabar y reproducir diferentes archivos de sonido.</p>
                   <div id="ballWrapper" style="left: 569px; top: 150px;">
 				  <div id="ball"></div>
 			         <div id="ballShadow"></div>			
 			   </div> <!-- ballWrapper -->	
-                  </div> <!-- answer -->	 
+                  </div> <!-- answer -->	
                  <div id="actions">
         <div class="action bullet-navigation inactive" id="prev-bullet"><span>{{ prev_bullet_link }}</span></div><div class="action" id="close-app">{{ close_app_button }}</div><div class="action bullet-navigation" id="next-bullet"> {{ next_bullet_link }}</div>
             <div id="show-next-startup">
