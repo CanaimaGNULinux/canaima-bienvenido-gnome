@@ -74,6 +74,16 @@ function link_portal() {
 	window.location = '[app]portal';
 
 }
+function link_wiki() {    
+
+	window.location = '[app]wiki';
+
+}
+function link_trac() {    
+
+	window.location = '[app]trac';
+
+}
  
 
 function closeWindow() {
@@ -238,22 +248,17 @@ function doOut(_g) {
 function finalize(){
 	window.location = '[app]finalize';
 }
+/**
+ * Sets autostart
+ * 
+ */
 function set_autostart_on(){
 	window.location = '[app]set-autostart-on';
+	alert "buuuuuuuuu";
 }
 
 function set_autostart_off(){
 	window.location = '[app]set-autostart-off';
 }
 
-/**
- * Answer active?
- * 
- */
-function set_answer_active_on(){
-	window.location = '[app]set-answer-active-on';
-}
 
-function set_answer_active_off(){
-	window.location = '[app]set-answer-active-off';
-}

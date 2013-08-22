@@ -248,6 +248,10 @@ function doOut(_g) {
 function finalize(){
 	window.location = '[app]finalize';
 }
+/**
+ * Sets autostart
+ * 
+ */
 function set_autostart_on(){
 	window.location = '[app]set-autostart-on';
 }
@@ -256,14 +260,4 @@ function set_autostart_off(){
 	window.location = '[app]set-autostart-off';
 }
 
-/**
- * Answer active?
- * 
- */
-function set_answer_active_on(){
-	window.location = '[app]set-answer-active-on';
-}
 
-function set_answer_active_off(){
-	window.location = '[app]set-answer-active-off';
-}

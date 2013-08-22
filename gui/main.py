@@ -204,18 +204,32 @@ class BulletsBrowser(webkit.WebView):
                     exit_app()
                     return True
                 # Autostart
-                elif parts[1] == 'set-autostart-on':
-                    Config.AUTOSTART_ENABLED = True
-                    return True
-                elif parts[1] == 'set-autostart-off':
-                    Config.AUTOSTART_ENABLED = False
-                    return True
-                elif parts[1] == 'set-answer-active-on':
-                    self.answer_active = True
-                    return True
-                elif parts[1] == 'set-answer-active-off':
-                    self.answer_active = False
-                    return True
+		elif parts[1] == "set-autostart-off":
+                    os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
+                    os.system("echo 'MOSTRAR=0' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
+                    print "entra"
+                elif parts[1] == "set-autostart-on":
+                   os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
+                   os.system("echo 'MOSTRAR=1' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
+                   gtk.main_quit()
+                elif parts[1] == "set-answer-active-on":
+                  os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
+                  os.system("echo 'MOSTRAR=0' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
+                elif parts[1] == "set-answer-active-off":
+                  os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
+                  os.system("echo 'MOSTRAR=1' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
+                #elif parts[1] == 'set-autostart-on':
+                    #Config.AUTOSTART_ENABLED = True
+                    #return True
+                #elif parts[1] == 'set-autostart-off':
+                    #Config.AUTOSTART_ENABLED = False
+                    #return True
+                #elif parts[1] == 'set-answer-active-on':
+                    #self.answer_active = True
+                    #return True
+                #elif parts[1] == 'set-answer-active-off':
+                    #self.answer_active = False
+                    #return True
             # Bullets navigation
             elif parts[0] == 'bullet':
                 params = parts[1].split("?", 1)
