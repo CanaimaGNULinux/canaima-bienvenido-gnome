@@ -1,3 +1,28 @@
+canaima-bienvenido-gnome (4.1) stable; urgency=low
+
+  [ ssolano ]
+  * [b498449] borrando archivos inecesario
+  * [9704bfb] arreglando agregando dependecia de jquery
+  * [d33f3f2] cambiando corrigiendo errores en el text
+  * [0bb15be] editando makefile
+  * [cebadae] corrigiendo main.py y makefile
+  * [dafc3fc] corrigiendo
+  * [4b8fea6] corrigiendo error en python
+
+  [ Carlos Espinoza ]
+  * [42b8cda] Agregando Acerca de Canaima GNU/Linux al Bienvenido
+
+  [ ssolano ]
+  * [1496488] agregando acerca de canaima
+  * [aea6b6b] agregando acerca de canaima
+  * [3fe5bf7] acomondando makefile
+  * [abdc3d8] probando empaquetamiento
+  * [170b41d] corrigiendo boton cerrar y acomodando el acerca
+  * [00fab8b] agregando  archivo jquery.mini y corrigiendo errores en el texto de ayuda del bienvenido
+  * [5adf15d] acomodando la opcion no volver a aparece
+
+ -- ssolano <ssolano@canaima-popular>  Fri, 23 Aug 2013 09:04:05 -0430
+
 canaima-bienvenido-gnome (4.0) stable; urgency=low
 
   * [3260eec] Nueva Version para 4.0.
