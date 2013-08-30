@@ -45,11 +45,15 @@ install:
 	@cp gui.conf $(DESTDIR)/etc/skel/.config/canaima-bienvenido-gnome/
 	@cp canaima-bienvenido-gnome-auto.desktop $(DESTDIR)/etc/skel/.config/autostart
 	@cp canaima-bienvenido-gnome.sh $(DESTDIR)/usr/bin/canaima-bienvenido-gnome
+	@cp canaima-bienvenido-gnome.desktop $(DESTDIR)/usr/share/applications
 
 uninstall:
 
 	@rm -rf $(DESTDIR)/usr/share/canaima-bienvenido-gnome/
-	@rm -rf $(DESTDIR)/usr/bin/canaima-bienvenido-gnome
+	@rm -rf $(DESTDIR)/usr/share/applications/canaima-bienvenido-gnome.desktop
+	@rm -f $(DESTDIR)/etc/skel/.config/autostart/canaima-bienvenido-gnome-auto.desktop
+	@rm -f $(DESTDIR)/usr/share/applications/canaima-bienvenido-gnome.desktop
+	@rm -f $(DESTDIR)/usr/bin/canaima-bienvenido-gnome/canaima-bienvenido-gnome.sh
 	@rm -f $(DESTDIR)/etc/skel/.config/autostart/canaima-bienvenido-gnome-auto.desktop
 
 clean:
