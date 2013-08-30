@@ -1,3 +1,13 @@
+canaima-bienvenido-gnome (4.2) stable; urgency=low
+
+  [ Sasha Solano ]
+  * [bbdcac8] borrado archivos inecesarios
+  * [6c13348] borrando debian/files
+
+  [ ssolano ]
+
+ -- ssolano <ssolano@canaima-popular>  Fri, 30 Aug 2013 04:09:19 -0430
+
 canaima-bienvenido-gnome (4.1) stable; urgency=low
 
   [ ssolano ]
