@@ -6,7 +6,7 @@ canaima-bienvenido-gnome (4.2) stable; urgency=low
 
   [ ssolano ]
 
- -- ssolano <ssolano@canaima-popular>  Fri, 30 Aug 2013 04:09:19 -0430
+ -- ssolano <sashasolano@gmail.com>  Fri, 30 Aug 2013 04:09:19 -0430
 
 canaima-bienvenido-gnome (4.1) stable; urgency=low
 
@@ -31,7 +31,7 @@ canaima-bienvenido-gnome (4.1) stable; urgency=low
   * [00fab8b] agregando  archivo jquery.mini y corrigiendo errores en el texto de ayuda del bienvenido
   * [5adf15d] acomodando la opcion no volver a aparece
 
- -- ssolano <ssolano@canaima-popular>  Fri, 23 Aug 2013 09:04:05 -0430
+ -- ssolano <sashasolano@gmail.com>  Fri, 23 Aug 2013 09:04:05 -0430
 
 canaima-bienvenido-gnome (4.0) stable; urgency=low
 

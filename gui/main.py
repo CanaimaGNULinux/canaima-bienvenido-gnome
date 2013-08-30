@@ -231,6 +231,10 @@ class BulletsBrowser(webkit.WebView):
                 return True
         return False
 
+def es_modo_live():
+	'Verifica si el entorno de ejecucion es un LiveCD'
+	return os.path.isdir("/lib/live/mount/medium")
+
 
 def build_app_window(start_page):
     """
@@ -260,12 +264,13 @@ def exit_app():
     Config.save()
     sys.exit()
 
-
 if __name__ == '__main__':
-   Config.load()
-   if '--autostart' in sys.argv and not Config.AUTOSTART_ENABLED:
-       sys.exit()
-   PATH = "file://" + BulletsBrowser.bullets_dir
-   WIN = build_app_window(PATH + "/pages/bullets.html")
-   WIN.show_all()
-   gtk.main()
+	Config.load()
+	if '--autostart' in sys.argv and not Config.AUTOSTART_ENABLED:
+		sys.exit()
+	PATH = "file://" + BulletsBrowser.bullets_dir
+	WIN = build_app_window(PATH + "/pages/bullets.html")
+	WIN.show_all()
+	if not es_modo_live():
+		gtk.main()
+		
