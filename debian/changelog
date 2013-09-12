@@ -1,3 +1,15 @@
+canaima-bienvenido-gnome (4.3) stable; urgency=low
+
+  [ Sasha Solano ]
+  * [73ce9b6] Agregado lanzador para el menú
+  * [3a2bbe6] acomodando icono del .desktop
+  * [f5dc24e] quitando la depencia de canaima escritorio gnome
+  * [d25e997] cambios agregando depencia de jquery y el inicio de session
+
+  [ ssolano ]
+
+ -- ssolano <ssolano@canaima-popular>  Thu, 12 Sep 2013 16:51:17 -0430
+
 canaima-bienvenido-gnome (4.2) stable; urgency=low
 
   [ Sasha Solano ]
