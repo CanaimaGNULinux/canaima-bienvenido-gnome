@@ -12,5 +12,28 @@
 	<script type="text/javascript" src="data/assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="data/assets/js/jmpress.min.js"></script>
 	<script type="text/javascript" src="data/assets/js/jquery.jmslideshow.js"></script>
+	<script type="text/javascript" src="data/assets/js/jquery.mini.js"></script>
 	<script type="text/javascript" src="data/assets/js/modernizr.custom.48780.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('input#chkAutoStart').change(function(){
+		if ($(this).is(':checked')){
+			set_autostart_on();
+			alert ("sss");
+		} else {
+			set_autostart_off();
+		        alert ("ttt");
+		}
+				});
+		// 
+		$('div#actions div.action.bullet-navigation').each(function(i, v){
+		if($(this).hasClass('inactive')){
+			$(this).fadeTo('slow', 0.2);
+		}
+		
+		});
+	});
+</script>
+</html>
+
     </head>

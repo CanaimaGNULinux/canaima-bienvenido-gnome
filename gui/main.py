@@ -204,20 +204,22 @@ class BulletsBrowser(webkit.WebView):
                     exit_app()
                     return True
                 # Autostart
-		elif parts[1] == "set-autostart-off":
+                elif parts[1] == "set-autostart-off":
                     os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
                     os.system("echo 'MOSTRAR=0' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
-                    print "entra"
+                    return True
                 elif parts[1] == "set-autostart-on":
-                   os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
-                   os.system("echo 'MOSTRAR=1' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
-                   gtk.main_quit()
+                    os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
+                    os.system("echo 'MOSTRAR=1' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
+                    return True
                 elif parts[1] == "set-answer-active-on":
-                  os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
-                  os.system("echo 'MOSTRAR=0' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
+                    os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
+                    os.system("echo 'MOSTRAR=0' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
+		    return True
                 elif parts[1] == "set-answer-active-off":
-                  os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
-                  os.system("echo 'MOSTRAR=1' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
+                    os.system("mkdir -p " + home + "/.config/canaima-bienvenido-gnome/")
+                    os.system("echo 'MOSTRAR=1' > " + home + "/.config/canaima-bienvenido-gnome/gui.conf")
+		    return True
             # Bullets navigation
             elif parts[0] == 'bullet':
                 params = parts[1].split("?", 1)
