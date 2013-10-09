@@ -10,7 +10,7 @@ case ${1} in
 	;;
 
 	start|*)
-		python /usr/share/canaima-bienvenido-gnome/main.py
+		python /usr/share/canaima-bienvenido-gnome/canaima-bienvenido.py
 	;;
 esac
 
