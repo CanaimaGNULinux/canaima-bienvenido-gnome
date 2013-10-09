@@ -242,7 +242,7 @@ def build_app_window(start_page):
     """
     Build application window.
     """
-    logo='/usr/share/icons/Gnamon/places/48/canaima-logo.png'
+    logo='/usr/share/icons/Gnamon/places/scalable/canaima-logo.svg'
     sw = gtk.ScrolledWindow()
     bullet_browser = BulletsBrowser(start_page)
     sw.add(bullet_browser)
