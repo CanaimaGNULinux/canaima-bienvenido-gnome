@@ -1,3 +1,17 @@
+canaima-bienvenido-gnome (4.4) stable; urgency=low
+
+  [ Sasha Solano ]
+  * [3bc08b7] deleted:    debian/source/format
+  * [a7c0c6a] quitando mensajes de prueba
+
+  [ Sasha ]
+  * [56e54f6] corrigiendo iconos pixelados
+  * [c1a3ad7] cambiando el nombre de main.py a canaima-bienvenido.py
+
+  [ Sasha Solano ]
+
+ -- Sasha Solano <sashasolano@gmail.com>  Thu, 31 Oct 2013 12:16:04 -0430
+
 canaima-bienvenido-gnome (4.3) stable; urgency=low
 
   [ Sasha Solano ]
@@ -8,7 +22,7 @@ canaima-bienvenido-gnome (4.3) stable; urgency=low
 
   [ ssolano ]
 
- -- ssolano <ssolano@canaima-popular>  Thu, 12 Sep 2013 16:51:17 -0430
+ -- ssolano <sashasolano@gmail.com>  Thu, 12 Sep 2013 16:51:17 -0430
 
 canaima-bienvenido-gnome (4.2) stable; urgency=low
 
