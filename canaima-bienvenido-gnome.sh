@@ -5,7 +5,7 @@ case ${1} in
 		. ${HOME}/.config/canaima-bienvenido-gnome/gui.conf
 
 		if [ ${MOSTRAR} -eq 1 ]; then
-			python /usr/share/canaima-bienvenido-gnome/main.py
+			python /usr/share/canaima-bienvenido-gnome/canaima-bienvenido.py
 		fi
 	;;
 
