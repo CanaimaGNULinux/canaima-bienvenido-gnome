@@ -1,3 +1,9 @@
+canaima-bienvenido-gnome (4.6) stable; urgency=low
+
+  * [d7a3145] acomodando error que no se inicia al principio
+
+ -- Sasha Solano <sashasolano@gmail.com>  Tue, 05 Nov 2013 15:14:35 -0430
+
 canaima-bienvenido-gnome (4.5) stable; urgency=low
 
   * [7a04102] quitandole el ~B1 al canaima acerca
