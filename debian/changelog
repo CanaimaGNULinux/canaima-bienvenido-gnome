@@ -1,3 +1,9 @@
+canaima-bienvenido-gnome (4.7) stable; urgency=low
+
+  * [fb7eebf] Cambiando escudo de la img venezuela del arcerca
+
+ -- Carlos Espinoza <carlosarmikhael@gmail.com>  Mon, 11 Nov 2013 11:33:24 -0430
+
 canaima-bienvenido-gnome (4.6) stable; urgency=low
 
   * [d7a3145] acomodando error que no se inicia al principio
