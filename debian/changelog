@@ -1,3 +1,16 @@
+canaima-bienvenido-gnome (5.0-1) stable; urgency=medium
+
+  [ Carlos Espinoza ]
+  * [6c8a284] Agregando archivo format
+
+  [ ssolano ]
+  * [dd8b758] cambiando numero de version de 4.0 a 4.1
+
+  [ kuai mare carrasquero ]
+  * [6c3edb3] Se modificaron los archivos: 	debian/control 	gui/data/assets/css/style.css 	gui/data/shell/01.html 	gui/data/shell/17.html 	gui/data/shell/acerca.html en cuanto al control se modifico el paquete python-support a su version mas reciente en cuanto a los html se modifico el escrito de version 4.0 a 5.0
+
+ -- kuai mare carrasquero <orionkmc@gmail.com>  Sat, 13 Jun 2015 12:00:50 -0430
+
 canaima-bienvenido-gnome (4.7) stable; urgency=low
 
   * [fb7eebf] Cambiando escudo de la img venezuela del arcerca
